@@ -6,14 +6,16 @@
     .education-item {
         margin-bottom: 20px;
         .degree {
-            @include body-text;
-            font-weight: bold;
+            @include sub-header;
         }
         .university {
             @include body-text;
-        }
-        .time {
-            @include body-text;
+            font-weight: bold;
+            .time {
+                float: right;
+                color: var(--fg-color-title-sm);
+                font-weight: 100;
+            }
         }
     }
 }
