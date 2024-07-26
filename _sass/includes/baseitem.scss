@@ -2,11 +2,11 @@
     .title {
         @include header;
     }
-    .item {
-        .iteminstance {
+    .experience-item {
+        .role {
             @include sub-header;
         }
-        .place {
+        .company {
             @include body-text;
             font-weight: bold;
             .time {

@@ -2,13 +2,13 @@
 {% if education %}
 <section class="baseitem">
     <h2 class="title">Education</h2>
-    {% for exp in education %}
-        <div class="item">
-            <div class="itemtitle">
-                {{exp.itemtitle}}
+    {% for exp in experience %}
+        <div class="experience-item">
+            <div class="role">
+                {{exp.role}}
             </div>
-            <div class="place">
-                {{exp.place}} 
+            <div class="company">
+                {{exp.company}} 
                 <span class="time">{{exp.time}}</span>
             </div> 
             <div class="details">{{exp.details}}</div>
