@@ -1,19 +1,18 @@
-name: John Doe
+name: Juliette Bénon
 support_dark_mode: true
-fork: true
+fork: false
 
 # Sidebar
 contact:
-  email: info@johndoe.com
-  github: johndoe
-  linkedin: johndoe
+  email: juliettebenon@gmail.com
+  github: jbenon
+  linkedin:
   phone: 
   gitlab: 
   twitter: 
 
 languages:
   - idiom: English
-  - idiom: Russian
   - idiom: French
 
 education:
