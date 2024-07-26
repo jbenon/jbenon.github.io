@@ -27,5 +27,12 @@
     display: grid;
     width: 100%;
     grid-template-columns: 20% auto;
+}
+
+#column_left {
+    padding: 20px;
+}
+
+#column_right {
     padding: 20px;
 }
