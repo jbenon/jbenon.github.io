@@ -1,17 +1,19 @@
 {% assign education = site.data.data.education %}
 {% if education %}
 <section class="education">
-    <div class="title">Education</div>
-    {% for ed in education %}
-        <div class="education-item">
-            <div class="degree">
-                {{ed.degree}}
+    <h2 class="title">Education</h2>
+    {% for exp in experience %}
+        <div class="experience-item">
+            <div class="role">
+                {{exp.role}}
             </div>
-            <div class="university">
-                {{ed.university}}
-                <pan class="time">{{ed.time}}</pan>
+            <div class="company">
+                {{exp.company}} 
+                <span class="time">{{exp.time}}</span>
             </div> 
+            <div class="details">{{exp.details}}</div>
         </div>
+       
     {% endfor %}
 </section>
 {% endif %}

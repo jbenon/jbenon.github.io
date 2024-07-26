@@ -16,13 +16,13 @@ languages:
   - idiom: French
 
 education:
-  - degree: MSc in Informatics
+  - role: MSc in Informatics
     time: 2014-2016
-    university: Ionian University
+    company: Ionian University
 
-  - degree: BSc in Computer Science
+  - role: BSc in Computer Science
     time: 2010-2014
-    university: Ionian University
+    company: Ionian University
 
 skills:
   - category: Backend
