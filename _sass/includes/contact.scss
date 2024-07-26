@@ -2,6 +2,7 @@
     margin-bottom: 20px;
     .title {
         @include sub-header;
+        color: var(--fg-color);
     }
     .contact-item {
         display: flex;
