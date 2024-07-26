@@ -9,25 +9,27 @@ contact:
 
 # Education
 education:
-  - item-title: PhD in Cognitive Neuroscience
+  - item-title: <a href=https://ed3c.sorbonne-universite.fr/en>PhD in Cognitive Neuroscience</a>
     time: 2022-Ongoing
-    place: Paris Brain Institute
+    place: <a href=https://www.sorbonne-universite.fr/en>Sorbonne Université</a>, Paris, FR
     details: >
-      Supervised by Jean Daunizeau in the Motivation Brain Behavior team,
-      Paris Brain Institute (Paris, FR).
+      Supervised by <a href=https://sites.google.com/site/jeandaunizeauswebsite/>Jean Daunizeau</a>
+      in the <a href=https://sites.google.com/site/motivationbrainbehavior/>Motivation Brain Behavior</a>
+      team, <a href=https://institutducerveau-icm.org/en/>Paris Brain Institute</a>.
 
-  - item-title: MSc in Cognitive Science
+  - item-title: <a href=https://cogmaster.ens.psl.eu/en>MSc in Cognitive Science</a>
     time: 2020-2022
-    place: Université ENS-PSL
+    place: <a href=https://psl.eu/en>Université ENS-PSL</a>, Paris, FR
 
-  - item-title: BSc in Mathematics
+  - item-title: <a href=https://odf.u-paris.fr/fr/offre-de-formation/licence-XA/sciences-technologies-sante-STS/mathematiques-et-applications-K56VCV5Q.html>BSc in Mathematics</a>
     time: 2019-2020
-    place: Université Paris Cité
+    place: <a href=https://u-paris.fr/en/>Université Paris Descartes</a>, Paris, FR
 
-  - item-title: Preparatory classes MPSI / MP*
+  - item-title: <a href=https://en.wikipedia.org/wiki/Classe_pr%C3%A9paratoire_aux_grandes_%C3%A9coles>Preparatory classes MPSI / MP*</a>
     time: 2020-2022
+    place: <a href=https://corneille-rouen.lycee.ac-normandie.fr/spip.php?article386>Lycée Pierre Corneille</a>, Rouen, FR
     details: >
-      Post-secondary program in Mathematics, Physics and Informatics (Rouen, FR).
+      Post-secondary program in Mathematics, Physics and Informatics.
 
 # Experience
 experience:
