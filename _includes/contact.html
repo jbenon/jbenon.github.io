@@ -11,49 +11,23 @@
         </div>
     {% endif %}
 
-    {% if contact.phone %}
-        <div class="contact-item">
-            <i data-feather="phone"></i>
-            <a href="#">
-                {{contact.phone}}
-            </a>
-        </div>
-    {% endif %}
-
     {% if contact.github %}
         <div class="contact-item">
             <i data-feather="github"></i>
             <a href="https://github.com/{{contact.github}}">
-                {{contact.github}}
+                GitHub
+            </a>
+        </div>
+    {% endif %}
+    
+    {% if contact.researchgate %}
+        <div class="contact-item">
+            <i class="fa-brands fa-researchgate"></i>
+            <a href="{{contact.contact.researchgate}}">
+                GitHub
             </a>
         </div>
     {% endif %}
 
-    {% if contact.linkedin %}
-        <div class="contact-item">
-            <i data-feather="linkedin"></i>
-            <a href="https://linkedin.com/in/{{contact.linkedin}}">
-                {{contact.linkedin}}
-            </a>
-        </div>
-    {% endif %}
-
-    {% if contact.twitter %}
-        <div class="contact-item">
-            <i data-feather="twitter"></i>
-            <a href="https://twitter.com/{{contact.twitter}}">
-                {{contact.twitter}}
-            </a>
-        </div>
-    {% endif %}
-
-    {% if contact.gitlab %}
-        <div class="contact-item">
-            <i data-feather="gitlab"></i>
-            <a href="https://gitlab.com/{{contact.gitlab}}">
-                {{contact.gitlab}}
-            </a>
-        </div>
-    {% endif %}
 </section>
 {% endif %}

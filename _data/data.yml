@@ -5,7 +5,11 @@ fork: false
 # Sidebar
 contact:
   email: juliettebenon@gmail.com
-  github: jbenon
+  github: https://github.com/jbenon
+  researchgate: https://www.researchgate.net/profile/Juliette-Benon-3
+  google-scholar: https://scholar.google.com/citations?user=1rcEINgAAAAJ
+  orcid: https://orcid.org/0009-0003-6084-8003
+
 
 # Education
 education:
