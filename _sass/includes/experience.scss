@@ -4,14 +4,14 @@
     }
     .experience-item {
         margin-bottom: 20px;
+        .time {
+            @include body-text;
+            float: right;
+            color: var(--fg-color-title-sm);
+            font-weight: 100;
+        }
         .role {
             @include sub-header;
-            .time {
-                @include body-text;
-                float: right;
-                color: var(--fg-color-title-sm);
-                font-weight: 100;
-            }
         }
         .company {
             @include body-text;
