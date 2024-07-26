@@ -1,13 +1,13 @@
 {% assign experience = site.data.data.experience %}
 {% if experience %}
-<section class="experience">
+<section class="baseitem">
     <h2 class="title">Experience</h2>
     {% for exp in experience %}
-        <div class="experience-item">
-            <div class="role">
+        <div class="item">
+            <div class="itemtitle">
                 {{exp.itemtitle}}
             </div>
-            <div class="company">
+            <div class="place">
                 {{exp.place}} 
                 <span class="time">{{exp.time}}</span>
             </div> 
