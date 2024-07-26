@@ -1,19 +1,7 @@
-{% assign awards = site.data.data.awards %}
-{% if awards %}
+{% assign experience = site.data.data.awards %}
+{% if experience %}
 <section class="experience">
     <h2 class="title">Fundings and awards</h2>
-    {% for exp in awards %}
-        <div class="experience-item">
-            <div class="role">
-                {{exp.item-title}}
-                <span class="time">{{exp.time}}</span>
-            </div>
-            <div class="company">
-                {{exp.place}} 
-            </div> 
-            <div class="details">{{exp.details}}</div>
-        </div>
-       
-    {% endfor %}
+    {% include experience-body.html %}
 </section>
 {% endif %}

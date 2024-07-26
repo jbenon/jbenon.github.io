@@ -1,0 +1,20 @@
+<div class="experience-item" id="grid">
+    {% for exp in experience %}
+        <!-- Date on the left -->
+        <div id="column_left">
+            <span class="time">{{exp.time}}</span>
+        </div>
+        <!-- Eveyrhing else on the right -->
+        <div id="column_right">
+            <div class="role">
+                {{exp.item-title}}
+            </div>
+            <div class="company">
+                {{exp.place}} 
+            </div> 
+            <div class="details">
+                {{exp.details}}
+            </div>
+        </div>
+    {% endfor %}
+</div

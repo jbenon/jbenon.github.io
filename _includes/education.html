@@ -1,19 +1,7 @@
-{% assign education = site.data.data.education %}
-{% if education %}
+{% assign experience = site.data.data.education %}
+{% if experience %}
 <section class="experience">
     <h2 class="title">Education</h2>
-    {% for exp in education %}
-        <div class="experience-item">
-            <div class="role">
-                {{exp.item-title}}
-                <span class="time">{{exp.time}}</span>
-            </div>
-            <div class="company">
-                {{exp.place}}
-            </div> 
-            <div class="details">{{exp.details}}</div>
-        </div>
-       
-    {% endfor %}
+    {% include experience-body.html %}
 </section>
 {% endif %}

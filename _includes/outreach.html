@@ -1,19 +1,7 @@
-{% assign outreach = site.data.data.outreach %}
-{% if outreach %}
+{% assign experience = site.data.data.outreach %}
+{% if experience %}
 <section class="experience">
     <h2 class="title">Public and scientific outreach</h2>
-    {% for exp in outreach %}
-        <div class="experience-item">
-            <div class="role">
-                {{exp.item-title}}
-                <span class="time">{{exp.time}}</span>
-            </div>
-            <div class="company">
-                {{exp.place}} 
-            </div> 
-            <div class="details">{{exp.details}}</div>
-        </div>
-       
-    {% endfor %}
+    {% include experience-body.html %}
 </section>
 {% endif %}

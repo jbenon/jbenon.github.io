@@ -1,19 +1,7 @@
-{% assign posters = site.data.data.posters %}
-{% if posters %}
+{% assign experience = site.data.data.posters %}
+{% if experience %}
 <section class="experience">
     <h2 class="title">Poster presentations</h2>
-    {% for exp in posters %}
-        <div class="experience-item">
-            <div class="role">
-                {{exp.item-title}}
-                <span class="time">{{exp.time}}</span>
-            </div>
-            <div class="company">
-                {{exp.place}} 
-            </div> 
-            <div class="details">{{exp.details}}</div>
-        </div>
-       
-    {% endfor %}
+    {% include experience-body.html %}
 </section>
 {% endif %}
