@@ -46,7 +46,10 @@ experience:
       Integrative Neuroscience and Cognition Center (Paris, FR).
 
 publications:
-  - title: Random title of paper. An interesting one.
-    link: "#"
-    authors: John E. Doe
-    conference: Some conference, 2016
+  - title: The online metacognitive control of decisions
+    link: "https://doi.org/10.1038/s44271-024-00071-y"
+    citation: >
+      <b>Bénon, J.</b>, Lee, D., Hopper, W., Verdeil, M., Pessiglione, M., Vinckier, F.,
+      Bouret, S., Rouault, M., Lebouc, R., Pezzulo, G., Schreiweis, C., Burguière, E.,
+      & Daunizeau, J. (2024). The online metacognitive control of decisions.
+      <i>Communications Psychology</i>, 2(1), 1–17.

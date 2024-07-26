@@ -12,13 +12,8 @@
                     @include body-text; 
                 }
             }
-            .authors {
+            .citation {
                 @include body-text; 
-            }
-            .conference {
-                @include body-text; 
-                color: var(--fg-color-title-sm);
-                font-weight: 100;
             }
         }
     }
