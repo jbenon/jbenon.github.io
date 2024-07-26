@@ -23,7 +23,7 @@
 @mixin sub-header {
     font-size: 16px;
     font-weight: 700; 
-    color: var(--fg-color);
+    color: var(--fg-color-highlight);
 }
 
 @mixin body-text {
