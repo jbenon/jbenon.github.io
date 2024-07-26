@@ -35,17 +35,18 @@ education:
 experience:
   - item-title: MSc project | Neuro-computational modelling of value construction
     time: 2022
-    place: Paris Brain Institute
+    place: <a href=https://institutducerveau-icm.org/en/>Paris Brain Institute</a>, Paris, FR
     details: >
-      Supervised by Jean Daunizeau in the Motivation Brain Behavior team,
-      Paris Brain Institute (Paris, FR).
+      Supervised by <a href=https://sites.google.com/site/jeandaunizeauswebsite/>Jean Daunizeau</a>
+      in the <a href=https://sites.google.com/site/motivationbrainbehavior/>Motivation Brain Behavior</a>
+      team.
   
   - item-title: MSc project | Modeling auditory perception of numerosity
     time: 2021
-    place: Integrative Neuroscience and Cognition Center
+    place: <a href=https://incc-paris.fr/>Integrative Neuroscience and Cognition Center</a>, Paris, FR
     details: >
-      Supervised by Véronique Izard in the Language and cognition group,
-      Integrative Neuroscience and Cognition Center (Paris, FR).
+      Supervised by <a href=https://incc-paris.fr/people/veronique-izard/>Véronique Izard</a> in the
+      <a href=https://incc-paris.fr/language-and-cognition/>Language and cognition group</a>.
 
 # Publications
 publications:
@@ -54,59 +55,61 @@ publications:
     citation: >
       <b>Bénon, J.</b>, Lee, D., Hopper, W., Verdeil, M., Pessiglione, M., Vinckier, F.,
       Bouret, S., Rouault, M., Lebouc, R., Pezzulo, G., Schreiweis, C., Burguière, E.,
-      & Daunizeau, J. (2024). The online metacognitive control of decisions.
+      & Daunizeau, J. (2024).
+      <a href=https://doi.org/10.1038/s44271-024-00071-y>The online metacognitive control of decisions</a>.
       <i>Communications Psychology</i>, 2(1), 1–17.
       
 # Teaching
 teaching:
-  - item-title: Teaching fellow in cognitive neuroscience
+  - item-title: Teaching fellow in <a href=https://odf.u-paris.fr/fr/offre-de-formation/licence-XA/sciences-humaines-et-sociales-SHS/psychologie-K2NDLZCV/licence-psychologie-parcours-sciences-psychologiques-JT4FAPN6/bloc-fondamental-KLC5VZJY/psychophysiologie-3-KLC5YKP6.html>psychophysiology</a>
     time: June - April 2023
-    place: Institut de Psychologie
+    place: <a href=https://psychologie.u-paris.fr/en/>Institut de Psychologie</a>, Boulogne-Billancourt, FR
     
 # Fundings and awards
 awards:
   - item-title: Best poster prize
     time: June 2023
     details: >
-      Poster prize competition organized by the yound researcher’s
-      association of the Paris Brain Institute.
+      <a href=https://www.ajites.fr/our-activities/poster-prize>Poster prize competition</a>
+      organized by the young researcher’s association of the
+      <a href=https://institutducerveau-icm.org/en/>Paris Brain Institute</a>.
       
   - item-title: Three-years PhD fellowship
     time: September 2022
     details: >
-      Doctoral grant from the doctoral school Cognition, Cerveau, Comportement (ED3C).
+      Doctoral grant from the doctoral school <a href=https://ed3c.sorbonne-universite.fr/en>Cognition, Cerveau, Comportement</a> (ED3C).
       
 # Poster presentations
 posters:
-  - item-title: Neuroscience and Artificial Intelligence meeting
+  - item-title: <a href=https://www.neurosciences.asso.fr/JT2024/>Neuroscience and Artificial Intelligence meeting (NeuroAI)</a>
     time: May 2024
-    place: Neuro AI, Bordeaux Neurocampus
+    place: Bordeaux Neurocampus, Bordeaux, FR
       
-  - item-title: Fifth quadrennial meeting on Orbitofrontal Cortex function
+  - item-title: <a href=https://www.ofc2024.com/>Fifth quadrennial meeting on Orbitofrontal Cortex function (OFC)</a>
     time: April 2024
-    place: OFC, Paris Brain Institute
+    place: Paris Brain Institute, Paris, FR
       
-  - item-title: Symposium on Biology of Decision-Making
+  - item-title: <a href=https://sbdm2023.sciencesconf.org/>Symposium on Biology of Decision-Making (SBDM)</a>
     time: June 2023
-    place: SBDM, Paris Brain Institute
+    place: Paris Brain Institute, Paris, FR
     
 # Public and scientific outreach
 outreach:
-  - item-title: Organization of OFC 2024
+  - item-title: Organization of <a href=https://www.ofc2024.com/>OFC 2024</a>
     time: April 2024
     details: >
-      Member of the local organizing committee of the 5th meeting on
-      Orbitofrontal cortex function.
+      Member of the local organizing committee of the <a href=https://www.ofc2024.com/>5th meeting on
+      Orbitofrontal cortex function</a>.
       
-  - item-title: Organization of SBDM 2023
+  - item-title: Organization of <a href=https://sbdm2023.sciencesconf.org/>SBDM 2023</a>
     time: June 2023
     details: >
-      Member of the local organizing committee of the 11th symposium on Biology of
-      Decision-Making.
+      Member of the local organizing committee of the <a href=https://sbdm2023.sciencesconf.org/>11th symposium on Biology of
+      Decision-Making</a>.
       
-  - item-title: Organization of the Forum des Sciences Cognitives 2022
+  - item-title: Organization of the <a href=https://cognivence.scicog.fr/forum-des-sciences-cognitives/fsc2022/>Forum des Sciences Cognitives 2022</a>
     time: April 2022
     details: >
-      Co-president of the student association Cognivence and organizer of a large
-      cognitive science fair dedicated to the general public.
+      Co-president of the student association <a href=https://cognivence.scicog.fr/>Cognivence</a> and organizer of a large
+      <a href=https://cognivence.scicog.fr/forum-des-sciences-cognitives/fsc2022/>cognitive science fair</a> dedicated to the general public.
       
