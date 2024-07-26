@@ -22,3 +22,9 @@
         }
     }
 }
+
+#grid {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 10% auto;
+}
