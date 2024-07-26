@@ -7,6 +7,7 @@
         .role {
             @include sub-header;
             .time {
+                @include body-text;
                 float: right;
                 color: var(--fg-color-title-sm);
                 font-weight: 100;
