@@ -6,70 +6,47 @@ fork: false
 contact:
   email: juliettebenon@gmail.com
   github: jbenon
-  linkedin:
-  phone: 
-  gitlab: 
-  twitter: 
 
+# Education
 education:
-  - itemtitle: MSc in Informatics
-    time: 2014-2016
-    place: Ionian University
+  - item-title: PhD in Cognitive Neuroscience
+    time: 2022-Ongoing
+    place: Paris Brain Institute
+    details: >
+      Supervised by Jean Daunizeau in the Motivation Brain Behavior team,
+      Paris Brain Institute (Paris, FR).
 
-  - itemtitle: BSc in Computer Science
-    time: 2010-2014
-    place: Ionian University
+  - item-title: MSc in Cognitive Science
+    time: 2020-2022
+    place: Université ENS-PSL
 
-# Profile
-profile: |
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
-  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
-  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-  Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu 
-  fugiat nulla pariatur.
+  - item-title: BSc in Mathematics
+    time: 2019-2020
+    place: Université Paris Cité
+
+  - item-title: Preparatory classes MPSI / MP*
+    time: 2020-2022
+    details: >
+      Post-secondary program in Mathematics, Physics and Informatics (Rouen, FR).
 
 # Experience
 experience:
-  - itemtitle: Software Engineer
-    time: 2020-Present
-    place: Google
-    details: |
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
-      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
-      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-      Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu 
-      fugiat nulla pariatur.
+  - item-title: MSc project | Neuro-computational modelling of value construction
+    time: 2022
+    place: Paris Brain Institute
+    details: >
+      Supervised by Jean Daunizeau in the Motivation Brain Behavior team,
+      Paris Brain Institute (Paris, FR).
   
-  - itemtitle: Researcher
-    time: 2016-2020
-    place: Microsoft
-    details: |
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
-      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
-      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-      Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu 
-      fugiat nulla pariatur.
+  - item-title: MSc project | Modeling auditory perception of numerosity
+    time: 2021
+    place: Integrative Neuroscience and Cognition Center
+    details: >
+      Supervised by Véronique Izard in the Language and cognition group,
+      Integrative Neuroscience and Cognition Center (Paris, FR).
 
 publications:
   - title: Random title of paper. An interesting one.
     link: "#"
     authors: John E. Doe
     conference: Some conference, 2016
-
-  - title: Second title of paper. An interesting one too.
-    link: "#"
-    authors: John E. Doe
-    conference: Some conference again, 2018
-
-projects:
-  - title: Cool Project 
-    link: #
-    details: |
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
-      tempor incididunt ut labore et dolore magna aliqua.
-
-  - title: Cool Project 
-    link: #
-    details: |
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
-      tempor incididunt ut labore et dolore magna aliqua.
