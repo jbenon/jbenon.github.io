@@ -5,7 +5,7 @@
     {% if contact.email %}
         <div class="contact-item">
             <i data-feather="mail"></i>
-            <a href="{{contact.email}}">
+            <a href="mailto:{{contact.email}}">
                 {{contact.email}}
             </a>
         </div>
@@ -14,7 +14,7 @@
     {% if contact.github %}
         <div class="contact-item">
             <i data-feather="github"></i>
-            <a href="https://github.com/{{contact.github}}">
+            <a href="{{contact.github}}">
                 GitHub
             </a>
         </div>
@@ -23,8 +23,8 @@
     {% if contact.researchgate %}
         <div class="contact-item">
             <i class="fa-brands fa-researchgate"></i>
-            <a href="{{contact.contact.researchgate}}">
-                GitHub
+            <a href="{{contact.researchgate}}">
+                ResearchGate
             </a>
         </div>
     {% endif %}
