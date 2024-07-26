@@ -3,6 +3,7 @@
         @include header;
     }
     .experience-item {
+        margin-bottom: 20px;
         .role {
             @include sub-header;
         }
