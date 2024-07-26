@@ -3,7 +3,7 @@
         @include header;
     }
     .item {
-        .itemtitle {
+        .iteminstance {
             @include sub-header;
         }
         .place {
