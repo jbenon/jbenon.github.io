@@ -6,7 +6,9 @@
         .publication-item {
             margin-bottom: 20px;
             .publication-title {
-                @include sub-header;
+                a {
+                    @include sub-header;
+                }
             }
             .citation {
                 @include body-text; 
