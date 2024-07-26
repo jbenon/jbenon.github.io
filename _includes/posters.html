@@ -1,0 +1,19 @@
+{% assign posters = site.data.data.posters %}
+{% if posters %}
+<section class="experience">
+    <h2 class="title">Poster presentations</h2>
+    {% for exp in posters %}
+        <div class="experience-item">
+            <div class="role">
+                {{exp.item-title}}
+            </div>
+            <div class="company">
+                {{exp.place}} 
+                <span class="time">{{exp.time}}</span>
+            </div> 
+            <div class="details">{{exp.details}}</div>
+        </div>
+       
+    {% endfor %}
+</section>
+{% endif %}
