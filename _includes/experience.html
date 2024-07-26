@@ -2,8 +2,8 @@
 {% if experience %}
 <section class="experience">
     <h2 class="title">Research training</h2>
-    {% for exp in experience %}
-        <div class="experience-item" id="grid">
+    <div class="experience-item" id="grid">
+        {% for exp in experience %}
             <!-- Date on the left -->
             <div id="column_left">
                 <span class="time">{{exp.time}}</span>
@@ -20,7 +20,7 @@
                     {{exp.details}}
                 </div>
             </div>
-        </div
-    {% endfor %}
+        {% endfor %}
+    </div
 </section>
 {% endif %}
