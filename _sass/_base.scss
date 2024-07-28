@@ -24,4 +24,16 @@ body {
             text-decoration: underline;
         }
     }
+
+    .container-home{
+        grid-template-columns: 75% auto;
+        .mainbar {
+            padding-right: 10px;
+            padding-bottom:20px;
+        }
+        .socialbar {
+            padding-left: 10px;
+            padding-bottom:20px;
+        }
+    }
 }
