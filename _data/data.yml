@@ -3,6 +3,14 @@ support_dark_mode: true
 fork: false
 description: PhD candidate in cognitive neuroscience.
 
+# Home presentation
+presentation:
+  title: Hi!
+  content: >
+    My name is Juliette Bénon. I am a PhD candidate in cognitive neuroscience
+    at the Paris Brain Institute.\n
+    I work on...
+
 # Sidebar
 contact:
   email: juliettebenon@gmail.com
