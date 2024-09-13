@@ -1,28 +1,4 @@
-- section-title: Education
-  - title: PhD in Cognitive Neuroscience
-    link: https://sites.google.com/site/motivationbrainbehavior/
-    link-hover: My lab website
-    time: 2022 - Ongoing
-    place: Sorbonne Université, Paris, FR
-    details: >
-      Supervised by Jean Daunizeau in the Motivation Brain Behavior team, Paris Brain Institute.
-
-  - title: MSc in Cognitive Science
-    link: https://cogmaster.ens.psl.eu/en
-    link-hover: Cogmaster website
-    time: 2020 - 2022
-    place: Université ENS-PSL, Paris, FR
-
-  - title: BSc in Mathematics
-    link: https://odf.u-paris.fr/fr/offre-de-formation/licence-XA/sciences-technologies-sante-STS/mathematiques-et-applications-K56VCV5Q.html
-    link-hover: BSc page (French)
-    time: 2019 - 2020
-    place: Université Paris Descartes, Paris, FR
-
-  - title: Preparatory classes MPSI / MP*
-    link: https://en.wikipedia.org/wiki/Classe_pr%C3%A9paratoire_aux_grandes_%C3%A9coles
-    link-hover: What are preparatory classes?
-    time: 2017 - 2019
-    place: Lycée Pierre Corneille, Rouen, FR
-    details: >
-      Post-secondary program in Mathematics, Physics and Informatics.
+- title: PhD in Cognitive Neuroscience
+- title: MSc in Cognitive Science
+- title: BSc in Mathematics
+- title: Preparatory classes MPSI / MP*
