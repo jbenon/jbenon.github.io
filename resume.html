@@ -11,41 +11,46 @@ layout: default
     </nav>
 
     {% for section in site.data.resume %}
+    <div class="row justify-content-center">
+      <div class="col-xl-7 col-lg-8 col-md-9">
 
-      <!-- Section header -->
-      <div class="row justify-content-center">
-        <div class="col"><hr></div>
-        <div class="col-auto"><h3>{{section.title}}</h3></div>
-        <div class="col"><hr></div>
-      </div>
+        <!-- Section header -->
+        <div class="row justify-content-center">
+          <div class="col"><hr></div>
+          <div class="col-auto"><h3>{{section.title}}</h3></div>
+          <div class="col"><hr></div>
+        </div>
 
-      {% if section.publications %}
-        <!-- Publications section -->
-         {% for publication in section.publications %}
+        {% if section.publications %}
+          <!-- Publications section -->
+          {% for publication in section.publications %}
+              <div class="row justify-content-center">
+                  <div class="col">
+                      <p class="text-primary">{{publication.title}}</p>
+                      <p>{{publication.citation}}</p>
+                  </div>
+              </div>
+            {% endfor %}
+
+        {% else %}
+          <!-- Regular section -->
+          {% for item in section.items %}
             <div class="row justify-content-center">
-                <div class="col">
-                    <p class="text-primary">{{publication.title}}</p>
-                    <p>{{publication.citation}}</p>
-                </div>
+              <div class="col-3 text-end">
+                <p class="text-secondary">{{item.date}}</p>
+              </div>
+              <div class="col-9">
+                <h6 class="text-primary">{{item.title}}</h6>
+                <p class="text-primary-emphasis">{{item.place}}</p>
+                <p>{{item.details}}</p>
+              </div>
             </div>
           {% endfor %}
 
-      {% else %}
-        <!-- Regular section -->
-        {% for item in section.items %}
-          <div class="row justify-content-center">
-            <div class="col-3 text-end">
-              <p class="text-secondary">{{item.date}}</p>
-            </div>
-            <div class="col-9">
-              <h6 class="text-primary">{{item.title}}</h6>
-              <p class="text-primary-emphasis">{{item.place}}</p>
-              <p>{{item.details}}</p>
-            </div>
-          </div>
-        {% endfor %}
-
-      {% endif %}
+        {% endif %}
+        
+      </div>
+    </div>
 
     {% endfor %}
 
