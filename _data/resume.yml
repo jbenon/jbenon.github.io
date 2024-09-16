@@ -1,4 +1,12 @@
-- title: PhD in Cognitive Neuroscience
-- title: MSc in Cognitive Science
-- title: BSc in Mathematics
-- title: Preparatory classes MPSI / MP*
+- section: Education
+  - title: PhD in Cognitive Neuroscience
+    title-link: https://sites.google.com/site/motivationbrainbehavior/
+    title-link-hover: My lab website
+    date: 2022 - Ongoing
+    place: Sorbonne Université, Paris, FR
+    details: >
+      Supervised by Jean Daunizeau in the Motivation Brain Behavior team, Paris Brain Institute.
+
+  - title: MSc in Cognitive Science
+  - title: BSc in Mathematics
+  - title: Preparatory classes MPSI / MP*
