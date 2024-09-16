@@ -11,30 +11,32 @@ layout: default
     </nav>
 
     <!-- Test education -->
-    {% for element in site.data.resume %}
-      <p>{{element.title}}</p>
-    {% endfor %}
-    <div class="row justify-content-center">
-      <div class="col-xl-7 col-lg-8 col-md-9">
-        <!-- Section header -->
-        <div class="row justify-content-center">
-          <div class="col"><hr></div>
-          <div class="col-auto"><h3>Education</h3></div>
-          <div class="col"><hr></div>
-        </div>
-        <!-- Section content 1 -->
-        <div class="row justify-content-center">
-          <div class="col-3 text-end">
-            <p class="text-secondary">2022 - Ongoing</p>
-          </div>
-          <div class="col-9">
-            <h6 class="text-primary">PhD in Cognitive Neuroscience</h6>
-            <p class="text-primary-emphasis">Sorbonne Université, Paris, FR</p>
-            <p>Supervised by Jean Daunizeau in the Motivation Brain Behavior team, Paris Brain Institute.</p>
-          </div>
-        </div>
+    {% for section in site.data.resume %}
+      <!-- Section header -->
+      <div class="row justify-content-center">
+        <div class="col"><hr></div>
+        <div class="col-auto"><h3>{{section.title}}</h3></div>
+        <div class="col"><hr></div>
       </div>
-    </div>
+      {% if section.publications %}
+        <!-- Publications section -->
+      {% else %}
+        <!-- Regular section -->
+         {% for item in section %}
+          <div class="row justify-content-center">
+            <div class="col-3 text-end">
+              <p class="text-secondary">{{item.date}}</p>
+            </div>
+            <div class="col-9">
+              <h6 class="text-primary">{{item.title}}</h6>
+              <p class="text-primary-emphasis">{{item.place}}</p>
+              <p>{{item.details}}</p>
+            </div>
+        </div>
+         {% endfor %}
+      {% endif %}
+    {% endfor %}
+
 
     <!-- Education -->
     <div class="row justify-content-center">
