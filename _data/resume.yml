@@ -22,6 +22,16 @@
       details: >
         Post-secondary program in Mathematics, Physics and Informatics.
 
+# ===== PUBLICATIONS ===== #
+- title: Publications
+  publications:
+    - title: The online metacognitive control of decisions
+      citation: >
+        <b>Bénon, J.</b>, Lee, D., Hopper, W., Verdeil, M., Pessiglione, M., Vinckier, F.,
+        Bouret, S., Rouault, M., Lebouc, R., Pezzulo, G., Schreiweis, C., Burguière, E.,
+        & Daunizeau, J. (2024). The online metacognitive control of decisions.
+        <i>Communications Psychology</i>, 2(1), 1–17.
+
 # ===== RESEARCH TRAINING ===== #
 - title: Research training
   items:
