@@ -1,4 +1,5 @@
-section: Education
+section:
+  section-title: Education
   items:
     - title: PhD in Cognitive Neuroscience
       title-link: https://sites.google.com/site/motivationbrainbehavior/
