@@ -1,3 +1,4 @@
+# ===== EDUCATION ===== #
 - title: Education
   items:
     - title: PhD in Cognitive Neuroscience
@@ -7,7 +8,45 @@
       place: Sorbonne Université, Paris, FR
       details: >
         Supervised by Jean Daunizeau in the Motivation Brain Behavior team, Paris Brain Institute.
-
     - title: MSc in Cognitive Science
+      date: 2020 - 2022
+      place: Université ENS-PSL, Paris, FR
+      details: >
+        Supervised by Jean Daunizeau in the Motivation Brain Behavior team, Paris Brain Institute.
     - title: BSc in Mathematics
+      date: 2019 - 2020
+      place: Université Paris Descartes, Paris, FR
     - title: Preparatory classes MPSI / MP*
+      date: 2017 - 2019
+      place: Lycée Pierre Corneille, Rouen, FR
+      details: >
+        Post-secondary program in Mathematics, Physics and Informatics.
+
+# ===== RESEARCH TRAINING ===== #
+- title: Research training
+  items:
+    - title: MSc project | Neuro-computational modelling of value construction
+      date: 2022
+      place: Paris Brain Institute, Paris, FR
+      details: >
+        Supervised by Jean Daunizeau in the Motivation Brain Behavior team.
+    - title: MSc project | Modeling auditory perception of numerosity
+      date: 2021
+      place: Integrative Neuroscience and Cognition Center, Paris, FR
+      details: >
+        Supervised by Véronique Izard in the Language and cognition group.
+        
+# ===== TEACHING ===== #
+- title: Teaching
+  items:
+    - title: Teaching fellow in psychophysiology
+      date: January - April 2023
+      place: Institut de Psychologie, Boulogne-Billancourt, FR
+      
+# ===== FELLOWSHIPS ===== #
+- title: Fellowships
+  items:
+    - title: Three-years PhD fellowship
+      date: September 2022
+      details: >
+        Doctoral grant from the doctoral school Cognition, Cerveau, Comportement (ED3C).

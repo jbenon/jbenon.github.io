@@ -2,27 +2,38 @@
 layout: default
 ---
 
+
 <div class="container">
-    <!-- Header -->
+    <!-- Navigation -->
     <nav class="nav nav-underline justify-content-center">
         <a class="nav-link" aria-current="page" href="index.html">Home</a>
         <a class="nav-link active" aria-current="page">Resume</a>
         
     </nav>
 
-    <!-- Test education -->
     {% for section in site.data.resume %}
+
       <!-- Section header -->
       <div class="row justify-content-center">
         <div class="col"><hr></div>
         <div class="col-auto"><h3>{{section.title}}</h3></div>
         <div class="col"><hr></div>
       </div>
+
       {% if section.publications %}
         <!-- Publications section -->
+         {% for publication in section.publications %}
+            <div class="row justify-content-center">
+                <div class="col">
+                    <p class="text-primary">{{publication.title}}</p>
+                    <p>{{publication.citation}}</p>
+                </div>
+            </div>
+          {% endfor %}
+
       {% else %}
         <!-- Regular section -->
-         {% for item in section.items %}
+        {% for item in section.items %}
           <div class="row justify-content-center">
             <div class="col-3 text-end">
               <p class="text-secondary">{{item.date}}</p>
@@ -32,189 +43,11 @@ layout: default
               <p class="text-primary-emphasis">{{item.place}}</p>
               <p>{{item.details}}</p>
             </div>
-        </div>
-         {% endfor %}
+          </div>
+        {% endfor %}
+        
       {% endif %}
+
     {% endfor %}
-
-
-    <!-- Education -->
-    <div class="row justify-content-center">
-      <div class="col-xl-7 col-lg-8 col-md-9">
-        <!-- Section header -->
-        <div class="row justify-content-center">
-          <div class="col"><hr></div>
-          <div class="col-auto"><h3>Education</h3></div>
-          <div class="col"><hr></div>
-        </div>
-        <!-- Section content 1 -->
-        <div class="row justify-content-center">
-            <div class="col-3 text-end">
-              <p class="text-secondary">2022 - Ongoing</p>
-            </div>
-            <div class="col-9">
-              <h6 class="text-primary">PhD in Cognitive Neuroscience</h6>
-              <p class="text-primary-emphasis">Sorbonne Université, Paris, FR</p>
-              <p>Supervised by Jean Daunizeau in the Motivation Brain Behavior team, Paris Brain Institute.</p>
-            </div>
-        </div>
-        <!-- Section content 2 -->
-        <div class="row justify-content-center">
-            <div class="col-3 text-end">
-              <p class="text-secondary">2020 - 2022</p>
-            </div>
-            <div class="col-9">
-              <h6 class="text-primary">MSc in Cognitive Science</h6>
-              <p class="text-primary-emphasis">Université ENS-PSL, Paris, FR</p>
-            </div>
-        </div>
-        <!-- Section content 3 -->
-        <div class="row justify-content-center">
-            <div class="col-3 text-end">
-              <p class="text-secondary">2020 - 2022</p>
-            </div>
-            <div class="col-9">
-              <h6 class="text-primary">BSc in Mathematics</h6>
-              <p class="text-primary-emphasis">Université Paris Descartes, Paris, FR</p>
-            </div>
-        </div>
-        <!-- Section content 4 -->
-        <div class="row justify-content-center">
-            <div class="col-3 text-end">
-              <p class="text-secondary">2019 - 2019</p>
-            </div>
-            <div class="col-9">
-              <h6 class="text-primary">Preparatory classes MPSI / MP*</h6>
-              <p class="text-primary-emphasis">Lycée Pierre Corneille, Rouen, FR</p>
-              <p>Post-secondary program in Mathematics, Physics and Informatics.</p>
-            </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Research training -->
-    <div class="row justify-content-center">
-      <div class="col-xl-7 col-lg-8 col-md-9">
-        <!-- Section header -->
-        <div class="row justify-content-center">
-          <div class="col"><hr></div>
-          <div class="col-auto"><h3>Research training</h3></div>
-          <div class="col"><hr></div>
-        </div>
-        <!-- Section content 1 -->
-        <div class="row justify-content-center">
-            <div class="col-3 text-end">
-              <p class="text-secondary">2022</p>
-            </div>
-            <div class="col-9">
-              <h6 class="text-primary">MSc project | Neuro-computational modelling of value construction</h6>
-              <p class="text-primary-emphasis">Paris Brain Institute, Paris, FR</p>
-              <p>Supervised by Jean Daunizeau in the Motivation Brain Behavior team.</p>
-            </div>
-        </div>
-        <!-- Section content 2 -->
-        <div class="row justify-content-center">
-            <div class="col-3 text-end">
-              <p class="text-secondary">2021</p>
-            </div>
-            <div class="col-9">
-              <h6 class="text-primary">MSc project | Modeling auditory perception of numerosity</h6>
-              <p class="text-primary-emphasis">Integrative Neuroscience and Cognition Center, Paris, FR</p>
-              <p>Supervised by Véronique Izard in the Language and cognition group.</p>
-            </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Publications -->
-    <div class="row justify-content-center">
-      <div class="col-xl-7 col-lg-8 col-md-9">
-        <!-- Section header -->
-        <div class="row justify-content-center">
-          <div class="col"><hr></div>
-          <div class="col-auto"><h3>Publications</h3></div>
-          <div class="col"><hr></div>
-        </div>
-        <!-- Section content 1 -->
-        <div class="row justify-content-center">
-            <div class="col">
-                <p class="text-primary">The online metacognitive control of decisions</p>
-                <p><b>Bénon, J.</b>, Lee, D., Hopper, W., Verdeil, M., Pessiglione, M., Vinckier, F.,
-                  Bouret, S., Rouault, M., Lebouc, R., Pezzulo, G., Schreiweis, C., Burguière, E.,
-                  & Daunizeau, J. (2024). The online metacognitive control of decisions.
-                  <i>Communications Psychology</i>, 2(1), 1–17.</p>
-            </div>
-        </div>
-      </div>
-    </div>
-    
-    <!-- Teaching -->
-    <div class="row justify-content-center">
-      <div class="col-xl-7 col-lg-8 col-md-9">
-        <!-- Section header -->
-        <div class="row justify-content-center">
-          <div class="col"><hr></div>
-          <div class="col-auto"><h3>Teaching</h3></div>
-          <div class="col"><hr></div>
-        </div>
-        <!-- Section content 1 -->
-        <div class="row justify-content-center">
-            <div class="col-3 text-end">
-              <p class="text-secondary">January - April 2023</p>
-            </div>
-            <div class="col-9">
-              <h6 class="text-primary">Teaching fellow in psychophysiology</h6>
-              <p class="text-primary-emphasis">Institut de Psychologie, Boulogne-Billancourt, FR</p>
-            </div>
-        </div>
-      </div>
-    </div>
-    
-    <!-- Fellowships -->
-    <div class="row justify-content-center">
-      <div class="col-xl-7 col-lg-8 col-md-9">
-        <!-- Section header -->
-        <div class="row justify-content-center">
-          <div class="col"><hr></div>
-          <div class="col-auto"><h3>Fellowships</h3></div>
-          <div class="col"><hr></div>
-        </div>
-        <!-- Section content 1 -->
-        <div class="row justify-content-center">
-            <div class="col-3 text-end">
-              <p class="text-secondary">September 2022</p>
-            </div>
-            <div class="col-9">
-              <h6 class="text-primary">Three-years PhD fellowship</h6>
-              <p>Doctoral grant from the doctoral school Cognition, Cerveau, Comportement (ED3C).</p>
-            </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Posters -->
-    <div class="row justify-content-center">
-      <div class="col-xl-7 col-lg-8 col-md-9">
-        <!-- Section header -->
-        <div class="row justify-content-center">
-          <div class="col"><hr></div>
-          <div class="col-auto"><h3>Posters</h3></div>
-          <div class="col"><hr></div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Outreach -->
-    <div class="row justify-content-center">
-      <div class="col-xl-7 col-lg-8 col-md-9">
-        <!-- Section header -->
-        <div class="row justify-content-center">
-          <div class="col"><hr></div>
-          <div class="col-auto"><h3>Public and scientific outreach</h3></div>
-          <div class="col"><hr></div>
-        </div>
-      </div>
-    </div>
-
 
 </div>
