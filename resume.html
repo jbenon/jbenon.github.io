@@ -22,7 +22,7 @@ layout: default
         <!-- Publications section -->
       {% else %}
         <!-- Regular section -->
-         {% for item in section %}
+         {% for item in section.items %}
           <div class="row justify-content-center">
             <div class="col-3 text-end">
               <p class="text-secondary">{{item.date}}</p>
