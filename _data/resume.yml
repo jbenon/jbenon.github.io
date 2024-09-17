@@ -3,7 +3,6 @@
   items:
     - title: PhD in Cognitive Neuroscience
       title-link: https://sites.google.com/site/motivationbrainbehavior/
-      title-link-hover: My lab website
       date: 2022 - Ongoing
       place: Sorbonne Université, Paris, FR
       details: >
@@ -11,8 +10,6 @@
     - title: MSc in Cognitive Science
       date: 2020 - 2022
       place: Université ENS-PSL, Paris, FR
-      details: >
-        Supervised by Jean Daunizeau in the Motivation Brain Behavior team, Paris Brain Institute.
     - title: BSc in Mathematics
       date: 2019 - 2020
       place: Université Paris Descartes, Paris, FR
