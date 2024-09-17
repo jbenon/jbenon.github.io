@@ -60,3 +60,33 @@
       date: September 2022
       details: >
         Doctoral grant from the doctoral school Cognition, Cerveau, Comportement (ED3C).
+        
+# ===== POSTERS ===== #
+- title: Posters
+  items:
+    - title: Neuro-computational modelling of value construction
+      date: June 2023
+      place: 11th Symposium on Biology of Decision-Making (SBDM 2023), Paris, FR
+    - title: Neuro-computational modelling of value construction
+      date: June 2023
+      place: Paris Brain Institute, Paris, FR
+      details: >
+        1st prize of the Ajités' poster prize competition.
+    - title: Do glitches in the OFC neural code explain irrational choices? A neuro-computational approach to value synthesis
+      date: April 2024
+      place: 5th Orbitofrontal cortex meeting (OFC 2024), Paris, FR
+    - title: Do glitches in the OFC neural code explain irrational choices? A neuro-computational approach to value synthesis
+      date: May 2024
+      place: Thematic days Neuroscience & AI (NeuroAI 2024), Bordeaux, FR
+
+# ===== OUTREACH ===== #
+- title: Scientific and public outreach
+  items:
+    - title: Organizing committee of OFC 2024
+      date: April 2024
+    - title: Organizing committee of SBDM 2023
+      date: June 2023
+    - title: Co-president of Cognivence
+      date: 2021 - 2022
+      details: >
+        Organization of a large cognitive science fair dedicated to the general public.
