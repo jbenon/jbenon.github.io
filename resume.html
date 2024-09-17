@@ -25,12 +25,12 @@ layout: default
             {% for publication in section.publications %}
                 <div class="row justify-content-center">
                     <div class="col">
-                        <p class="text-primary">
+                        <h6 class="text-primary">
                           {{publication.title}}
-                          <a class="icon-link" href="{{site.url}}/assets/pdf/papers/{{publication.pdf}}.pdf">
+                          <a class="icon-link" href="{{publication.pdf}}">
                             <i class="bi bi-download"></i>
                           </a>
-                        </p>
+                        </h6>
                         <p>{{publication.citation}}</p>
                     </div>
                 </div>
