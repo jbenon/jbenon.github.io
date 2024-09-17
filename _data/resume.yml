@@ -26,6 +26,7 @@
 - title: Publications
   publications:
     - title: The online metacognitive control of decisions
+      pdf: Benon2024
       citation: >
         <b>Bénon, J.</b>, Lee, D., Hopper, W., Verdeil, M., Pessiglione, M., Vinckier, F.,
         Bouret, S., Rouault, M., Lebouc, R., Pezzulo, G., Schreiweis, C., Burguière, E.,
@@ -64,20 +65,24 @@
 # ===== POSTERS ===== #
 - title: Posters
   items:
-    - title: Neuro-computational modelling of value construction
-      date: June 2023
-      place: 11th Symposium on Biology of Decision-Making (SBDM 2023), Paris, FR
-    - title: Neuro-computational modelling of value construction
-      date: June 2023
-      place: Paris Brain Institute, Paris, FR
-      details: >
-        1st prize of the Ajités' poster prize competition.
-    - title: Do glitches in the OFC neural code explain irrational choices? A neuro-computational approach to value synthesis
-      date: April 2024
-      place: 5th Orbitofrontal cortex meeting (OFC 2024), Paris, FR
     - title: Do glitches in the OFC neural code explain irrational choices? A neuro-computational approach to value synthesis
       date: May 2024
       place: Thematic days Neuroscience & AI (NeuroAI 2024), Bordeaux, FR
+      pdf: Poster_2024_OFC-NeuroAI
+    - title: Do glitches in the OFC neural code explain irrational choices? A neuro-computational approach to value synthesis
+      date: April 2024
+      place: 5th Orbitofrontal cortex meeting (OFC 2024), Paris, FR
+      pdf: Poster_2024_OFC-NeuroAI
+    - title: Neuro-computational modelling of value construction
+      date: June 2023
+      place: Paris Brain Institute, Paris, FR
+      pdf: Poster_2023_Ajites
+      details: >
+        1st prize of the Ajités' poster prize competition.
+    - title: Neuro-computational modelling of value construction
+      date: June 2023
+      place: 11th Symposium on Biology of Decision-Making (SBDM 2023), Paris, FR
+      pdf: Poster_2023_SBDM
 
 # ===== OUTREACH ===== #
 - title: Scientific and public outreach
