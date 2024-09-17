@@ -44,12 +44,13 @@ layout: default
                   <p class="text-secondary">{{item.date}}</p>
                 </div>
                 <div class="col-9">
-                  <h6 class="text-primary">{{item.title}}</h6>
-                  {% if item.pdf %}
-                    <a class="icon-link" href="/assets/{{item.pdf}}.pdf" download>
-                      <i class="fa-solid fa-download"></i>
-                    </a>
-                  {% endif %}
+                  <h6 class="text-primary">{{item.title}}
+                    {% if item.pdf %}
+                      <a class="icon-link" href="/assets/{{item.pdf}}.pdf" download>
+                        <i class="fa-solid fa-download"></i>
+                      </a>
+                    {% endif %}
+                  </h6>
                   <p class="text-primary-emphasis">{{item.place}}</p>
                   <p>{{item.details}}</p>
                 </div>
