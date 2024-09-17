@@ -27,7 +27,7 @@ layout: default
                     <div class="col">
                         <h6 class="text-primary">
                           {{publication.title}}
-                          <a class="icon-link" href="/assets/{{publication.pdf}}.pdf" download>
+                          <a class="icon-link" href="/assets/{{publication.pdf}}.pdf" download data-bs-toggle="tooltip" data-bs-title="Download">
                             <i class="fa-solid fa-download"></i>
                           </a>
                         </h6>
@@ -46,7 +46,7 @@ layout: default
                 <div class="col-9">
                   <h6 class="text-primary">{{item.title}}
                     {% if item.pdf %}
-                      <a class="icon-link" href="/assets/{{item.pdf}}.pdf" download>
+                      <a class="icon-link" href="/assets/{{item.pdf}}.pdf" download data-bs-toggle="tooltip" data-bs-title="Download">
                         <i class="fa-solid fa-download"></i>
                       </a>
                     {% endif %}
