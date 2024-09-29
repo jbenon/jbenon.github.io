@@ -48,47 +48,47 @@
 - title: Teaching
   items:
     - title: Lecturer on the artificial intelligence applied to healthcare course
-      date: March 2024
+      date: Mar 2024
       place: Université Paris Cité, Paris FR.
     - title: Teaching fellow in psychophysiology
-      date: January - April 2023
+      date: Jan - Apr 2023
       place: Institut de Psychologie, Boulogne-Billancourt, FR.
       
 # ===== FELLOWSHIPS ===== #
 - title: Fellowships
   items:
     - title: Three-years PhD fellowship
-      date: September 2022
+      date: 2022
       details: >
         Doctoral grant from the doctoral school Cognition, Cerveau, Comportement (ED3C).
         
 # ===== POSTERS ===== #
 - title: Posters
   items:
-    - title: Do glitches in the OFC neural code explain irrational choices? A neuro-computational approach to value synthesis
+    - title: NeuroAI, Thematic days Neuroscience & AI
       date: May 2024
-      place: Thematic days Neuroscience & AI (NeuroAI 2024), Bordeaux, FR.
+      place: Bordeaux, FR.
       pdf: Poster_2024_OFC-NeuroAI
-    - title: Do glitches in the OFC neural code explain irrational choices? A neuro-computational approach to value synthesis
-      date: April 2024
-      place: 5th Orbitofrontal cortex meeting (OFC 2024), Paris, FR.
+    - title: OFC, 5th Orbitofrontal cortex meeting
+      date: Apr 2024
+      place: Paris, FR.
       pdf: Poster_2024_OFC-NeuroAI
-    - title: Neuro-computational modelling of value construction
+    - title: Poster prize competition
       date: June 2023
       place: Paris Brain Institute, Paris, FR.
       pdf: Poster_2023_Ajites
       details: >
         1st prize of the Ajités' poster prize competition.
-    - title: Neuro-computational modelling of value construction
+    - title: SBDM, 11th Symposium on Biology of Decision-Making 
       date: June 2023
-      place: 11th Symposium on Biology of Decision-Making (SBDM 2023), Paris, FR.
+      place: Paris, FR.
       pdf: Poster_2023_SBDM
 
 # ===== OUTREACH ===== #
 - title: Scientific and public outreach
   items:
     - title: Organizing committee of OFC 2024
-      date: April 2024
+      date: Apr 2024
     - title: Organizing committee of SBDM 2023
       date: June 2023
     - title: Co-president of Cognivence
