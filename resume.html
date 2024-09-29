@@ -42,14 +42,14 @@ layout: default
             <!-- Regular section -->
             {% for item in section.items %}
               <div class="row justify-content-center">
-                <div class="col-3 text-end">
+                <div class="col-4 text-end">
                   <p class="text-secondary">
                     {{item.date}}
                     <br>
                     {{item.place}}
                   </p>
                 </div>
-                <div class="col-9">
+                <div class="col-8">
                   <span class="fw-semibold">
                     {% if item.pdf %}
                       <a class="icon-link link-underline link-underline-opacity-0"
