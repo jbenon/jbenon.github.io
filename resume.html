@@ -56,11 +56,12 @@ layout: default
                     {% endif %}
                     {{item.title}}
                   </span>
-                  &nbsp;|&nbsp;
+                  {% if item.place or item.details}
+                    &nbsp;|&nbsp;
+                  {% endif %}
                   <span class="text-secondary">
                     {{item.place}}
                   </span>
-                  .&nbsp;
                   <span>
                     {{item.details}}
                   </span>
