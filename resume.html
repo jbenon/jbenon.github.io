@@ -48,24 +48,26 @@ layout: default
                   </p>
                 </div>
                 <div class="col-10">
-                  <span>
-                    {% if item.pdf %}
-                      <a class="icon-link link-underline link-underline-opacity-0"
-                      href="/assets/{{publication.pdf}}.pdf"
-                      data-bs-toggle="tooltip" data-bs-title="Download" download>
-                        <i class="fa-solid fa-download"></i>
-                      </a>&nbsp;
-                    {% endif %}
-                    {{item.title}}
-                  </span>
-                  <span class="text-secondary">
-                    {{item.place}}
-                  </span>
-                  {% if item.details %}
-                    <span class="small">
-                      <br>{{item.details}}
+                  <p>
+                    <span>
+                      {% if item.pdf %}
+                        <a class="icon-link link-underline link-underline-opacity-0"
+                        href="/assets/{{publication.pdf}}.pdf"
+                        data-bs-toggle="tooltip" data-bs-title="Download" download>
+                          <i class="fa-solid fa-download"></i>
+                        </a>&nbsp;
+                      {% endif %}
+                      {{item.title}}
                     </span>
-                  {% endif %}
+                    <span class="text-secondary">
+                      {{item.place}}
+                    </span>
+                    {% if item.details %}
+                      <span class="small">
+                        <br>{{item.details}}
+                      </span>
+                    {% endif %}
+                  </p>
                 </div>
               {% endfor %}
             </div>
