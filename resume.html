@@ -25,7 +25,7 @@ layout: default
             {% for publication in section.publications %}
                 <div class="row justify-content-center">
                     <div class="col">
-                        <p class="text-primary"></h6>
+                        <p class="text-primary">
                           <a class="icon-link link-underline link-underline-opacity-0"
                           href="/assets/{{publication.pdf}}.pdf"
                           data-bs-toggle="tooltip" data-bs-title="Download" download>
@@ -36,8 +36,9 @@ layout: default
                           data-bs-toggle="tooltip" data-bs-title="{{publication.title-tooltip}}">
                             {{publication.title}}
                           </a>
+                        <br>
+                        {{publication.citation}}
                         </p>
-                        <p>{{publication.citation}}</p>
                     </div>
                 </div>
               {% endfor %}
