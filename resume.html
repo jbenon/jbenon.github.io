@@ -23,7 +23,8 @@ layout: default
             <!-- Publications section -->
             {% for publication in section.publications %}
                 <div class="row justify-content-center">
-                    <div class="col">
+                  <div class="col-1"></div>
+                    <div class="col-11">
                         <p class="text-body">
                           <a class="icon-link link-underline link-underline-opacity-0"
                           href="/assets/{{publication.pdf}}.pdf"
@@ -46,12 +47,13 @@ layout: default
             <!-- Regular section -->
             <div class="row">
               {% for item in section.items %}
+                <div class="col-1"></div>
                 <div class="col-2 text-end">
                   <p class="text-secondary">
                     {{item.date}}
                   </p>
                 </div>
-                <div class="col-10">
+                <div class="col-9">
                   <p>
                     <span>
                       {% if item.pdf %}
