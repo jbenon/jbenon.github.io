@@ -2,18 +2,25 @@
 - title: Education
   items:
     - title: PhD in Cognitive Neuroscience.
-      title-link: https://sites.google.com/site/motivationbrainbehavior/
       date: 2022 - Ongoing
       place: Motivation Brain Behavior lab, Paris Brain Institute, Paris, FR.
+      place-link: https://sites.google.com/site/motivationbrainbehavior/
+      place-tooltip: Visit the lab website
       details: >
         PI: Jean Daunizeau.
     - title: MSc in Cognitive Science.
+      title-link: https://cogmaster.ens.psl.eu/en
+      title-tooltip: Visit the "Cogmaster" website
       date: 2020 - 2022
       place: Université ENS-PSL, Paris, FR.
     - title: BSc in Mathematics.
+      title-link: https://math-info.u-paris.fr/licence-de-mathematiques/parcours-modelisation-et-simulation/
+      title-tooltip: Visit the BSc page (in French)
       date: 2019 - 2020
       place: Université Paris Descartes, Paris, FR.
     - title: Preparatory classes MPSI / MP*.
+      title-link: https://en.wikipedia.org/wiki/Classe_pr%C3%A9paratoire_aux_grandes_%C3%A9coles
+      title-tooltip: Visit the Wikipedia page
       date: 2017 - 2019
       place: Lycée Pierre Corneille, Rouen, FR.
 
@@ -21,6 +28,8 @@
 - title: Publications
   publications:
     - title: The online metacognitive control of decisions
+      title-link: https://www.nature.com/articles/s44271-024-00071-y
+      title-tooltip: Access online
       pdf: Benon2024
       citation: >
         <b>Bénon, J.</b>, Lee, D., Hopper, W., Verdeil, M., Pessiglione, M., Vinckier, F.,
@@ -34,11 +43,15 @@
     - title: Neuro-computational modelling of value construction (MSc project).
       date: 2022
       place: Motivation Brain Behavior lab, Paris Brain Institute, Paris, FR.
+      place-link: https://sites.google.com/site/motivationbrainbehavior/
+      place-tooltip: Visit the lab website
       details: >
         PI: Jean Daunizeau.
     - title: Modeling auditory perception of numerosity (MSc project).
       date: 2021
       place: Language and cognition group, Integrative Neuroscience and Cognition Center, Paris, FR.
+      place-link: https://incc-paris.fr/language-and-cognition/
+      place-tooltip: Visit the lab website
       details: >
         PI: Véronique Izard.
         
@@ -46,9 +59,13 @@
 - title: Teaching
   items:
     - title: Lecturer on the <span class="fst-italic">artificial intelligence applied to healthcare</span> course.
+      title-link: https://odf.u-paris.fr/fr/offre-de-formation/diplome-d-universite-du-diu-1/sciences-technologies-sante-STS/du-intelligence-artificielle-ia-appliquee-en-sante-JXMZBK41.html
+      title-tooltip: Visit the course page (in French)
       date: Mar 2024
       place: Université Paris Cité, Paris FR.
     - title: Teaching fellow in <span class="fst-italic">psychophysiology</span>.
+      title-link: https://odf.u-paris.fr/fr/offre-de-formation/licence-XA/sciences-humaines-et-sociales-SHS/psychologie-K2NDLZCV/licence-psychologie-parcours-sciences-psychologiques-JT4FAPN6/bloc-fondamental-KLC5VZJY/psychophysiologie-3-KLC5YKP6.html
+      title-tooltip: Visit the course page (in French)
       date: Jan - Apr 2023
       place: Institut de Psychologie, Boulogne-Billancourt, FR.
       
@@ -56,26 +73,36 @@
 - title: Fellowships
   items:
     - title: Three-years PhD fellowship from the doctoral school Cognition, Cerveau, Comportement (ED3C).
+      title-link: https://ed3c.sorbonne-universite.fr/en
+      title-tooltip: Visit the doctoral school website
       date: 2022
         
 # ===== POSTERS ===== #
 - title: Posters
   items:
     - title: NeuroAI, Thematic days Neuroscience & AI.
+      title-link: https://www.neurosciences.asso.fr/JT2024/
+      title-tooltip: Visit the conference website
       date: May 2024
       place: Bordeaux, FR.
       pdf: Poster_2024_OFC-NeuroAI
     - title: OFC, 5th Orbitofrontal cortex meeting.
+      title-link: https://ofcconf.wixsite.com/ofc2024
+      title-tooltip: Visit the conference website
       date: Apr 2024
       place: Paris, FR.
       pdf: Poster_2024_OFC-NeuroAI
     - title: Poster prize competition.
+      title-link: https://www.ajites.fr/our-activities/poster-prize
+      title-tooltip: Visit the competition page
       date: June 2023
       place: Paris Brain Institute, Paris, FR.
       pdf: Poster_2023_Ajites
       details: >
         1st prize of the Ajités' poster prize competition.
     - title: SBDM, 11th Symposium on Biology of Decision-Making.
+      title-link: https://sbdm2023.sciencesconf.org/
+      title-tooltip: Visit the symposium website
       date: June 2023
       place: Paris, FR.
       pdf: Poster_2023_SBDM
@@ -84,8 +111,16 @@
 - title: Scientific and public outreach
   items:
     - title: Organizing committee of OFC 2024.
+      title-link: https://ofcconf.wixsite.com/ofc2024
+      title-tooltip: Visit the conference website
       date: Apr 2024
     - title: Organizing committee of SBDM 2023.
+      title-link: https://sbdm2023.sciencesconf.org/
+      title-tooltip: Visit the symposium website
       date: June 2023
     - title: Co-president of Cognivence.
+      title-link: https://cognivence.scicog.fr/forum-des-sciences-cognitives/fsc2022/
+      title-tooltip: Visit the cognitive science fair page (in French)
       date: 2021 - 2022
+      details: >
+        Organization of a large cognitive science fair for the general public.

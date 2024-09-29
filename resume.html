@@ -57,10 +57,24 @@ layout: default
                           <i class="fa-solid fa-download"></i>
                         </a>&nbsp;
                       {% endif %}
-                      {{item.title}}
+                      {% if item.title-link %}
+                        <a href="{{item.title-link}}"
+                        data-bs-toggle="tooltip" data-bs-title="{{item.title-tooltip}}">
+                          {{item.title}}
+                        </a>
+                      {% else %}
+                        {{item.title}}
+                      {% endif %}
                     </span>
                     <span class="text-secondary">
-                      {{item.place}}
+                      {% if item.place-link %}
+                        <a href="{{item.place-link}}"
+                        data-bs-toggle="tooltip" data-bs-title="{{item.place-tooltip}}">
+                          {{item.place}}
+                        </a>
+                      {% else %}
+                        {{item.place}}
+                      {% endif %}
                     </span>
                     {% if item.details %}
                       <span class="small">
