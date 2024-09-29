@@ -15,7 +15,7 @@
     <style>
         @media print {
             .row{ /* Do not break page within a section */
-                break-inside: avoid;
+                page-break-inside: avoid;
             }
             * { /* Print background elements */
                 -webkit-print-color-adjust: exact !important;   /* Chrome, Safari 6 – 15.3, Edge */
@@ -34,6 +34,7 @@
             }
             body {
                 margin: 0;
+                transform: scale(0.9);
             }
         }
     </style>
