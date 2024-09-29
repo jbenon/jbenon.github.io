@@ -14,9 +14,9 @@ layout: default
         <div class="col-xl-9 col-lg-10 col-md-11 gy-3">
 
           <!-- Section header -->
-          <div class="row justify-content-center lh-lg">
-            <div class="col"><hr></div>
-            <div class="col-auto"><h5>{{section.title}}</h5></div>
+          <div class="row justify-content-center">
+            <div class="col-1"><hr></div>
+            <div class="col-auto text-primary fw-semibold"><h5>{{section.title}}</h5></div>
             <div class="col"><hr></div>
           </div>
 
@@ -46,7 +46,7 @@ layout: default
                   <p class="text-secondary">{{item.date}}</p>
                 </div>
                 <div class="col-10">
-                  <span class="text-primary">
+                  <span class="few-semibold">
                     {% if item.pdf %}
                       <a class="icon-link link-underline link-underline-opacity-0"
                       href="/assets/{{publication.pdf}}.pdf"
