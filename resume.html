@@ -31,7 +31,11 @@ layout: default
                           data-bs-toggle="tooltip" data-bs-title="Download" download>
                             <i class="fa-solid fa-download"></i>
                           </a>&nbsp;
-                          {{publication.title}}
+                          <a class="text-body link-underline-dark link-underline-opacity-0 link-underline-opacity-75-hover"
+                          href="{{publication.title-link}}"
+                          data-bs-toggle="tooltip" data-bs-title="{{publication.title-tooltip}}">
+                            {{item.title}}
+                          </a>
                         </p>
                         <p>{{publication.citation}}</p>
                     </div>
@@ -58,7 +62,7 @@ layout: default
                         </a>&nbsp;
                       {% endif %}
                       {% if item.title-link %}
-                        <a class="text-body link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover"
+                        <a class="text-body link-underline-dark link-underline-opacity-0 link-underline-opacity-75-hover"
                         href="{{item.title-link}}"
                         data-bs-toggle="tooltip" data-bs-title="{{item.title-tooltip}}">
                           {{item.title}}
@@ -69,7 +73,7 @@ layout: default
                     </span>
                     <span class="text-secondary">
                       {% if item.place-link %}
-                        <a class="text-secondary link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover"
+                        <a class="text-secondary link-underline-dark link-underline-opacity-0 link-underline-opacity-75-hover"
                         href="{{item.place-link}}"
                         data-bs-toggle="tooltip" data-bs-title="{{item.place-tooltip}}">
                           {{item.place}}
