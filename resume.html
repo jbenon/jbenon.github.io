@@ -9,119 +9,114 @@ layout: default
     <a class="nav-link active" aria-current="page">Resume</a>
   </nav>
 
-  <!-- Emebed everything to have left/right margins -->
-  <div class="col-11">
-
-    <!-- Resume header when printing only-->
-    <div class="row justify-content-center d-none d-print-block">
-      <div class="col justify-content-center text-center">
-        <h3>
-          <a href="https://jbenon.github.io" class="link-underline link-underline-opacity-0 text-body">
-            Juliette Bénon
-          </a>
-        </h3>
-        <h6 class="text-secondary">PhD candidate in cognitive neuroscience.</h6>
-        <p>
-          <a href="mailto:juliettebenon@gmail.com"
-          class="link-underline link-underline-opacity-0 text-body">
-            juliettebenon@gmail.com
-          </a>
-          &nbsp;|&nbsp;
-          <a href="https://jbenon.github.io"
-          class="link-underline link-underline-opacity-0 text-body">
-            jbenon.github.io
-          </a>
-        </p>
-      </div>
+  <!-- Resume header when printing only-->
+  <div class="row justify-content-center d-none d-print-block">
+    <div class="col justify-content-center text-center">
+      <h3>
+        <a href="https://jbenon.github.io" class="link-underline link-underline-opacity-0 text-body">
+          Juliette Bénon
+        </a>
+      </h3>
+      <h6 class="text-secondary">PhD candidate in cognitive neuroscience.</h6>
+      <p>
+        <a href="mailto:juliettebenon@gmail.com"
+        class="link-underline link-underline-opacity-0 text-body">
+          juliettebenon@gmail.com
+        </a>
+        &nbsp;|&nbsp;
+        <a href="https://jbenon.github.io"
+        class="link-underline link-underline-opacity-0 text-body">
+          jbenon.github.io
+        </a>
+      </p>
     </div>
+  </div>
 
-    {% for section in site.data.resume %}
-    <div class="row justify-content-center">
-      <div class="col-xl-9 col-lg-10 gy-3">
+  {% for section in site.data.resume %}
+  <div class="row justify-content-center">
+    <div class="col-xl-9 col-lg-10 gy-3">
 
-        <!-- Section header -->
-        <div class="row justify-content-center">
-          <div class="col-auto text-primary">
-            <h5 class="fw-semibold">{{section.title}}</h5>
-          </div>
-          <div class="col">
-            <hr>
-          </div>
+      <!-- Section header -->
+      <div class="row justify-content-center">
+        <div class="col-auto text-primary">
+          <h5 class="fw-semibold">{{section.title}}</h5>
         </div>
+        <div class="col">
+          <hr>
+        </div>
+      </div>
 
-        {% if section.publications %}
-        <!-- Publications section -->
-        {% for publication in section.publications %}
-        <div class="row justify-content-center">
-          <div class="col">
-            <p class="text-body">
-              <a class="icon-link link-underline link-underline-opacity-0" href="/assets/{{publication.pdf}}.pdf"
+      {% if section.publications %}
+      <!-- Publications section -->
+      {% for publication in section.publications %}
+      <div class="row justify-content-center">
+        <div class="col">
+          <p class="text-body">
+            <a class="icon-link link-underline link-underline-opacity-0" href="/assets/{{publication.pdf}}.pdf"
+              data-bs-toggle="tooltip" data-bs-title="Download" download>
+              <i class="fa-solid fa-download"></i>
+            </a>&nbsp;
+            <a class="text-primary link-underline link-underline-opacity-0 link-underline-opacity-75-hover"
+              href="{{publication.title-link}}" data-bs-toggle="tooltip" data-bs-title="{{publication.title-tooltip}}">
+              {{publication.title}}
+            </a>
+            <br>
+            {{publication.citation}}
+          </p>
+        </div>
+      </div>
+      {% endfor %}
+
+      {% else %}
+      <!-- Regular section -->
+      <div class="row">
+        {% for item in section.items %}
+        <div class="col-2 text-end">
+          <p class="text-secondary">
+            {{item.date}}
+          </p>
+        </div>
+        <div class="col-10">
+          <p>
+            <span>
+              {% if item.pdf %}
+              <a class="icon-link link-underline link-underline-opacity-0" href="/assets/{{item.pdf}}.pdf"
                 data-bs-toggle="tooltip" data-bs-title="Download" download>
                 <i class="fa-solid fa-download"></i>
               </a>&nbsp;
-              <a class="text-primary link-underline link-underline-opacity-0 link-underline-opacity-75-hover"
-                href="{{publication.title-link}}" data-bs-toggle="tooltip" data-bs-title="{{publication.title-tooltip}}">
-                {{publication.title}}
+              {% endif %}
+              {% if item.title-link %}
+              <a class="text-body link-underline-dark link-underline-opacity-0 link-underline-opacity-75-hover"
+                href="{{item.title-link}}" data-bs-toggle="tooltip" data-bs-title="{{item.title-tooltip}}">
+                {{item.title}}
               </a>
-              <br>
-              {{publication.citation}}
-            </p>
-          </div>
+              {% else %}
+              {{item.title}}
+              {% endif %}
+            </span>
+            <span class="text-secondary">
+              {% if item.place-link %}
+              <a class="text-secondary link-underline-dark link-underline-opacity-0 link-underline-opacity-75-hover"
+                href="{{item.place-link}}" data-bs-toggle="tooltip" data-bs-title="{{item.place-tooltip}}">
+                {{item.place}}
+              </a>
+              {% else %}
+              {{item.place}}
+              {% endif %}
+            </span>
+            {% if item.details %}
+            <span class="small">
+              <br>{{item.details}}
+            </span>
+            {% endif %}
+          </p>
         </div>
         {% endfor %}
-
-        {% else %}
-        <!-- Regular section -->
-        <div class="row">
-          {% for item in section.items %}
-          <div class="col-2 text-end">
-            <p class="text-secondary">
-              {{item.date}}
-            </p>
-          </div>
-          <div class="col-10">
-            <p>
-              <span>
-                {% if item.pdf %}
-                <a class="icon-link link-underline link-underline-opacity-0" href="/assets/{{item.pdf}}.pdf"
-                  data-bs-toggle="tooltip" data-bs-title="Download" download>
-                  <i class="fa-solid fa-download"></i>
-                </a>&nbsp;
-                {% endif %}
-                {% if item.title-link %}
-                <a class="text-body link-underline-dark link-underline-opacity-0 link-underline-opacity-75-hover"
-                  href="{{item.title-link}}" data-bs-toggle="tooltip" data-bs-title="{{item.title-tooltip}}">
-                  {{item.title}}
-                </a>
-                {% else %}
-                {{item.title}}
-                {% endif %}
-              </span>
-              <span class="text-secondary">
-                {% if item.place-link %}
-                <a class="text-secondary link-underline-dark link-underline-opacity-0 link-underline-opacity-75-hover"
-                  href="{{item.place-link}}" data-bs-toggle="tooltip" data-bs-title="{{item.place-tooltip}}">
-                  {{item.place}}
-                </a>
-                {% else %}
-                {{item.place}}
-                {% endif %}
-              </span>
-              {% if item.details %}
-              <span class="small">
-                <br>{{item.details}}
-              </span>
-              {% endif %}
-            </p>
-          </div>
-          {% endfor %}
-        </div>
-
-        {% endif %}
       </div>
-    </div>
-    {% endfor %}
 
+      {% endif %}
+    </div>
   </div>
+  {% endfor %}
 
 </div>
