@@ -4,9 +4,9 @@
     - title: PhD in Cognitive Neuroscience.
       title-link: https://sites.google.com/site/motivationbrainbehavior/
       date: 2022 - Ongoing
-      place: Sorbonne Université, Paris, FR.
+      place: Motivation Brain Behavior lab, Paris Brain Institute, Paris, FR.
       details: >
-        Supervised by Jean Daunizeau in the Motivation Brain Behavior team, Paris Brain Institute.
+        PI: Jean Daunizeau.
     - title: MSc in Cognitive Science.
       date: 2020 - 2022
       place: Université ENS-PSL, Paris, FR.
@@ -16,8 +16,6 @@
     - title: Preparatory classes MPSI / MP*.
       date: 2017 - 2019
       place: Lycée Pierre Corneille, Rouen, FR.
-      details: >
-        Post-secondary program in Mathematics, Physics and Informatics.
 
 # ===== PUBLICATIONS ===== #
 - title: Publications
@@ -35,14 +33,14 @@
   items:
     - title: Neuro-computational modelling of value construction (MSc project).
       date: 2022
-      place: Paris Brain Institute, Paris, FR.
+      place: Motivation Brain Behavior lab, Paris Brain Institute, Paris, FR.
       details: >
-        Supervised by Jean Daunizeau in the Motivation Brain Behavior team.
+        PI: Jean Daunizeau.
     - title: Modeling auditory perception of numerosity (MSc project).
       date: 2021
-      place: Integrative Neuroscience and Cognition Center, Paris, FR.
+      place: Language and cognition group, Integrative Neuroscience and Cognition Center, Paris, FR.
       details: >
-        Supervised by Véronique Izard in the Language and cognition group.
+        PI: Véronique Izard.
         
 # ===== TEACHING ===== #
 - title: Teaching
@@ -91,5 +89,3 @@
       date: June 2023
     - title: Co-president of Cognivence.
       date: 2021 - 2022
-      details: >
-        Organization of a large cognitive science fair dedicated to the general public.
