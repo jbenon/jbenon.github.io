@@ -61,9 +61,11 @@ layout: default
                   <span class="text-secondary">
                     {{item.place}}
                   </span>
-                  <span>
-                    {{item.details}}
-                  </span>
+                  {% if item.details %}
+                    <span>
+                      <br>{{item.details}}
+                    </span>
+                  {% endif %}
                 </div>
               </div>
             {% endfor %}
