@@ -25,14 +25,14 @@ layout: default
             {% for publication in section.publications %}
                 <div class="row justify-content-center">
                     <div class="col">
-                        <h6 class="text-primary">
-                          {{publication.title}}
+                        <p class="text-primary"></h6>
                           <a class="icon-link link-underline link-underline-opacity-0"
                           href="/assets/{{publication.pdf}}.pdf"
                           data-bs-toggle="tooltip" data-bs-title="Download" download>
                             <i class="fa-solid fa-download"></i>
-                          </a>
-                        </h6>
+                          </a>&nbsp;
+                          {{publication.title}}
+                        </p>
                         <p>{{publication.citation}}</p>
                     </div>
                 </div>
@@ -46,17 +46,24 @@ layout: default
                   <p class="text-secondary">{{item.date}}</p>
                 </div>
                 <div class="col-9">
-                  <h6 class="text-primary">{{item.title}}
+                  <span class="text-primary">
                     {% if item.pdf %}
                       <a class="icon-link link-underline link-underline-opacity-0"
                       href="/assets/{{publication.pdf}}.pdf"
                       data-bs-toggle="tooltip" data-bs-title="Download" download>
                         <i class="fa-solid fa-download"></i>
-                      </a>
+                      </a>&nbsp;
                     {% endif %}
-                  </h6>
-                  <p class="text-secondary">{{item.place}}</p>
-                  <p class="gy-1">{{item.details}}</p>
+                    {{item.title}}
+                  </span>
+                  &nbsp;|&nbsp;
+                  <span class="text-secondary">
+                    {{item.place}}
+                  </span>
+                  .&nbsp;
+                  <span>
+                    {{item.details}}
+                  </span>
                 </div>
               </div>
             {% endfor %}
