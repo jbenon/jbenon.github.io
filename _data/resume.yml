@@ -1,19 +1,19 @@
 # ===== EDUCATION ===== #
 - title: Education
   items:
-    - title: PhD in Cognitive Neuroscience
+    - title: PhD in Cognitive Neuroscience.
       title-link: https://sites.google.com/site/motivationbrainbehavior/
       date: 2022 - Ongoing
       place: Sorbonne Université, Paris, FR.
       details: >
         Supervised by Jean Daunizeau in the Motivation Brain Behavior team, Paris Brain Institute.
-    - title: MSc in Cognitive Science
+    - title: MSc in Cognitive Science.
       date: 2020 - 2022
       place: Université ENS-PSL, Paris, FR.
-    - title: BSc in Mathematics
+    - title: BSc in Mathematics.
       date: 2019 - 2020
       place: Université Paris Descartes, Paris, FR.
-    - title: Preparatory classes MPSI / MP*
+    - title: Preparatory classes MPSI / MP*.
       date: 2017 - 2019
       place: Lycée Pierre Corneille, Rouen, FR.
       details: >
@@ -33,12 +33,12 @@
 # ===== RESEARCH TRAINING ===== #
 - title: Research training
   items:
-    - title: MSc project | Neuro-computational modelling of value construction
+    - title: Neuro-computational modelling of value construction (MSc project).
       date: 2022
       place: Paris Brain Institute, Paris, FR.
       details: >
         Supervised by Jean Daunizeau in the Motivation Brain Behavior team.
-    - title: MSc project | Modeling auditory perception of numerosity
+    - title: Modeling auditory perception of numerosity (MSc project).
       date: 2021
       place: Integrative Neuroscience and Cognition Center, Paris, FR.
       details: >
@@ -47,10 +47,10 @@
 # ===== TEACHING ===== #
 - title: Teaching
   items:
-    - title: Lecturer on the artificial intelligence applied to healthcare course
+    - title: Lecturer on the <span class="fst-italic">artificial intelligence applied to healthcare</span> course.
       date: Mar 2024
       place: Université Paris Cité, Paris FR.
-    - title: Teaching fellow in psychophysiology
+    - title: Teaching fellow in <span class="fst-italic">psychophysiology</span>.
       date: Jan - Apr 2023
       place: Institut de Psychologie, Boulogne-Billancourt, FR.
       
@@ -63,21 +63,21 @@
 # ===== POSTERS ===== #
 - title: Posters
   items:
-    - title: NeuroAI, Thematic days Neuroscience & AI
+    - title: NeuroAI, Thematic days Neuroscience & AI.
       date: May 2024
       place: Bordeaux, FR.
       pdf: Poster_2024_OFC-NeuroAI
-    - title: OFC, 5th Orbitofrontal cortex meeting
+    - title: OFC, 5th Orbitofrontal cortex meeting.
       date: Apr 2024
       place: Paris, FR.
       pdf: Poster_2024_OFC-NeuroAI
-    - title: Poster prize competition
+    - title: Poster prize competition.
       date: June 2023
       place: Paris Brain Institute, Paris, FR.
       pdf: Poster_2023_Ajites
       details: >
         1st prize of the Ajités' poster prize competition.
-    - title: SBDM, 11th Symposium on Biology of Decision-Making 
+    - title: SBDM, 11th Symposium on Biology of Decision-Making.
       date: June 2023
       place: Paris, FR.
       pdf: Poster_2023_SBDM
@@ -85,11 +85,11 @@
 # ===== OUTREACH ===== #
 - title: Scientific and public outreach
   items:
-    - title: Organizing committee of OFC 2024
+    - title: Organizing committee of OFC 2024.
       date: Apr 2024
-    - title: Organizing committee of SBDM 2023
+    - title: Organizing committee of SBDM 2023.
       date: June 2023
-    - title: Co-president of Cognivence
+    - title: Co-president of Cognivence.
       date: 2021 - 2022
       details: >
         Organization of a large cognitive science fair dedicated to the general public.
