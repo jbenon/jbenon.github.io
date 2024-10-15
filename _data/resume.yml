@@ -80,13 +80,13 @@
 # ===== POSTERS ===== #
 - title: Posters and talks
   items:
-    - title: SNE, 22nd meeting of the Society for NeuroEconomics
+    - title: SNE, 22nd meeting of the Society for NeuroEconomics.
       title-link: https://neuroeconomics.org/2024-meeting/
       title-tooltip: Visit the meeting website
       date: October 2024
       place: Paris, FR.
       pdf: Slides_2024_SNE
-    - title: AIBH, Artificial Intelligence in Biology and Health
+    - title: AIBH, Artificial Intelligence in Biology and Health.
       title-link: https://research.pasteur.fr/en/event/symposium-atc-ia-artificial-intelligence-in-biology-and-health-edition-2024/
       title-tooltip: Visit the symposium website
       date: October 2024
