@@ -7,7 +7,9 @@
       place-link: https://sites.google.com/site/motivationbrainbehavior/
       place-tooltip: Visit the lab website
       details: >
-        PI: Jean Daunizeau.
+        PI: <a class="text-body link-underline-dark link-underline-opacity-0 link-underline-opacity-75-hover"
+        href="https://sites.google.com/site/jeandaunizeauswebsite" data-bs-toggle="tooltip"
+        data-bs-title="Visit personal website">Jean Daunizeau</a>.
     - title: MSc in Cognitive Science.
       title-link: https://cogmaster.ens.psl.eu/en
       title-tooltip: Visit the Cogmaster website
@@ -46,14 +48,18 @@
       place-link: https://sites.google.com/site/motivationbrainbehavior/
       place-tooltip: Visit the lab website
       details: >
-        PI: Jean Daunizeau.
+        PI: <a class="text-body link-underline-dark link-underline-opacity-0 link-underline-opacity-75-hover"
+        href="https://sites.google.com/site/jeandaunizeauswebsite" data-bs-toggle="tooltip"
+        data-bs-title="Visit personal website">Jean Daunizeau</a>.
     - title: Modeling auditory perception of numerosity (MSc project).
       date: 2021
       place: Language and cognition group, Integrative Neuroscience and Cognition Center, Paris, FR.
       place-link: https://incc-paris.fr/language-and-cognition/
       place-tooltip: Visit the lab website
       details: >
-        PI: Véronique Izard.
+        PI: <a class="text-body link-underline-dark link-underline-opacity-0 link-underline-opacity-75-hover"
+        href="https://babylab.incc-paris.fr/en/veronique-izard-en/" data-bs-toggle="tooltip"
+        data-bs-title="Visit personal page">Véronique Izard</a>.
         
 # ===== TEACHING ===== #
 - title: Teaching
@@ -94,8 +100,6 @@
       date: Oct 2024
       place: Paris, FR.
       pdf: Poster_2024_OFC-NeuroAI-AIBH
-      details: >
-        Best poster prize.
     - title: NeuroAI, Thematic days Neuroscience & AI.
       type: Poster
       title-link: https://www.neurosciences.asso.fr/JT2024/
@@ -117,8 +121,6 @@
       date: June 2023
       place: Paris Brain Institute, Paris, FR.
       pdf: Poster_2023_Ajites
-      details: >
-        1st prize of the Ajités' poster prize competition.
     - title: SBDM, 11th Symposium on Biology of Decision-Making.
       type: Poster
       title-link: https://sbdm2023.sciencesconf.org/
