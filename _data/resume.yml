@@ -80,13 +80,13 @@
 # ===== POSTERS ===== #
 - title: Posters and talks
   items:
-    - title: [Selected talk] SNE, 22nd meeting of the Society for NeuroEconomics
+    - title: SNE, 22nd meeting of the Society for NeuroEconomics
       title-link: https://neuroeconomics.org/2024-meeting/
       title-tooltip: Visit the meeting website
       date: October 2024
       place: Paris, FR.
       pdf: Slides_2024_SNE
-    - title: [Poster] AIBH, Artificial Intelligence in Biology and Health
+    - title: AIBH, Artificial Intelligence in Biology and Health
       title-link: https://research.pasteur.fr/en/event/symposium-atc-ia-artificial-intelligence-in-biology-and-health-edition-2024/
       title-tooltip: Visit the symposium website
       date: October 2024
@@ -94,19 +94,19 @@
       pdf: Poster_2024_OFC-NeuroAI-AIBH
       details: >
         Best poster prize.
-    - title: [Poster] NeuroAI, Thematic days Neuroscience & AI.
+    - title: NeuroAI, Thematic days Neuroscience & AI.
       title-link: https://www.neurosciences.asso.fr/JT2024/
       title-tooltip: Visit the conference website
       date: May 2024
       place: Bordeaux, FR.
       pdf: Poster_2024_OFC-NeuroAI-AIBH
-    - title: [Poster] OFC, 5th Orbitofrontal cortex meeting.
+    - title: OFC, 5th Orbitofrontal cortex meeting.
       title-link: https://ofcconf.wixsite.com/ofc2024
       title-tooltip: Visit the conference website
       date: Apr 2024
       place: Paris, FR.
       pdf: Poster_2024_OFC-NeuroAI-AIBH
-    - title: [Poster] Poster prize competition.
+    - title: Poster prize competition.
       title-link: https://www.ajites.fr/our-activities/poster-prize
       title-tooltip: Visit the competition page
       date: June 2023
@@ -114,7 +114,7 @@
       pdf: Poster_2023_Ajites
       details: >
         1st prize of the Ajités' poster prize competition.
-    - title: [Poster] SBDM, 11th Symposium on Biology of Decision-Making.
+    - title: SBDM, 11th Symposium on Biology of Decision-Making.
       title-link: https://sbdm2023.sciencesconf.org/
       title-tooltip: Visit the symposium website
       date: June 2023
