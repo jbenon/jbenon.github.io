@@ -1,4 +1,4 @@
-#Hi! I'm Juliette Bénon.
+# Hi! I'm Juliette Bénon.
 
 I am a PhD candidate in cognitive neuroscience at the [Paris Brain Institute](https://parisbraininstitute.org/), supervised by [Jean Daunizeau](https://sites.google.com/site/jeandaunizeauswebsite) in the [Motivation Brain Behavior team](https://sites.google.com/site/motivationbrainbehavior).
 
