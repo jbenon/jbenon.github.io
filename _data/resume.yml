@@ -38,28 +38,6 @@
         Bouret, S., Rouault, M., Lebouc, R., Pezzulo, G., Schreiweis, C., Burguière, E.,
         & Daunizeau, J. (2024). The online metacognitive control of decisions.
         <i>Communications Psychology</i>, 2(1), 1–17.
-
-# ===== RESEARCH TRAINING ===== #
-- title: Research training
-  items:
-    - title: Neuro-computational modelling of value construction (MSc project).
-      date: 2022
-      place: Motivation Brain Behavior lab, Paris Brain Institute, Paris, FR.
-      place-link: https://sites.google.com/site/motivationbrainbehavior/
-      place-tooltip: Visit the lab website
-      details: >
-        PI: <a class="text-body link-underline-dark link-underline-opacity-0 link-underline-opacity-75-hover"
-        href="https://sites.google.com/site/jeandaunizeauswebsite" data-bs-toggle="tooltip"
-        data-bs-title="Visit personal website">Jean Daunizeau</a>.
-    - title: Modeling auditory perception of numerosity (MSc project).
-      date: 2021
-      place: Language and cognition group, Integrative Neuroscience and Cognition Center, Paris, FR.
-      place-link: https://incc-paris.fr/language-and-cognition/
-      place-tooltip: Visit the lab website
-      details: >
-        PI: <a class="text-body link-underline-dark link-underline-opacity-0 link-underline-opacity-75-hover"
-        href="https://babylab.incc-paris.fr/en/veronique-izard-en/" data-bs-toggle="tooltip"
-        data-bs-title="Visit personal page">Véronique Izard</a>.
         
 # ===== TEACHING ===== #
 - title: Teaching
