@@ -64,6 +64,20 @@
 # ===== POSTERS ===== #
 - title: Posters and talks
   items:
+    - title: Foraging conference
+      type: Poster
+      title-link: https://sites.google.com/view/foragingconference/home
+      title-tooltip: Visit the conference website
+      date: Dec 2024
+      place: Lyon, FR.
+      pdf: Poster_2024_ForagingConf
+    - title: ESCBC, 10th European Student Conference on Behaviour and Cognition
+      type: Poster
+      title-link: https://escbc.org/
+      title-tooltip: Visit the conference website
+      date: Nov 2024
+      place: Paris, FR.
+      pdf: Poster_2024_OFC-NeuroAI-AIBH-ESCBC
     - title: SNE, 22nd meeting of the Society for NeuroEconomics.
       type: Selected talk
       title-link: https://neuroeconomics.org/2024-meeting/
@@ -77,21 +91,21 @@
       title-tooltip: Visit the symposium website
       date: Oct 2024
       place: Paris, FR.
-      pdf: Poster_2024_OFC-NeuroAI-AIBH
+      pdf: Poster_2024_OFC-NeuroAI-AIBH-ESCBC
     - title: NeuroAI, Thematic days Neuroscience & AI.
       type: Poster
       title-link: https://www.neurosciences.asso.fr/JT2024/
       title-tooltip: Visit the conference website
       date: May 2024
       place: Bordeaux, FR.
-      pdf: Poster_2024_OFC-NeuroAI-AIBH
+      pdf: Poster_2024_OFC-NeuroAI-AIBH-ESCBC
     - title: OFC, 5th Orbitofrontal cortex meeting.
       type: Poster
       title-link: https://ofcconf.wixsite.com/ofc2024
       title-tooltip: Visit the conference website
       date: Apr 2024
       place: Paris, FR.
-      pdf: Poster_2024_OFC-NeuroAI-AIBH
+      pdf: Poster_2024_OFC-NeuroAI-AIBH-ESCBC
     - title: Poster prize competition (1st prize).
       type: Poster
       title-link: https://www.ajites.fr/our-activities/poster-prize
