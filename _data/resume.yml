@@ -2,7 +2,7 @@
 - title: Education
   items:
     - title: PhD in Cognitive Neuroscience.
-      date: 2022 - Ongoing
+      date: 2022 - 2025
       place: Motivation Brain Behavior lab, Paris Brain Institute, Paris, FR.
       place-link: https://sites.google.com/site/motivationbrainbehavior/
       place-tooltip: Visit the lab website
@@ -84,21 +84,21 @@
       title-tooltip: Visit the symposium website
       date: Oct 2024
       place: Paris, FR.
-      pdf: Poster_2024_OFC-NeuroAI-AIBH
+      pdf: Poster_2024_OFC-NeuroAI-AIBH-ESCBC
     - title: NeuroAI, Thematic days Neuroscience & AI.
       type: Poster
       title-link: https://www.neurosciences.asso.fr/JT2024/
       title-tooltip: Visit the conference website
       date: May 2024
       place: Bordeaux, FR.
-      pdf: Poster_2024_OFC-NeuroAI-AIBH
+      pdf: Poster_2024_OFC-NeuroAI-AIBH-ESCBC
     - title: OFC, 5th Orbitofrontal cortex meeting.
       type: Poster
       title-link: https://ofcconf.wixsite.com/ofc2024
       title-tooltip: Visit the conference website
       date: Apr 2024
       place: Paris, FR.
-      pdf: Poster_2024_OFC-NeuroAI-AIBH
+      pdf: Poster_2024_OFC-NeuroAI-AIBH-ESCBC
     - title: Poster prize competition (1st prize).
       type: Poster
       title-link: https://www.ajites.fr/our-activities/poster-prize
@@ -128,6 +128,6 @@
     - title: Co-president of Cognivence.
       title-link: https://cognivence.scicog.fr/forum-des-sciences-cognitives/fsc2022/
       title-tooltip: Visit the cognitive science fair page (in French)
-      date: 2021 - 2022
+      date: Apr 2022
       details: >
         Organization of a large cognitive science fair for the general public.
