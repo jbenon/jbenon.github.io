@@ -71,6 +71,7 @@
       date: Dec 2024
       place: Lyon, FR.
       pdf: Poster_2024_Foraging
+      download-tooltip: Download
     - title: SNE, 22nd meeting of the Society for NeuroEconomics.
       type: Selected talk
       title-link: https://neuroeconomics.org/2024-meeting/
@@ -78,6 +79,7 @@
       date: Oct 2024
       place: Paris, FR.
       pdf: Slides_2024_SNE
+      download-tooltip: Download slides
     - title: AIBH, Artificial Intelligence in Biology and Health (best poster prize).
       type: Poster
       title-link: https://research.pasteur.fr/en/event/symposium-atc-ia-artificial-intelligence-in-biology-and-health-edition-2024/
@@ -85,6 +87,7 @@
       date: Oct 2024
       place: Paris, FR.
       pdf: Poster_2024_OFC-NeuroAI-AIBH-ESCBC
+      download-tooltip: Download (AIBH 2024, NeuroAI 2024, ESCBC 2024, OFC 2024)
     - title: NeuroAI, Thematic days Neuroscience & AI.
       type: Poster
       title-link: https://www.neurosciences.asso.fr/JT2024/
@@ -92,6 +95,7 @@
       date: May 2024
       place: Bordeaux, FR.
       pdf: Poster_2024_OFC-NeuroAI-AIBH-ESCBC
+      download-tooltip: Download (AIBH 2024, NeuroAI 2024, ESCBC 2024, OFC 2024)
     - title: OFC, 5th Orbitofrontal cortex meeting.
       type: Poster
       title-link: https://ofcconf.wixsite.com/ofc2024
@@ -99,6 +103,7 @@
       date: Apr 2024
       place: Paris, FR.
       pdf: Poster_2024_OFC-NeuroAI-AIBH-ESCBC
+      download-tooltip: Download (AIBH 2024, NeuroAI 2024, ESCBC 2024, OFC 2024)
     - title: Poster prize competition (1st prize).
       type: Poster
       title-link: https://www.ajites.fr/our-activities/poster-prize
@@ -106,6 +111,7 @@
       date: June 2023
       place: Paris Brain Institute, Paris, FR.
       pdf: Poster_2023_Ajites
+      download-tooltip: Download
     - title: SBDM, 11th Symposium on Biology of Decision-Making.
       type: Poster
       title-link: https://sbdm2023.sciencesconf.org/
@@ -113,6 +119,7 @@
       date: June 2023
       place: Paris, FR.
       pdf: Poster_2023_SBDM
+      download-tooltip: Download
 
 # ===== OUTREACH ===== #
 - title: Scientific and public outreach

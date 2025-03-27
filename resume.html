@@ -78,30 +78,41 @@ layout: default
         </div>
         <div class="col-10">
           <p>
+            <!-- Download icon -->
             {% if item.pdf %}
               <span>
-                <a class="icon-link link-underline link-underline-opacity-0" href="/assets/{{item.pdf}}.pdf"
-                  data-bs-toggle="tooltip" data-bs-title="Download" download>
-                  <i class="fa-solid fa-download"></i>
-                </a>&nbsp;
+                {% if item.download-tooltip %}
+                  <a class="icon-link link-underline link-underline-opacity-0" href="/assets/{{item.pdf}}.pdf"
+                    data-bs-toggle="tooltip" data-bs-title="{{item.download-tooltip}}" download>
+                    <i class="fa-solid fa-download"></i>
+                  </a>&nbsp;
+                {% else %}
+                  <a class="icon-link link-underline link-underline-opacity-0" href="/assets/{{item.pdf}}.pdf"
+                    data-bs-toggle="tooltip" data-bs-title="Download" download>
+                    <i class="fa-solid fa-download"></i>
+                  </a>&nbsp;
+                {% endif %}
               </span>
             {% endif %}
+            <!-- Poster / talk type -->
             {% if item.type %}
               <span class="fw-light">
                 [{{item.type}}]
               </span>
             {% endif %}
             <span>
-              {% if item.title-link %}
-                <a class="text-body link-underline-dark link-underline-opacity-0 link-underline-opacity-75-hover"
-                  href="{{item.title-link}}" data-bs-toggle="tooltip" data-bs-title="{{item.title-tooltip}}">
-                  {{item.title}}
-                </a>
-              {% else %}
+            <!-- Title link -->
+            {% if item.title-link %}
+              <a class="text-body link-underline-dark link-underline-opacity-0 link-underline-opacity-75-hover"
+                href="{{item.title-link}}" data-bs-toggle="tooltip" data-bs-title="{{item.title-tooltip}}">
                 {{item.title}}
-              {% endif %}
+              </a>
+            {% else %}
+              {{item.title}}
+            {% endif %}
             </span>
             <span class="text-secondary">
+              <!-- Location -->
               {% if item.place-link %}
                 <a class="text-secondary link-underline-dark link-underline-opacity-0 link-underline-opacity-75-hover"
                   href="{{item.place-link}}" data-bs-toggle="tooltip" data-bs-title="{{item.place-tooltip}}">
@@ -111,6 +122,7 @@ layout: default
                 {{item.place}}
               {% endif %}
             </span>
+            <!-- Details -->
             {% if item.details %}
             <span class="small">
               <br>{{item.details}}
