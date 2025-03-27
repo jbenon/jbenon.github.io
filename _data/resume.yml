@@ -45,7 +45,7 @@
     - title: Lecturer on the <span class="fst-italic">artificial intelligence applied to healthcare</span> course.
       title-link: https://odf.u-paris.fr/fr/offre-de-formation/diplome-d-universite-du-diu-1/sciences-technologies-sante-STS/du-intelligence-artificielle-ia-appliquee-en-sante-JXMZBK41.html
       title-tooltip: Visit the course page (in French)
-      date: Mar 2024
+      date: 2024 - 2025
       place: Université Paris Cité, Paris FR.
     - title: Teaching fellow in <span class="fst-italic">psychophysiology</span>.
       title-link: https://odf.u-paris.fr/fr/offre-de-formation/licence-XA/sciences-humaines-et-sociales-SHS/psychologie-K2NDLZCV/licence-psychologie-parcours-sciences-psychologiques-JT4FAPN6/bloc-fondamental-KLC5VZJY/psychophysiologie-3-KLC5YKP6.html
@@ -64,6 +64,13 @@
 # ===== POSTERS ===== #
 - title: Posters and talks
   items:
+    - title: Foraging conference.
+      type: Poster
+      title-link: https://sites.google.com/view/foragingconference/home
+      title-tooltip: Visit the conference website
+      date: Dec 2024
+      place: Lyon, FR.
+      pdf: Poster_2024_Foraging
     - title: SNE, 22nd meeting of the Society for NeuroEconomics.
       type: Selected talk
       title-link: https://neuroeconomics.org/2024-meeting/
