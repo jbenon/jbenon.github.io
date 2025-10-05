@@ -94,6 +94,22 @@ layout: default
                 {% endif %}
               </span>
             {% endif %}
+            <!-- Video icon -->
+            {% if item.video %}
+              <span>
+                {% if item.video-tooltip %}
+                  <a class="icon-link link-underline link-underline-opacity-0" href="{{item.video}}"
+                    data-bs-toggle="tooltip" data-bs-title="{{item.video-tooltip}}">
+                    <i class="fa-brands fa-youtube"></i>
+                  </a>&nbsp;
+                {% else %}
+                  <a class="icon-link link-underline link-underline-opacity-0" href="{{item.video}}"
+                  data-bs-toggle="tooltip" data-bs-title="Watch on YouTube"></a>
+                    <i class="fa-brands fa-youtube"></i>
+                  </a>&nbsp;
+                {% endif %}
+              </span>
+            {% endif %}
             <!-- Poster / talk type -->
             {% if item.type %}
               <span class="fw-light">

@@ -1,3 +1,24 @@
+# ===== PROFESSIONAL EXPERIENCE ===== #
+- title: Professional experience
+*
+  items:
+    - title: PhD student.
+      title-link: https://sites.google.com/site/motivationbrainbehavior/
+      title-tooltip: Visit the lab website
+      date: 2022 - 2025
+      place: Motivation Brain Behavior lab, Paris Brain Institute, Paris, FR.
+      place-link: https://sites.google.com/site/motivationbrainbehavior/
+      place-tooltip: Visit the lab website
+      video: https://youtu.be/nQLxdDOsAww
+      video-tooltip: Watch the defense
+      details: >
+        Supervised by: <a class="text-body link-underline-dark link-underline-opacity-0 link-underline-opacity-75-hover"
+        href="https://sites.google.com/site/jeandaunizeauswebsite" data-bs-toggle="tooltip"
+        data-bs-title="Visit Jean's personal website">Jean Daunizeau</a>.
+        \newline
+        Thesis title: A neuro-computational account of rationality costs in decision-making.
+
+
 # ===== EDUCATION ===== #
 - title: Education
   items:
@@ -5,13 +26,7 @@
       title-link: https://ed3c.sorbonne-universite.fr/en
       title-tooltip: Visit the doctoral school website
       date: 2022 - 2025
-      place: Motivation Brain Behavior lab, Paris Brain Institute, Paris, FR.
-      place-link: https://sites.google.com/site/motivationbrainbehavior/
-      place-tooltip: Visit the lab website
-      details: >
-        PI: <a class="text-body link-underline-dark link-underline-opacity-0 link-underline-opacity-75-hover"
-        href="https://sites.google.com/site/jeandaunizeauswebsite" data-bs-toggle="tooltip"
-        data-bs-title="Visit personal website">Jean Daunizeau</a>.
+      place: Sorbonne Université, Paris, FR.
     - title: MSc in Cognitive Science.
       title-link: https://cogmaster.ens.psl.eu/en
       title-tooltip: Visit the Cogmaster website
@@ -29,8 +44,15 @@
       place: Lycée Pierre Corneille, Rouen, FR.
 
 # ===== PUBLICATIONS ===== #
-- title: Publications
+- title: Publications and preprints
   publications:
+    - title: Biological profits of irrational computations in the orbitofrontal cortex
+      title-link: https://www.biorxiv.org/content/10.1101/2025.07.10.664081v1
+      title-tooltip: Access online
+      pdf: BenonDaunizeau2025_V1
+      citation: >
+        <b>Bénon, J.</b>, & Daunizeau, J. (2025). Biological profits of irrational computations in
+        the orbitofrontal cortex. <i>bioRxiv</i>.
     - title: The online metacognitive control of decisions
       title-link: https://www.nature.com/articles/s44271-024-00071-y
       title-tooltip: Access online
@@ -39,7 +61,7 @@
         <b>Bénon, J.</b>, Lee, D., Hopper, W., Verdeil, M., Pessiglione, M., Vinckier, F.,
         Bouret, S., Rouault, M., Lebouc, R., Pezzulo, G., Schreiweis, C., Burguière, E.,
         & Daunizeau, J. (2024). The online metacognitive control of decisions.
-        <i>Communications Psychology</i>, 2(1), 1–17.
+        <i>Communications Psychology</i>, 2(1), 1-17.
         
 # ===== TEACHING ===== #
 - title: Teaching
@@ -50,9 +72,9 @@
       date: 2024 - 2025
       place: Université Paris Cité, Paris FR.
     - title: Teaching fellow in <span class="fst-italic">psychophysiology</span>.
-      title-link: https://odf.u-paris.fr/fr/offre-de-formation/licence-XA/sciences-humaines-et-sociales-SHS/psychologie-K2NDLZCV/licence-psychologie-parcours-sciences-psychologiques-JT4FAPN6/bloc-fondamental-KLC5VZJY/psychophysiologie-3-KLC5YKP6.html
+      title-link: https://odf.u-paris.fr/fr/offre-de-formation/licence-XA/sciences-humaines-et-sociales-SHS/psychologie-K2NDLZCV/licence-psychologie-parcours-sciences-psychologiques-JT4FAPN6/bloc-fondamental-3-M835PQPH/ter-psychophysiologie-M836K1CF.html
       title-tooltip: Visit the course page (in French)
-      date: Jan - Apr 2023
+      date: 2023
       place: Institut de Psychologie, Boulogne-Billancourt, FR.
       
 # ===== FELLOWSHIPS ===== #
@@ -66,14 +88,22 @@
 # ===== POSTERS ===== #
 - title: Posters and talks
   items:
+    - title: SBDM, 12th Symposium on the Biology of Decision-Making.
+      type: Poster
+      title-link: https://sbdm2025.github.io/
+      title-tooltip: Visit the conference website
+      date: June 2025
+      place: Lyon, FR.
+      pdf: Poster_2024_Foraging_2025_SBDM
+      download-tooltip: Download (Foraging conf, SBDM 2025)
     - title: Foraging conference.
       type: Poster
       title-link: https://sites.google.com/view/foragingconference/home
       title-tooltip: Visit the conference website
       date: Dec 2024
       place: Lyon, FR.
-      pdf: Poster_2024_Foraging
-      download-tooltip: Download
+      pdf: Poster_2024_Foraging_2025_SBDM
+      download-tooltip: Download (Foraging conf, SBDM 2025)
     - title: SNE, 22nd meeting of the Society for NeuroEconomics.
       type: Selected talk
       title-link: https://neuroeconomics.org/2024-meeting/
@@ -114,7 +144,7 @@
       place: Paris Brain Institute, Paris, FR.
       pdf: Poster_2023_Ajites
       download-tooltip: Download
-    - title: SBDM, 11th Symposium on Biology of Decision-Making.
+    - title: SBDM, 11th Symposium on the Biology of Decision-Making.
       type: Poster
       title-link: https://sbdm2023.sciencesconf.org/
       title-tooltip: Visit the symposium website
