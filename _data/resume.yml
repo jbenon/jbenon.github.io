@@ -1,21 +1,39 @@
 # ===== PROFESSIONAL EXPERIENCE ===== #
 - title: Professional experience
   items:
-    - title: PhD student.
+    - title: PhD candidate.
       title-link: https://sites.google.com/site/motivationbrainbehavior/
       title-tooltip: Visit the lab website
       date: 2022 - 2025
       place: Motivation Brain Behavior lab, Paris Brain Institute, Paris, FR.
-      place-link: https://sites.google.com/site/motivationbrainbehavior/
-      place-tooltip: Visit the lab website
       video: https://youtu.be/nQLxdDOsAww
       video-tooltip: Watch the defense
       details: >
         Supervised by: <a class="text-body link-underline-dark link-underline-opacity-0 link-underline-opacity-75-hover"
         href="https://sites.google.com/site/jeandaunizeauswebsite" data-bs-toggle="tooltip"
         data-bs-title="Visit Jean's personal website">Jean Daunizeau</a>.
-        \newline
+        \n
         Thesis title: A neuro-computational account of rationality costs in decision-making.
+    - title: MSc intern.
+      title-link: https://sites.google.com/site/motivationbrainbehavior/
+      title-tooltip: Visit the lab website
+      date: 2021-2022
+      place: Motivation Brain Behavior lab, Paris Brain Institute, Paris, FR.
+      details: >
+        Supervised by: <a class="text-body link-underline-dark link-underline-opacity-0 link-underline-opacity-75-hover"
+        href="https://sites.google.com/site/jeandaunizeauswebsite" data-bs-toggle="tooltip"
+        data-bs-title="Visit Jean's personal website">Jean Daunizeau</a>.
+        \n
+        Project title: Neuro-computational modelling of value construction.
+    - title: BSc intern.
+      title-link: https://babylab.incc-paris.fr/en/
+      title-tooltip: Visit the lab website
+      date: 2021
+      place: Babylab, Integrative Neuroscience and Cognition Center, Paris, FR.
+      details: >
+        Supervised by: Véronique Izard.
+        \n
+        Project title: Modelling of auditory numerosity perception.
 
 
 # ===== EDUCATION ===== #
