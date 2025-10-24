@@ -21,13 +21,11 @@ layout: default
       </h3>
       <h6 class="text-secondary">PhD candidate in cognitive neuroscience.</h6>
       <p>
-        <a href="mailto:juliettebenon@gmail.com"
-        class="link-underline link-underline-opacity-0 text-body">
+        <a href="mailto:juliettebenon@gmail.com" class="link-underline link-underline-opacity-0 text-body">
           juliettebenon@gmail.com
         </a>
         &nbsp;|&nbsp;
-        <a href="https://jbenon.github.io"
-        class="link-underline link-underline-opacity-0 text-body">
+        <a href="https://jbenon.github.io" class="link-underline link-underline-opacity-0 text-body">
           jbenon.github.io
         </a>
       </p>
@@ -82,62 +80,78 @@ layout: default
           <p>
             <!-- Download icon -->
             {% if item.pdf %}
-              <span>
-                {% if item.download-tooltip %}
-                  <a class="icon-link link-underline link-underline-opacity-0" href="/assets/{{item.pdf}}.pdf"
-                    data-bs-toggle="tooltip" data-bs-title="{{item.download-tooltip}}" download>
-                    <i class="fa-solid fa-download"></i>
-                  </a>&nbsp;
-                {% else %}
-                  <a class="icon-link link-underline link-underline-opacity-0" href="/assets/{{item.pdf}}.pdf"
-                    data-bs-toggle="tooltip" data-bs-title="Download" download>
-                    <i class="fa-solid fa-download"></i>
-                  </a>&nbsp;
-                {% endif %}
-              </span>
+            <span>
+              {% if item.download-tooltip %}
+              <a class="icon-link link-underline link-underline-opacity-0" href="/assets/{{item.pdf}}.pdf"
+                data-bs-toggle="tooltip" data-bs-title="{{item.download-tooltip}}" download>
+                <i class="fa-solid fa-download"></i>
+              </a>&nbsp;
+              {% else %}
+              <a class="icon-link link-underline link-underline-opacity-0" href="/assets/{{item.pdf}}.pdf"
+                data-bs-toggle="tooltip" data-bs-title="Download" download>
+                <i class="fa-solid fa-download"></i>
+              </a>&nbsp;
+              {% endif %}
+            </span>
             {% endif %}
             <!-- Video icon -->
             {% if item.video %}
-              <span>
-                {% if item.video-tooltip %}
-                  <a class="icon-link link-underline link-underline-opacity-0" href="{{item.video}}"
-                    data-bs-toggle="tooltip" data-bs-title="{{item.video-tooltip}}">
-                    <i class="fa-brands fa-youtube"></i>
-                  </a>&nbsp;
-                {% else %}
-                  <a class="icon-link link-underline link-underline-opacity-0" href="{{item.video}}"
-                  data-bs-toggle="tooltip" data-bs-title="Watch on YouTube"></a>
-                    <i class="fa-brands fa-youtube"></i>
-                  </a>&nbsp;
-                {% endif %}
-              </span>
+            <span>
+              {% if item.video-tooltip %}
+              <a class="icon-link link-underline link-underline-opacity-0" href="{{item.video}}"
+                data-bs-toggle="tooltip" data-bs-title="{{item.video-tooltip}}">
+                <i class="fa-brands fa-youtube"></i>
+              </a>&nbsp;
+              {% else %}
+              <a class="icon-link link-underline link-underline-opacity-0" href="{{item.video}}"
+                data-bs-toggle="tooltip" data-bs-title="Watch on YouTube"></a>
+              <i class="fa-brands fa-youtube"></i>
+              </a>&nbsp;
+              {% endif %}
+            </span>
+            {% endif %}
+            <!-- URL icon -->
+            {% if item.url %}
+            <span>
+              {% if item.url-tooltip %}
+              <a class="icon-link link-underline link-underline-opacity-0" href="{{item.video}}"
+                data-bs-toggle="tooltip" data-bs-title="{{item.video-tooltip}}">
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </a>&nbsp;
+              {% else %}
+              <a class="icon-link link-underline link-underline-opacity-0" href="{{item.video}}"
+                data-bs-toggle="tooltip" data-bs-title="Access online"></a>
+              <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </a>&nbsp;
+              {% endif %}
+            </span>
             {% endif %}
             <!-- Poster / talk type -->
             {% if item.type %}
-              <span class="fw-light">
-                [{{item.type}}]
-              </span>
+            <span class="fw-light">
+              [{{item.type}}]
+            </span>
             {% endif %}
             <span>
-            <!-- Title link -->
-            {% if item.title-link %}
+              <!-- Title link -->
+              {% if item.title-link %}
               <a class="text-body link-underline-dark link-underline-opacity-0 link-underline-opacity-75-hover"
                 href="{{item.title-link}}" data-bs-toggle="tooltip" data-bs-title="{{item.title-tooltip}}">
                 {{item.title}}
               </a>
-            {% else %}
+              {% else %}
               {{item.title}}
-            {% endif %}
+              {% endif %}
             </span>
             <span class="text-secondary">
               <!-- Location -->
               {% if item.place-link %}
-                <a class="text-secondary link-underline-dark link-underline-opacity-0 link-underline-opacity-75-hover"
-                  href="{{item.place-link}}" data-bs-toggle="tooltip" data-bs-title="{{item.place-tooltip}}">
-                  {{item.place}}
-                </a>
-              {% else %}
+              <a class="text-secondary link-underline-dark link-underline-opacity-0 link-underline-opacity-75-hover"
+                href="{{item.place-link}}" data-bs-toggle="tooltip" data-bs-title="{{item.place-tooltip}}">
                 {{item.place}}
+              </a>
+              {% else %}
+              {{item.place}}
               {% endif %}
             </span>
             <!-- Details -->
@@ -157,5 +171,5 @@ layout: default
   {% endfor %}
 
   <!-- Blank space -->
-   <div style="height: 1.5cm;"></div>
+  <div style="height: 1.5cm;"></div>
 </div>
