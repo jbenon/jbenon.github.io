@@ -114,13 +114,13 @@ layout: default
             {% if item.url %}
             <span>
               {% if item.url-tooltip %}
-              <a class="icon-link link-underline link-underline-opacity-0" href="{{item.video}}"
-                data-bs-toggle="tooltip" data-bs-title="{{item.video-tooltip}}">
+              <a class="icon-link link-underline link-underline-opacity-0" href="{{item.url}}" data-bs-toggle="tooltip"
+                data-bs-title="{{item.url-tooltip}}">
                 <i class="fa-solid fa-arrow-up-right-from-square"></i>
               </a>&nbsp;
               {% else %}
-              <a class="icon-link link-underline link-underline-opacity-0" href="{{item.video}}"
-                data-bs-toggle="tooltip" data-bs-title="Access online"></a>
+              <a class="icon-link link-underline link-underline-opacity-0" href="{{item.url}}" data-bs-toggle="tooltip"
+                data-bs-title="Access online"></a>
               <i class="fa-solid fa-arrow-up-right-from-square"></i>
               </a>&nbsp;
               {% endif %}
