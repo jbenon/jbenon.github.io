@@ -7,14 +7,14 @@
       title-tooltip: Visit the doctoral school website
       date: 2022 - 2025
       place: Sorbonne Université, Paris, FR.
-    - title: MSc in Cognitive Science.
-      title-link: https://cogmaster.ens.psl.eu/en
-      title-tooltip: Visit the Cogmaster website
+    - title: MSc in Cognitive Science (Cogmaster).
+      title-link: https://master-cognitive-science.ens.psl.eu/en/ens-psl-ehess-masters-degree-cognitive-science-17277
+      title-tooltip: Visit the Cogmaster's successor website
       date: 2020 - 2022
       place: Université ENS-PSL, Paris, FR.
     - title: BSc in Mathematics.
-      title-link: https://math-info.u-paris.fr/licence-de-mathematiques/parcours-modelisation-et-simulation/
-      title-tooltip: Visit the BSc page (in French)
+      title-link: https://math-info.u-paris.fr/en/bachelor-in-mathematics/modeling-and-simulation-track/
+      title-tooltip: Visit the BSc page
       date: 2019 - 2020
       place: Université Paris Descartes, Paris, FR.
     - title: Preparatory classes MPSI / MP* (maths and physics).
