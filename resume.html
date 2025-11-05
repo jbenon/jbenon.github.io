@@ -78,6 +78,42 @@ layout: default
         </div>
         <div class="col-10">
           <p>
+            <!-- Include element details -->
+            <!-- Poster / talk type -->
+            {% if item.type %}
+            <span class="fw-light">
+              [{{item.type}}]
+            </span>
+            {% endif %}
+            <span>
+              <!-- Title link -->
+              {% if item.title-link %}
+              <a class="text-body link-underline-dark link-underline-opacity-0 link-underline-opacity-75-hover"
+                href="{{item.title-link}}" data-bs-toggle="tooltip" data-bs-title="{{item.title-tooltip}}">
+                {{item.title}}
+              </a>
+              {% else %}
+              {{item.title}}
+              {% endif %}
+            </span>
+            <span class="text-secondary">
+              <!-- Location -->
+              {% if item.place-link %}
+              <a class="text-secondary link-underline-dark link-underline-opacity-0 link-underline-opacity-75-hover"
+                href="{{item.place-link}}" data-bs-toggle="tooltip" data-bs-title="{{item.place-tooltip}}">
+                {{item.place}}
+              </a>
+              {% else %}
+              {{item.place}}
+              {% endif %}
+            </span>
+            <!-- Details -->
+            {% if item.details %}
+            <span class="small">
+              <br>{{item.details}}
+            </span>
+            {% endif %}
+            <!-- Include icons -->
             <!-- Download icon -->
             {% if item.pdf %}
             <span>
@@ -124,40 +160,6 @@ layout: default
               <i class="fa-solid fa-arrow-up-right-from-square d-print-none"></i>
               </a>&nbsp;
               {% endif %}
-            </span>
-            {% endif %}
-            <!-- Poster / talk type -->
-            {% if item.type %}
-            <span class="fw-light">
-              [{{item.type}}]
-            </span>
-            {% endif %}
-            <span>
-              <!-- Title link -->
-              {% if item.title-link %}
-              <a class="text-body link-underline-dark link-underline-opacity-0 link-underline-opacity-75-hover"
-                href="{{item.title-link}}" data-bs-toggle="tooltip" data-bs-title="{{item.title-tooltip}}">
-                {{item.title}}
-              </a>
-              {% else %}
-              {{item.title}}
-              {% endif %}
-            </span>
-            <span class="text-secondary">
-              <!-- Location -->
-              {% if item.place-link %}
-              <a class="text-secondary link-underline-dark link-underline-opacity-0 link-underline-opacity-75-hover"
-                href="{{item.place-link}}" data-bs-toggle="tooltip" data-bs-title="{{item.place-tooltip}}">
-                {{item.place}}
-              </a>
-              {% else %}
-              {{item.place}}
-              {% endif %}
-            </span>
-            <!-- Details -->
-            {% if item.details %}
-            <span class="small">
-              <br>{{item.details}}
             </span>
             {% endif %}
           </p>
