@@ -52,14 +52,14 @@ layout: default
       <div class="row justify-content-center">
         <div class="col">
           <p class="text-body">
-            <a class="icon-link link-underline link-underline-opacity-0" href="/assets/{{publication.pdf}}.pdf"
-              data-bs-toggle="tooltip" data-bs-title="Download" download>
-              <i class="fa-solid fa-download d-print-none"></i>
-            </a>&nbsp;
             <a class="text-primary link-underline link-underline-opacity-0 link-underline-opacity-75-hover"
               href="{{publication.title-link}}" data-bs-toggle="tooltip" data-bs-title="{{publication.title-tooltip}}">
               {{publication.title}}
             </a>
+            <a class="icon-link link-underline link-underline-opacity-0" href="/assets/{{publication.pdf}}.pdf"
+              data-bs-toggle="tooltip" data-bs-title="Download" download>
+              <i class="fa-solid fa-download d-print-none"></i>
+            </a>&nbsp;
             <br>
             {{publication.citation}}
           </p>
@@ -78,7 +78,7 @@ layout: default
         </div>
         <div class="col-10">
           <p>
-            <!-- Include element details -->
+            <!-- Include title and subtitle -->
             <!-- Poster / talk type -->
             {% if item.type %}
             <span class="fw-light">
@@ -107,12 +107,6 @@ layout: default
               {{item.place}}
               {% endif %}
             </span>
-            <!-- Details -->
-            {% if item.details %}
-            <span class="small">
-              <br>{{item.details}}
-            </span>
-            {% endif %}
             <!-- Include icons -->
             <!-- Download icon -->
             {% if item.pdf %}
@@ -160,6 +154,12 @@ layout: default
               <i class="fa-solid fa-arrow-up-right-from-square d-print-none"></i>
               </a>&nbsp;
               {% endif %}
+            </span>
+            {% endif %}
+            <!-- Include details -->
+            {% if item.details %}
+            <span class="small">
+              <br>{{item.details}}
             </span>
             {% endif %}
           </p>
