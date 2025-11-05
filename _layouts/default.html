@@ -14,27 +14,44 @@
     <!-- Custom CSS for printing -->
     <style>
         @media print {
-            .row{ /* Do not break page within a section */
+            .row {
+                /* Do not break page within a section */
                 page-break-inside: avoid;
             }
-            * { /* Print background elements */
-                -webkit-print-color-adjust: exact !important;   /* Chrome, Safari 6 – 15.3, Edge */
-                color-adjust: exact !important;                 /* Firefox 48 – 96 */
-                print-color-adjust: exact !important;           /* Firefox 97+, Safari 15.4+ */
+
+            * {
+                /* Print background elements */
+                -webkit-print-color-adjust: exact !important;
+                /* Chrome, Safari 6 – 15.3, Edge */
+                color-adjust: exact !important;
+                /* Firefox 48 – 96 */
+                print-color-adjust: exact !important;
+                /* Firefox 97+, Safari 15.4+ */
             }
+
             @page {
-                margin: 0; /* Hide headers and footers */
+                margin: 0;
+                /* Hide headers and footers */
             }
-            html
-            {
+
+            html {
                 margin-top: 1cm;
                 margin-bottom: 1cm;
                 margin-left: 0;
                 margin-right: 0;
             }
+
             body {
                 margin: 0;
                 transform: scale(0.9);
+            }
+
+            fa,
+            .fa-solid,
+            .fa-regular,
+            .fa-brands {
+                display: none !important;
+                /* Hide Font Awesome icons */
             }
         }
     </style>
