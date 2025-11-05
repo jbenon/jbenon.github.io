@@ -54,7 +54,7 @@ layout: default
           <p class="text-body">
             <a class="icon-link link-underline link-underline-opacity-0" href="/assets/{{publication.pdf}}.pdf"
               data-bs-toggle="tooltip" data-bs-title="Download" download>
-              <i class="fa-solid fa-download"></i>
+              <i class="fa-solid fa-download d-print-none"></i>
             </a>&nbsp;
             <a class="text-primary link-underline link-underline-opacity-0 link-underline-opacity-75-hover"
               href="{{publication.title-link}}" data-bs-toggle="tooltip" data-bs-title="{{publication.title-tooltip}}">
@@ -84,12 +84,12 @@ layout: default
               {% if item.download-tooltip %}
               <a class="icon-link link-underline link-underline-opacity-0" href="/assets/{{item.pdf}}.pdf"
                 data-bs-toggle="tooltip" data-bs-title="{{item.download-tooltip}}" download>
-                <i class="fa-solid fa-download"></i>
+                <i class="fa-solid fa-download d-print-none"></i>
               </a>&nbsp;
               {% else %}
               <a class="icon-link link-underline link-underline-opacity-0" href="/assets/{{item.pdf}}.pdf"
                 data-bs-toggle="tooltip" data-bs-title="Download" download>
-                <i class="fa-solid fa-download"></i>
+                <i class="fa-solid fa-download d-print-none"></i>
               </a>&nbsp;
               {% endif %}
             </span>
@@ -100,12 +100,12 @@ layout: default
               {% if item.video-tooltip %}
               <a class="icon-link link-underline link-underline-opacity-0" href="{{item.video}}"
                 data-bs-toggle="tooltip" data-bs-title="{{item.video-tooltip}}">
-                <i class="fa-brands fa-youtube"></i>
+                <i class="fa-brands fa-youtube d-print-none"></i>
               </a>&nbsp;
               {% else %}
               <a class="icon-link link-underline link-underline-opacity-0" href="{{item.video}}"
                 data-bs-toggle="tooltip" data-bs-title="Watch on YouTube"></a>
-              <i class="fa-brands fa-youtube"></i>
+              <i class="fa-brands fa-youtube d-print-none"></i>
               </a>&nbsp;
               {% endif %}
             </span>
@@ -116,12 +116,12 @@ layout: default
               {% if item.url-tooltip %}
               <a class="icon-link link-underline link-underline-opacity-0" href="{{item.url}}" data-bs-toggle="tooltip"
                 data-bs-title="{{item.url-tooltip}}">
-                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                <i class="fa-solid fa-arrow-up-right-from-square d-print-none"></i>
               </a>&nbsp;
               {% else %}
               <a class="icon-link link-underline link-underline-opacity-0" href="{{item.url}}" data-bs-toggle="tooltip"
                 data-bs-title="Access online"></a>
-              <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              <i class="fa-solid fa-arrow-up-right-from-square d-print-none"></i>
               </a>&nbsp;
               {% endif %}
             </span>
