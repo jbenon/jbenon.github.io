@@ -46,14 +46,16 @@
                 transform: scale(0.9);
             }
 
-            fa,
+            .fa,
             .fa-solid,
             .fa-regular,
-            .fa-brands {
+            .fa-brands,
+            [class*="fa-"]::before {
                 /* Hide Font Awesome icons */
                 display: none !important;
                 margin: 0 !important;
                 padding: 0 !important;
+                content: none !important;
             }
         }
     </style>
