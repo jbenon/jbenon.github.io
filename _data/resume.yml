@@ -1,31 +1,14 @@
 
-# ===== EDUCATION ===== #
-- title: Education
-  items:
-    - title: PhD in Cognitive Neuroscience.
-      title-link: https://ed3c.sorbonne-universite.fr/en
-      title-tooltip: Visit the doctoral school website
-      date: 2022 - 2025
-      place: Sorbonne Université, Paris, FR.
-    - title: MSc in Cognitive Science.
-      title-link: https://web.archive.org/web/20211215024508/https://cogmaster.ens.psl.eu/en/presentation-13509
-      title-tooltip: Visit the Cogmaster's website on the WayBackMachine
-      date: 2020 - 2022
-      place: Université ENS-PSL, Paris, FR.
-    - title: BSc in Mathematics.
-      title-link: https://math-info.u-paris.fr/en/bachelor-in-mathematics/modeling-and-simulation-track/
-      title-tooltip: Visit the BSc page
-      date: 2019 - 2020
-      place: Université Paris Descartes, Paris, FR.
-    - title: Preparatory classes MPSI / MP* (maths and physics).
-      title-link: https://en.wikipedia.org/wiki/Classe_pr%C3%A9paratoire_aux_grandes_%C3%A9coles
-      title-tooltip: Visit the Wikipedia page
-      date: 2017 - 2019
-      place: Lycée Pierre Corneille, Rouen, FR.
-
 # ===== PROFESSIONAL EXPERIENCE ===== #
 - title: Professional experience
   items:
+    - title: Postdoctoral researcher.
+      title-link: https://www.zne.uzh.ch/en/people/Neuroeconomics-and-Decision-Neuroscience.html
+      title-tooltip: Visit the lab website
+      date: 2026 - Ongoing
+      place: University of Zürich, Zürich, CH.
+      details: >
+        Supervised by: Christian Ruff.
     - title: PhD candidate.
       title-link: https://sites.google.com/site/motivationbrainbehavior/
       title-tooltip: Visit the lab website
@@ -59,6 +42,31 @@
         Supervised by: Véronique Izard.
         <br> Project title: Modelling of auditory numerosity perception.
 
+
+# ===== EDUCATION ===== #
+- title: Education
+  items:
+    - title: PhD in Cognitive Neuroscience.
+      title-link: https://ed3c.sorbonne-universite.fr/en
+      title-tooltip: Visit the doctoral school website
+      date: 2022 - 2025
+      place: Sorbonne Université, Paris, FR.
+    - title: MSc in Cognitive Science.
+      title-link: https://web.archive.org/web/20211215024508/https://cogmaster.ens.psl.eu/en/presentation-13509
+      title-tooltip: Visit the Cogmaster's website on the WayBackMachine
+      date: 2020 - 2022
+      place: Université ENS-PSL, Paris, FR.
+    - title: BSc in Mathematics.
+      title-link: https://math-info.u-paris.fr/en/bachelor-in-mathematics/modeling-and-simulation-track/
+      title-tooltip: Visit the BSc page
+      date: 2019 - 2020
+      place: Université Paris Descartes, Paris, FR.
+    - title: Preparatory classes MPSI / MP* (maths and physics).
+      title-link: https://en.wikipedia.org/wiki/Classe_pr%C3%A9paratoire_aux_grandes_%C3%A9coles
+      title-tooltip: Visit the Wikipedia page
+      date: 2017 - 2019
+      place: Lycée Pierre Corneille, Rouen, FR.
+  
 
 # ===== PUBLICATIONS ===== #
 - title: Publications and preprints
