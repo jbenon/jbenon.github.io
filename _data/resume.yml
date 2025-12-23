@@ -79,7 +79,16 @@
         Bouret, S., Rouault, M., Lebouc, R., Pezzulo, G., Schreiweis, C., Burguière, E.,
         & Daunizeau, J. (2024). The online metacognitive control of decisions.
         <i>Communications Psychology</i>, 2(1), 1-17.
-        
+
+# ===== FELLOWSHIPS ===== #
+- title: Fellowships
+  items:
+    - title: Three-years PhD fellowship from the doctoral school Cognition, Cerveau, Comportement (ED3C).
+      title-link: https://ed3c.sorbonne-universite.fr/en
+      title-tooltip: Visit the doctoral school website
+      date: 2022
+
+
 # ===== TEACHING ===== #
 - title: Teaching
   items:
@@ -93,14 +102,17 @@
       title-tooltip: Visit the course page (in French)
       date: 2023
       place: Institut de Psychologie, Boulogne-Billancourt, FR.
-      
-# ===== FELLOWSHIPS ===== #
-- title: Fellowships
+
+
+# ===== REVIEWING ===== #
+- title: Reviewing
   items:
-    - title: Three-years PhD fellowship from the doctoral school Cognition, Cerveau, Comportement (ED3C).
-      title-link: https://ed3c.sorbonne-universite.fr/en
-      title-tooltip: Visit the doctoral school website
-      date: 2022
+    - title: PLOS Computational Biology
+      title-link: https://journals.plos.org/ploscompbiol/
+      title-tooltip: Visit the journal website
+      date:
+      place: 
+    
         
 # ===== POSTERS ===== #
 - title: Posters and talks
@@ -113,6 +125,12 @@
       place: Lyon, FR.
       pdf: Poster_2024_Foraging_2025_SBDM
       download-tooltip: Download (Foraging conf, SBDM 2025)
+    - title: Neuroeconomics and Decision Neuroscience Group
+      type: Invited talk
+      title-link: https://www.zne.uzh.ch/en/people/Neuroeconomics-and-Decision-Neuroscience.html
+      title-tooltip: Visit the lab website
+      date: Feb 2025
+      place: Zürich Center for Neuroeconomics, University of Zürich, CH.
     - title: Foraging conference.
       type: Poster
       title-link: https://sites.google.com/view/foragingconference/home
