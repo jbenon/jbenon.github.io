@@ -30,7 +30,7 @@ cv:
         studyType: PhD
         start_date: 2022
         end_date: 2025
-        highlights: >
+        summary: >
           Supervised by Jean Daunizeau (Motivation, Brain, Behaviour team).
 
       - institution: Université ENS-PSL
