@@ -30,8 +30,8 @@ cv:
         studyType: PhD
         start_date: 2022
         end_date: 2025
-        highlights: >
-          Supervised by Jean Daunizeau (Motivation, Brain, Behaviour team).
+        highlights:
+          - Supervised by Jean Daunizeau (Motivation, Brain, Behaviour team).
 
       - institution: Université ENS-PSL
         location: Paris, FR
@@ -62,32 +62,32 @@ cv:
         location: Zürich, CH
         start_date: 2026
         end_date: present
-        highlights: >
-          Supervised by Christian Ruff (Zürich Center for Neuroeconomics).
+        highlights:
+          - Supervised by Christian Ruff (Zürich Center for Neuroeconomics).
 
       - company: Paris Brain Institute
         position: PhD candidate
         location: Paris, FR
         start_date: 2022
         end_date: 2025
-        highlights: >
-          Supervised by Jean Daunizeau (Motivation, Brain, Behaviour team).
+        highlights:
+          - Supervised by Jean Daunizeau (Motivation, Brain, Behaviour team).
 
       - company: Paris Brain Institute
         position: Master's intern
         location: Paris, FR
         start_date: 2021
         end_date: 2022
-        highlights: >
-          Supervised by Jean Daunizeau (Motivation, Brain, Behaviour team).
+        highlights:
+          - Supervised by Jean Daunizeau (Motivation, Brain, Behaviour team).
 
       - company: Integrative Neuroscience and Cognition Center
         position: Master's intern
         location: Paris, FR
         start_date: 2021
         end_date: 2021
-        highlights: >
-          Supervised by Véronique Izard (Babylab).
+        highlights:
+          - Supervised by Véronique Izard (Babylab).
 
     Volunteer:
       - company: People's Climate March
