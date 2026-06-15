@@ -4,22 +4,17 @@ cv:
   email: einstein@example.com
   location: Princeton, NJ
   image: ""
-  summary: A German-born theoretical physicist, widely ranked among the greatest and most influential scientists of all time
-
+  summary: Summary here
+ 
   sections:
     Education:
-      - institution: University of Zurich
-        location: Zurich, Switzerland
+      - institution: PhD - Cognitive science
+        location: Paris Brain Institute, Paris, FR
         url: https://www.uzh.ch/
-        area: Physics
         studyType: PhD
-        start_date: 1900
-        end_date: 1905
-        score: ""
-        courses: "Theory of Relativity"
-        highlights:
-          - Description 1.
-          - Description 2.
+        start_date: 2022
+        end_date: 2025
+        summary: "Supervised by Jean Daunizeau (Motivation, Brain, Behaviour team)."
 
       - institution: Eidgenössische Technische Hochschule
         location: Zurich, Switzerland
