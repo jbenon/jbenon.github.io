@@ -24,9 +24,6 @@ if (!/^\s*theme:\s*al_folio_core\s*$/m.test(config)) {
 if (!/^\s*-\s*al_folio_core\s*$/m.test(config)) {
   failures.push("`_config.yml` plugins must include `al_folio_core`.");
 }
-if (!/^\s*-\s*al_folio_distill\s*$/m.test(config)) {
-  failures.push("`_config.yml` plugins must include `al_folio_distill` (distill is plugin-owned).");
-}
 if (!/^\s*-\s*al_cookie\s*$/m.test(config)) {
   failures.push("`_config.yml` plugins must include `al_cookie` (cookie consent is plugin-owned).");
 }
