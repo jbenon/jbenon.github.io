@@ -8,23 +8,16 @@ cv:
  
   sections:
     Education:
-      - institution: PhD - Cognitive science
-        location: Paris Brain Institute, Paris, FR
-        url: https://www.uzh.ch/
-        studyType: PhD
+      - position: PhD - Cognitive science
+        company: Paris Brain Institute, Paris, FR
         start_date: 2022
         end_date: 2025
         summary: "Supervised by Jean Daunizeau (Motivation, Brain, Behaviour team)."
 
-      - institution: Eidgenössische Technische Hochschule
-        location: Zurich, Switzerland
-        area: Physics
-        studyType: Federal teaching diploma
-        start_date: 1896
-        end_date: 1900
-        highlights:
-          - Description 1.
-          - Description 2.
+      - position: Master - Cognitive science
+        company: Université ENS-PSL, Paris, FR
+        start_date: 2020
+        end_date: 2022
 
     Experience:
       - company: Institute for Advanced Study, Princeton University
