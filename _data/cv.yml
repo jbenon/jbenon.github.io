@@ -1,10 +1,10 @@
 cv:
-  name: Juliette Bénon
-  label: "Postdoctoral researcher"
-  email: juliette.benon@proton.me
-  location: Zürich, Switzerland
+  name: Albert Einstein
+  label: Scientist
+  email: einstein@example.com
+  location: Princeton, NJ
   image: ""
-  summary: ""
+  summary: A German-born theoretical physicist, widely ranked among the greatest and most influential scientists of all time
 
   social_networks:
     - network: X
@@ -23,71 +23,66 @@ cv:
 
   sections:
     Education:
-      - institution: Paris Brain Institute
-        location: Paris, FR
-        url: https://sites.google.com/site/motivationbrainbehavior/
-        area: Cognitive science
+      - institution: University of Zurich
+        location: Zurich, Switzerland
+        url: https://www.uzh.ch/
+        area: Physics
         studyType: PhD
-        start_date: 2022
-        end_date: 2025
+        start_date: 1900
+        end_date: 1905
+        score: ""
+        courses: "Theory of Relativity"
         highlights:
-          - Supervised by Jean Daunizeau (Motivation, Brain, Behaviour team).
+          - Description 1.
+          - Description 2.
 
-      - institution: Université ENS-PSL
-        location: Paris, FR
-        url: https://master-cognitive-science.ens.psl.eu/fr
-        area: Cognitive science - Computational modelling
-        studyType: Master's degree
-        start_date: 2020
-        end_date: 2022
+      - institution: Eidgenössische Technische Hochschule
+        location: Zurich, Switzerland
+        area: Physics
+        studyType: Federal teaching diploma
+        start_date: 1896
+        end_date: 1900
+        highlights:
+          - Description 1.
+          - Description 2.
 
-      - institution: Université Paris Descartes
-        location: Paris, FR
-        url: https://math-info.u-paris.fr/en/bachelor-in-mathematics/modeling-and-simulation-track/
-        area: Mathematics
-        studyType: Bachelor's degree
-        start_date: 2019
-        end_date: 2020
-
-      - institution: Lycée Pierre Corneille
-        location: Rouen, FR
-        area: Mathematics & Physics
-        studyType: Preparatory classes
-        start_date: 2017
-        end_date: 2019
-  
     Experience:
-      - company: Universität Zürich
-        position: Postdoctoral researcher
-        location: Zürich, CH
-        start_date: 2026
-        end_date: present
+      - company: Institute for Advanced Study, Princeton University
+        position: Professor of Theoretical Physics
+        location: Princeton University, NJ
+        start_date: 1933
+        end_date: 1955
+        summary: Teaching at Palmer Physical Laboratory (now 302 Frist Campus Center). While not a professor at Princeton, I associated with the physics professors and continued to give lectures on campus.
         highlights:
-          - Supervised by Christian Ruff (Zürich Center for Neuroeconomics).
+          - Relativity
+          - Description 2.
 
-      - company: Paris Brain Institute
-        position: PhD candidate
-        location: Paris, FR
-        start_date: 2022
-        end_date: 2025
+      - company: California Institute of Technology
+        position: Visiting Professor
+        location: Pasadena, California, US
+        start_date: 1933
+        end_date: 1933
         highlights:
-          - Supervised by Jean Daunizeau (Motivation, Brain, Behaviour team).
+          - Description 1.
+          - Description 2.
 
-      - company: Paris Brain Institute
-        position: Master's intern
-        location: Paris, FR
-        start_date: 2021
-        end_date: 2022
-        highlights:
-          - Supervised by Jean Daunizeau (Motivation, Brain, Behaviour team).
+      - company: Kaiser Wilhelm Institute for Physics
+        position: Director
+        location: Berlin, Germany
+        start_date: 1917
+        end_date: 1933
 
-      - company: Integrative Neuroscience and Cognition Center
-        position: Master's intern
-        location: Paris, FR
-        start_date: 2021
-        end_date: 2021
-        highlights:
-          - Supervised by Véronique Izard (Babylab).
+      - company: Karl-Ferdinand University
+        position: Professor of Theoretical Physics
+        location: Prague, Czechoslovakia
+        start_date: 1911
+        end_date: 1917
+
+      - company: University of Zurich
+        position: Associate Professor of Theoretical Physics
+        location: Zurich, Switzerland
+        start_date: 1909
+        end_date: 1911
 
     Volunteer:
       - company: People's Climate March
