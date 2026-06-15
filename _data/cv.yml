@@ -1,57 +1,52 @@
 cv:
   name: Juliette Bénon
-  label: Postdoctoral researcher
+  label: "Postdoctoral researcher"
   email: juliette.benon@proton.me
-  location: Zürich, Swutzerland
-  image:
-  summary:
-
-  social_networks:
-    - network: X
-      username: AlbertEinstein
-    - network: GitHub
-      username: example
-    - network: LinkedIn
-      username: example
-
-  address:
-    street: 2712 Broadway St
-    city: San Francisco
-    region: California
-    postalCode: CA 94115
-    countryCode: US
+  location: Zürich, Switzerland
+  image: ""
+  summary: ""
 
   sections:
+  # ===== EDUCATION ===== #
     Education:
-      - institution: University of Zurich
-        location: Zurich, Switzerland
-        url: https://www.uzh.ch/
-        area: Physics
+      - institution: Paris Brain Institute
+        location: Paris, FR
+        url: https://sites.google.com/site/motivationbrainbehavior/
+        area: Cognitive science
         studyType: PhD
-        start_date: 1900
-        end_date: 1905
-        score: ""
-        courses: "Theory of Relativity"
-        highlights:
-          - Description 1.
-          - Description 2.
+        start_date: 2022
+        end_date: 2025
+        highlights: >
+          Supervised by Jean Daunizeau (Motivation, Brain, Behaviour team).
 
-      - institution: Eidgenössische Technische Hochschule
-        location: Zurich, Switzerland
-        area: Physics
-        studyType: Federal teaching diploma
-        start_date: 1896
-        end_date: 1900
-        highlights:
-          - Description 1.
-          - Description 2.
+      - institution: Université ENS-PSL
+        location: Paris, FR
+        area: Cognitive science - Computational modelling
+        studyType: Master's degree
+        start_date: 2020
+        end_date: 2022
 
+      - institution: Université Paris Descartes
+        location: Paris, FR
+        area: Mathematics
+        studyType: Bachelor's degree
+        start_date: 2019
+        end_date: 2020
+
+      - institution: Lycée Pierre Corneille
+        location: Rouen, FR
+        area: Mathematics & Physics
+        studyType: Preparatory classes
+        start_date: 2017
+        end_date: 2019
+  
+    # ===== EXPERIENCE ===== #
     Experience:
-      - company: Institute for Advanced Study, Princeton University
-        position: Professor of Theoretical Physics
-        location: Princeton University, NJ
-        start_date: 1933
-        end_date: 1955
+      - company: Universität Zürich
+        position: Postdoctoral researcher
+        location: Zürich, CH
+        start_date: 2026
+        end_date: present
         summary: Teaching at Palmer Physical Laboratory (now 302 Frist Campus Center). While not a professor at Princeton, I associated with the physics professors and continued to give lectures on campus.
         highlights:
           - Relativity
