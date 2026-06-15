@@ -30,11 +30,12 @@ cv:
         studyType: PhD
         start_date: 2022
         end_date: 2025
-        summary: >
+        highlights: >
           Supervised by Jean Daunizeau (Motivation, Brain, Behaviour team).
 
       - institution: Université ENS-PSL
         location: Paris, FR
+        url: https://master-cognitive-science.ens.psl.eu/fr
         area: Cognitive science - Computational modelling
         studyType: Master's degree
         start_date: 2020
@@ -42,6 +43,7 @@ cv:
 
       - institution: Université Paris Descartes
         location: Paris, FR
+        url: https://math-info.u-paris.fr/en/bachelor-in-mathematics/modeling-and-simulation-track/
         area: Mathematics
         studyType: Bachelor's degree
         start_date: 2019
@@ -71,24 +73,21 @@ cv:
         highlights: >
           Supervised by Jean Daunizeau (Motivation, Brain, Behaviour team).
 
+      - company: Paris Brain Institute
+        position: Master's intern
+        location: Paris, FR
+        start_date: 2021
+        end_date: 2022
+        highlights: >
+          Supervised by Jean Daunizeau (Motivation, Brain, Behaviour team).
 
-      - company: Kaiser Wilhelm Institute for Physics
-        position: Director
-        location: Berlin, Germany
-        start_date: 1917
-        end_date: 1933
-
-      - company: Karl-Ferdinand University
-        position: Professor of Theoretical Physics
-        location: Prague, Czechoslovakia
-        start_date: 1911
-        end_date: 1917
-
-      - company: University of Zurich
-        position: Associate Professor of Theoretical Physics
-        location: Zurich, Switzerland
-        start_date: 1909
-        end_date: 1911
+      - company: Integrative Neuroscience and Cognition Center
+        position: Master's intern
+        location: Paris, FR
+        start_date: 2021
+        end_date: 2021
+        highlights: >
+          Supervised by Véronique Izard (Babylab).
 
     Volunteer:
       - company: People's Climate March
