@@ -6,8 +6,22 @@ cv:
   image: ""
   summary: ""
 
+  social_networks:
+    - network: X
+      username: AlbertEinstein
+    - network: GitHub
+      username: example
+    - network: LinkedIn
+      username: example
+
+  address:
+    street: 2712 Broadway St
+    city: San Francisco
+    region: California
+    postalCode: CA 94115
+    countryCode: US
+
   sections:
-  # ===== EDUCATION ===== #
     Education:
       - institution: Paris Brain Institute
         location: Paris, FR
@@ -40,26 +54,23 @@ cv:
         start_date: 2017
         end_date: 2019
   
-    # ===== EXPERIENCE ===== #
     Experience:
       - company: Universität Zürich
         position: Postdoctoral researcher
         location: Zürich, CH
         start_date: 2026
         end_date: present
-        summary: Teaching at Palmer Physical Laboratory (now 302 Frist Campus Center). While not a professor at Princeton, I associated with the physics professors and continued to give lectures on campus.
-        highlights:
-          - Relativity
-          - Description 2.
+        highlights: >
+          Supervised by Christian Ruff (Zürich Center for Neuroeconomics).
 
-      - company: California Institute of Technology
-        position: Visiting Professor
-        location: Pasadena, California, US
-        start_date: 1933
-        end_date: 1933
-        highlights:
-          - Description 1.
-          - Description 2.
+      - company: Paris Brain Institute
+        position: PhD candidate
+        location: Paris, FR
+        start_date: 2022
+        end_date: 2025
+        highlights: >
+          Supervised by Jean Daunizeau (Motivation, Brain, Behaviour team).
+
 
       - company: Kaiser Wilhelm Institute for Physics
         position: Director
