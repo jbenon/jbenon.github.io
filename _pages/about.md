@@ -25,7 +25,7 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-### **Hi!**
+### Hi!
 
 I am a cognitive neuroscience postdoctoral researcher, currently working in
 [Christian Ruff's team](https://www.zne.uzh.ch/en/people/Neuroeconomics-and-Decision-Neuroscience.html) at the University of Zürich.
