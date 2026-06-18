@@ -99,8 +99,8 @@ cv:
         journal: Communications Psychology
         doi: doi.org/10.1038/s44271-024-00071-y
         date: 2024
-        volume: 2
-        number: 1
+        volume: "2"
+        number: "1"
         pages: "1-17"
         url: https://en.wikisource.org/wiki/Translation:On_the_Electrodynamics_of_Moving_Bodies
 
