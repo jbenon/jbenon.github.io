@@ -8,14 +8,14 @@ cv:
 
   sections:
     Education:
-      - position: PhD - Cognitive science
-        company: Paris Brain Institute, Paris, FR
+      - studyType: PhD - Cognitive science
+        institution: Paris Brain Institute, Paris, FR
         start_date: 2022
         end_date: 2025
-        summary: "Supervised by Jean Daunizeau (Motivation, Brain, Behaviour team)."
+        area: "Supervised by Jean Daunizeau (Motivation, Brain, Behaviour team)."
 
-      - position: Master - Cognitive science
-        company: Université ENS-PSL, Paris, FR
+      - studyType: Master - Cognitive science
+        institution: Université ENS-PSL, Paris, FR
         start_date: 2020
         end_date: 2022
 
