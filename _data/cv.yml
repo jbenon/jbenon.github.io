@@ -6,17 +6,31 @@ cv:
 
   sections:
     Education:
-      - degree: PhD - Cognitive science
+      - degree: PhD
+        area: Cognitive science
         institution: Paris Brain Institute, Paris, FR
         start_date: 2022
         end_date: 2025
-        area: "Supervised by Jean Daunizeau (Motivation, Brain, Behaviour team)."
+        highlights: >
+          - Supervised by Jean Daunizeau (Motivation, Brain, Behaviour team).
 
-      - degree: Master - Cognitive science
+      - degree: MSc
+        area: Cognitive science
         institution: Université ENS-PSL, Paris, FR
         start_date: 2020
         end_date: 2022
-        area: "Blabla"
+
+      - degree: BSc
+        area: Mathematics
+        institution: Université Paris Descartes, Paris, FR
+        start_date: 2019
+        end_date: 2020
+
+      - degree: Preparatory classes
+        area: Mathematics & Physics
+        institution: Lycée Pierre Corneille, Rouen, FR
+        start_date: 2017
+        end_date: 2019
 
     Experience:
       - company: Institute for Advanced Study, Princeton University
