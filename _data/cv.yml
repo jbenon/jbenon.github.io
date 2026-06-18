@@ -31,7 +31,7 @@ cv:
         end_date: 2021
         highlights:
           - "Supervisor: Véronique Izard (Babylab)."
-    
+
     Education:
       - degree: PhD
         area: Cognitive science
@@ -41,7 +41,7 @@ cv:
         highlights:
           - "Supervisor: Jean Daunizeau"
           - "Thesis: A neuro-computational account of rationality costs in decision-making"
-          
+
       - degree: MSc
         area: Cognitive science
         institution: Université ENS-PSL, Paris, FR
@@ -83,7 +83,7 @@ cv:
     Publications:
       - title: The online metacognitive control of decisions
         authors:
-          - *Juliette Bénon*
+          - "*Juliette Bénon*"
           - Douglas Lee
           - William Hopper
           - Morgan Verdeil
@@ -95,13 +95,13 @@ cv:
           - Giovanni Pezzulo
           - Christiane Schreiweis
           - Éric Burguière
-          - Jean Daunizeau 
+          - Jean Daunizeau
         journal: Communications Psychology
         doi: doi.org/10.1038/s44271-024-00071-y
         date: 2024
         volume: 2
         number: 1
-        pages: 1-17
+        pages: "1-17"
         url: https://en.wikisource.org/wiki/Translation:On_the_Electrodynamics_of_Moving_Bodies
 
     Invited talks:
@@ -114,10 +114,10 @@ cv:
       - position: Neuroeconomics and Decision Neuroscience Group
         company: Universität Zürich, CH
         date: Feb 2025
-      
+
     Reviewing:
       - Communications Psychology, eLife, Journal of Neuroscience, PLOS Computational Biology
-      
+
     Outreach and service:
       - name: Local organizing committee of the Orbitofrontal cortex meeting
         date: 2024
