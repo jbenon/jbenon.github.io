@@ -1,23 +1,22 @@
 cv:
   name: Albert Einstein
-  label: Scientist
+  headline: Scientist
   email: einstein@example.com
   location: Princeton, NJ
-  image: ""
-  summary: Summary here
 
   sections:
     Education:
-      - studyType: PhD - Cognitive science
+      - degree: PhD - Cognitive science
         institution: Paris Brain Institute, Paris, FR
         start_date: 2022
         end_date: 2025
         area: "Supervised by Jean Daunizeau (Motivation, Brain, Behaviour team)."
 
-      - studyType: Master - Cognitive science
+      - degree: Master - Cognitive science
         institution: Université ENS-PSL, Paris, FR
         start_date: 2020
         end_date: 2022
+        area: "Blabla"
 
     Experience:
       - company: Institute for Advanced Study, Princeton University
