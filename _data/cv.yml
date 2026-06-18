@@ -80,29 +80,33 @@ cv:
         start_date: 2022
         end_date: 2025
 
-    Publications:
-      - title: The online metacognitive control of decisions
+    Publications & Preprints:
+      - title: "[Irrational decisions reflect robustness constraints on value computations implemented by orbitofrontal circuits](http://doi.org/10.1101/2025.07.10.664081)"
         authors:
-          - "*Juliette Bénon*"
-          - Douglas Lee
-          - William Hopper
-          - Morgan Verdeil
-          - Mathias Pessiglione
-          - Fabien Vinckier
-          - Sébastien Bouret
-          - Marion Rouault
-          - Raphaël Le Bouc
-          - Giovanni Pezzulo
-          - Christiane Schreiweis
-          - Éric Burguière
-          - Jean Daunizeau
+          - "**Bénon, J.**"
+          - Pessiglione, M.
+          - Vinckier, F.
+          - Daunizeau, J.
+        journal: bioRxiv
+        date: 2026
+
+      - title: "[The online metacognitive control of decisions](http://doi.org/10.1038/s44271-024-00071-y)"
+        authors:
+          - "**Bénon, J.**"
+          - Lee, D.
+          - Hopper, W.
+          - Verdeil, M.
+          - Pessiglione, M.
+          - Vinckier, F.
+          - Bouret, S.
+          - Rouault, M.
+          - Le Bouc, R.
+          - Pezzulo, G.
+          - Schreiweis, C.
+          - Burguière, É.
+          - Daunizeau, J.
         journal: Communications Psychology
-        doi: doi.org/10.1038/s44271-024-00071-y
         date: 2024
-        volume: "2"
-        number: "1"
-        pages: "1-17"
-        url: https://en.wikisource.org/wiki/Translation:On_the_Electrodynamics_of_Moving_Bodies
 
     Invited talks:
       - position: Cognitive Noise Workshop
