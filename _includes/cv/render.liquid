@@ -1,39 +1,39 @@
 <style>
-  /* ── RenderCV-inspired styles ─────────────────────────────────────── */
-  .rcv-wrap { font-family: "Source Sans 3", "Source Sans Pro", sans-serif; color: #000; max-width: 860px; margin: 0 auto; }
+  /* ── RenderCV-inspired styles, using al-folio theme variables ──────── */
+  .rcv-wrap { font-family: "Source Sans 3", "Source Sans Pro", sans-serif; color: var(--global-text-color); max-width: 860px; margin: 0 auto; }
 
   /* Header */
   .rcv-header { text-align: center; margin-bottom: 1.4rem; }
   .rcv-name {
     font-size: 2rem; font-weight: 700; font-variant: small-caps; letter-spacing: 0.04em;
-    color: #004f90; margin: 0 0 0.25rem;
+    color: var(--global-theme-color); margin: 0 0 0.25rem;
   }
-  .rcv-headline { font-size: 1.1rem; font-weight: 700; color: #004f90; margin: 0 0 0.5rem; }
+  .rcv-headline { font-size: 1.1rem; font-weight: 700; color: var(--global-theme-color); margin: 0 0 0.5rem; }
   .rcv-connections { display: flex; justify-content: center; flex-wrap: wrap; gap: 0 1rem; font-size: 0.92rem; }
-  .rcv-connections a { color: #004f90; text-decoration: none; }
-  .rcv-connections a:hover { text-decoration: underline; }
-  .rcv-connections .rcv-sep { color: #aaa; }
+  .rcv-connections a { color: var(--global-theme-color); text-decoration: none; }
+  .rcv-connections a:hover { color: var(--global-hover-color); text-decoration: underline; }
+  .rcv-connections .rcv-sep { color: var(--global-text-color-light); }
 
   /* Section titles */
   .rcv-section { margin-top: 1.1rem; }
   .rcv-section-title {
     display: flex; align-items: center; gap: 0.55rem;
     font-size: 1rem; font-weight: 700; font-variant: small-caps; letter-spacing: 0.05em;
-    color: #004f90; margin-bottom: 0.45rem;
+    color: var(--global-theme-color); margin-bottom: 0.45rem;
   }
   .rcv-section-title span { text-transform: uppercase; }
   .rcv-section-title::after {
-    content: ""; flex: 1; height: 0.5pt; background: #004f90; opacity: 0.55;
+    content: ""; flex: 1; height: 0.5pt; background: var(--global-theme-color); opacity: 0.55;
   }
 
   /* Entries */
   .rcv-entry { display: flex; gap: 0.6rem; margin-bottom: 0.55rem; align-items: baseline; }
   .rcv-entry:last-child { margin-bottom: 0; }
-  .rcv-entry-main { flex: 1; font-size: 0.92rem; line-height: 1.45; }
+  .rcv-entry-main { flex: 1; font-size: 0.92rem; line-height: 1.45; color: var(--global-text-color); }
   .rcv-entry-main p { margin: 0; }
   .rcv-entry-date {
     width: 7rem; min-width: 7rem; text-align: right; font-size: 0.83rem;
-    color: #333; white-space: nowrap; padding-top: 0.05rem;
+    color: var(--global-text-color-light); white-space: nowrap; padding-top: 0.05rem;
   }
 
   .rcv-entry-main strong { font-weight: 700; }
@@ -44,11 +44,11 @@
   .rcv-highlights li { margin-bottom: 0; line-height: 1.4; }
 
   /* Links */
-  .rcv-entry-main a { color: #004f90; text-decoration: none; }
-  .rcv-entry-main a:hover { text-decoration: underline; }
+  .rcv-entry-main a { color: var(--global-theme-color); text-decoration: none; }
+  .rcv-entry-main a:hover { color: var(--global-hover-color); text-decoration: underline; }
 
   /* Plain-text sections */
-  .rcv-plain { font-size: 0.92rem; line-height: 1.5; }
+  .rcv-plain { font-size: 0.92rem; line-height: 1.5; color: var(--global-text-color); }
 </style>
 
 <div class="post">
