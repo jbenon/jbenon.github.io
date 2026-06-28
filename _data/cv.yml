@@ -10,27 +10,27 @@ cv:
         company: Universität Zürich, CH
         start_date: 2026
         highlights:
-          - "Supervisor: Christian Ruff (Neuroeconomics and Decision Neuroscience group)"
+          - "Supervisor: [Christian Ruff](https://www.econ.uzh.ch/en/people/faculty/ruff.html) (Neuroeconomics and Decision Neuroscience group)"
 
       - position: PhD candidate
         company: Paris Brain Institute, FR
         start_date: 2022
         end_date: 2025
         highlights:
-          - "Supervisor: Jean Daunizeau (Motivation Brain Behaviour team)"
+          - "Supervisor: [Jean Daunizeau](https://sites.google.com/site/jeandaunizeauswebsite/home) (Motivation Brain Behaviour team)"
 
       - position: MSc intern
         company: Paris Brain Institute, FR
         start_date: 2021
         end_date: 2022
         highlights:
-          - "Supervisor: Jean Daunizeau (Motivation Brain Behaviour team)"
+          - "Supervisor: [Jean Daunizeau](https://sites.google.com/site/jeandaunizeauswebsite/home) (Motivation Brain Behaviour team)"
 
       - position: MSc intern
         company: Integrative Neuroscience and Cognition Center, Paris, FR
         end_date: 2021
         highlights:
-          - "Supervisor: Véronique Izard (Babylab)."
+          - "Supervisor: [Véronique Izard](https://babylab.incc-paris.fr/en/veronique-izard-en/) (Babylab)."
 
     Education:
       - degree: PhD
@@ -39,7 +39,7 @@ cv:
         start_date: 2022
         end_date: 2025
         highlights:
-          - "Supervisor: Jean Daunizeau"
+          - "Supervisor: [Jean Daunizeau](https://sites.google.com/site/jeandaunizeauswebsite/home)"
           - "Thesis: A neuro-computational account of rationality costs in decision-making"
 
       - degree: MSc
@@ -66,13 +66,13 @@ cv:
         start_date: 2024
         end_date: 2025
         highlights:
-          - "Course: Artificial intelligence applied to healthcare (for all levels)."
+          - "Course: [Artificial intelligence applied to healthcare](https://odf.u-paris.fr/fr/offre-de-formation/diplome-d-universite-du-diu-1/sciences-technologies-sante-STS/du-intelligence-artificielle-ia-appliquee-en-sante-JXMZBK41.html) (all levels)."
 
       - position: Teaching fellow
-        company: Institut de Psychologie, Boulogne-Billancourt, FR
+        company: Université Paris Cité, FR
         end_date: 2023
         highlights:
-          - "Course: physiology (for final BSc year students)."
+          - "Course: [Psychophysiology](https://odf.u-paris.fr/fr/offre-de-formation/licence-XA/sciences-humaines-et-sociales-SHS/psychologie-K2NDLZCV/licence-psychologie-parcours-sciences-psychologiques-JT4FAPN6.html) (final BSc year students)."
 
     Funding:
       - name: Doctoral school Cerveau, Cognition, Comportement (ED3C)
@@ -130,4 +130,4 @@ cv:
       - name: Co-president of Cognivence
         start_date: 2021
         end_date: 2022
-        summary: Organization of a large cognitive science fair for the general public.
+        summary: Organization of a [large cognitive science fair](https://cognivence.scicog.fr/forum-des-sciences-cognitives/fsc2022/) for the general public.
