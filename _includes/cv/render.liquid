@@ -1,3 +1,56 @@
+<style>
+  /* ── RenderCV-inspired styles ─────────────────────────────────────── */
+  .rcv-wrap { font-family: "Source Sans 3", "Source Sans Pro", sans-serif; color: #000; max-width: 860px; margin: 0 auto; }
+
+  /* Header */
+  .rcv-header { text-align: center; margin-bottom: 1.4rem; }
+  .rcv-name {
+    font-size: 2rem; font-weight: 700; font-variant: small-caps; letter-spacing: 0.04em;
+    color: #004f90; margin: 0 0 0.25rem;
+  }
+  .rcv-headline { font-size: 1.1rem; font-weight: 700; color: #004f90; margin: 0 0 0.5rem; }
+  .rcv-connections { display: flex; justify-content: center; flex-wrap: wrap; gap: 0 1rem; font-size: 0.92rem; }
+  .rcv-connections a { color: #004f90; text-decoration: none; }
+  .rcv-connections a:hover { text-decoration: underline; }
+  .rcv-connections .rcv-sep { color: #aaa; }
+
+  /* Section titles */
+  .rcv-section { margin-top: 1.1rem; }
+  .rcv-section-title {
+    display: flex; align-items: center; gap: 0.55rem;
+    font-size: 1rem; font-weight: 700; font-variant: small-caps; letter-spacing: 0.05em;
+    color: #004f90; margin-bottom: 0.45rem;
+  }
+  .rcv-section-title span { text-transform: uppercase; }
+  .rcv-section-title::after {
+    content: ""; flex: 1; height: 0.5pt; background: #004f90; opacity: 0.55;
+  }
+
+  /* Entries */
+  .rcv-entry { display: flex; gap: 0.6rem; margin-bottom: 0.55rem; align-items: baseline; }
+  .rcv-entry:last-child { margin-bottom: 0; }
+  .rcv-entry-main { flex: 1; font-size: 0.92rem; line-height: 1.45; }
+  .rcv-entry-main p { margin: 0; }
+  .rcv-entry-date {
+    width: 7rem; min-width: 7rem; text-align: right; font-size: 0.83rem;
+    color: #333; white-space: nowrap; padding-top: 0.05rem;
+  }
+
+  .rcv-entry-main strong { font-weight: 700; }
+  .rcv-entry-main em { font-style: italic; }
+
+  /* Highlights */
+  .rcv-highlights { margin: 0.15rem 0 0 0.5rem; padding-left: 0.9rem; font-size: 0.9rem; }
+  .rcv-highlights li { margin-bottom: 0; line-height: 1.4; }
+
+  /* Links */
+  .rcv-entry-main a { color: #004f90; text-decoration: none; }
+  .rcv-entry-main a:hover { text-decoration: underline; }
+
+  /* Plain-text sections */
+  .rcv-plain { font-size: 0.92rem; line-height: 1.5; }
+</style>
+
 <div class="post">
   <header class="post-header">
     <h1 class="post-title">
@@ -23,252 +76,226 @@
   </header>
 
   <article>
-    <div class="cv">
+    <div class="rcv-wrap">
       {% assign cv = site.data.cv.cv %}
 
-      <!-- Header/Contact Information -->
+      <!-- ── Header ───────────────────────────────────────────────── -->
       {% if cv.name or cv.headline or cv.email or cv.phone or cv.website %}
-        <div class="card mt-3 p-3">
-          <h3 class="card-title font-weight-medium">Contact Information</h3>
-          <table class="table table-cv table-sm table-borderless">
-            {% if cv.name %}
-              <tr>
-                <td class="p-1 pr-2 font-weight-bold"><b>Name</b></td>
-                <td class="p-1 pl-2 font-weight-light">{{ cv.name }}</td>
-              </tr>
-            {% endif %}
-            {% if cv.headline %}
-              <tr>
-                <td class="p-1 pr-2 font-weight-bold"><b>Title</b></td>
-                <td class="p-1 pl-2 font-weight-light">{{ cv.headline }}</td>
-              </tr>
-            {% endif %}
+        <div class="rcv-header">
+          {% if cv.name %}
+            <div class="rcv-name">{{ cv.name }}</div>
+          {% endif %}
+          {% if cv.headline %}
+            <div class="rcv-headline">{{ cv.headline }}</div>
+          {% endif %}
+          <div class="rcv-connections">
             {% if cv.email %}
-              <tr>
-                <td class="p-1 pr-2 font-weight-bold"><b>Email</b></td>
-                <td class="p-1 pl-2 font-weight-light">{{ cv.email }}</td>
-              </tr>
+              <a href="mailto:{{ cv.email }}">
+                <i class="fa-solid fa-envelope"></i> {{ cv.email }}
+              </a>
             {% endif %}
             {% if cv.phone %}
-              <tr>
-                <td class="p-1 pr-2 font-weight-bold"><b>Phone</b></td>
-                <td class="p-1 pl-2 font-weight-light">{{ cv.phone }}</td>
-              </tr>
+              <span class="rcv-sep">|</span>
+              <span><i class="fa-solid fa-phone"></i> {{ cv.phone }}</span>
             {% endif %}
             {% if cv.website %}
-              <tr>
-                <td class="p-1 pr-2 font-weight-bold"><b>Website</b></td>
-                <td class="p-1 pl-2 font-weight-light">
-                  <a href="{{ cv.website }}" target="_blank">{{ cv.website }}</a>
-                </td>
-              </tr>
+              <span class="rcv-sep">|</span>
+              <a href="{{ cv.website }}" target="_blank" rel="noopener noreferrer">
+                <i class="fa-solid fa-globe"></i> {{ cv.website | remove: 'https://' | remove: 'http://' }}
+              </a>
             {% endif %}
-          </table>
+          </div>
         </div>
       {% endif %}
 
-      <!-- All sections, in the order defined in cv.yml -->
+      <!-- ── Sections ─────────────────────────────────────────────── -->
       {% for section_pair in cv.sections %}
         {% assign section_title = section_pair[0] %}
         {% assign section_entries = section_pair[1] %}
 
-        <a class="anchor" id="{{ section_title | slugify }}"></a>
-        <div class="card mt-3 p-3">
-          <h3 class="card-title font-weight-medium">{{ section_title }}</h3>
-          <div>
+        <div class="rcv-section">
+          <a class="anchor" id="{{ section_title | slugify }}"></a>
+          <div class="rcv-section-title"><span>{{ section_title }}</span></div>
 
-            {% if section_title == 'Experience' or section_title == 'Teaching' %}
-              {% assign entries = section_entries %}
-              {% include cv/experience.liquid %}
-
-            {% elsif section_title == 'Education' %}
-              {% assign entries = section_entries %}
-              {% include cv/education.liquid %}
-
-            {% elsif section_title == 'Publications' or section_title == 'Publications & Preprints' %}
-              {% assign entries = section_entries %}
-              {% include cv/publications.liquid %}
-
-            {% elsif section_title == 'Awards' or section_title == 'Honors and Awards' %}
-              {% assign entries = section_entries %}
-              {% include cv/awards.liquid %}
-
-            {% elsif section_title == 'Skills' %}
-              {% assign entries = section_entries %}
-              {% include cv/skills.liquid %}
-
-            {% elsif section_title == 'Languages' %}
-              {% assign entries = section_entries %}
-              {% include cv/languages.liquid %}
-
-            {% elsif section_title == 'Interests' or section_title == 'Academic Interests' %}
-              {% assign entries = section_entries %}
-              {% include cv/interests.liquid %}
-
-            {% elsif section_title == 'Certificates' %}
-              {% assign entries = section_entries %}
-              {% include cv/certificates.liquid %}
-
-            {% elsif section_title == 'Projects' or section_title == 'Open Source Projects' %}
-              {% assign entries = section_entries %}
-              {% include cv/projects.liquid %}
-
-            {% elsif section_title == 'References' %}
-              {% assign entries = section_entries %}
-              {% include cv/references.liquid %}
-
-            {% elsif section_title == 'Invited talks' %}
-              <!-- Invited talks: position = talk title, company = venue, date = date -->
-              <ul class="card-text font-weight-light list-group list-group-flush">
-                {% for entry in section_entries %}
-                  <li class="list-group-item">
-                    <div class="row">
-                      {% if entry.date %}
-                        <div class="col-xs-2 col-sm-2 col-md-2 text-center date-column">
-                          <table class="table-cv">
-                            <tbody>
-                              <tr>
-                                <td>
-                                  <span class="badge font-weight-bold danger-color-dark text-uppercase align-middle" style="min-width: 75px">
-                                    {{ entry.date }}
-                                  </span>
-                                </td>
-                              </tr>
-                            </tbody>
-                          </table>
-                        </div>
-                        <div class="col-xs-10 col-sm-10 col-md-10 mt-2 mt-md-0">
-                      {% else %}
-                        <div class="col-xs-12 col-sm-12 col-md-12">
-                      {% endif %}
-                          {% if entry.position %}
-                            <h6 class="title font-weight-bold ml-1 ml-md-4">{{ entry.position }}</h6>
-                          {% endif %}
-                          {% if entry.company %}
-                            <h6 class="ml-1 ml-md-4" style="font-size: 0.95rem">{{ entry.company }}</h6>
-                          {% endif %}
-                        </div>
-                    </div>
-                  </li>
-                {% endfor %}
-              </ul>
-
-            {% elsif section_title == 'Funding' %}
-              <!-- Funding: name = fellowship name, summary = description, start_date/end_date = years -->
-              <ul class="card-text font-weight-light list-group list-group-flush">
-                {% for entry in section_entries %}
-                  <li class="list-group-item">
-                    <div class="row">
-                      {% if entry.start_date %}
-                        <div class="col-xs-2 col-sm-2 col-md-2 text-center date-column">
-                          <table class="table-cv">
-                            <tbody>
-                              <tr>
-                                <td>
-                                  {% assign startDate = entry.start_date | split: '-' | first %}
-                                  {% assign endDate = entry.end_date | split: '-' | first | default: 'Present' %}
-                                  <span class="badge font-weight-bold danger-color-dark text-uppercase align-middle" style="min-width: 75px">
-                                    {{ startDate }} - {{ endDate }}
-                                  </span>
-                                </td>
-                              </tr>
-                            </tbody>
-                          </table>
-                        </div>
-                        <div class="col-xs-10 col-sm-10 col-md-10 mt-2 mt-md-0">
-                      {% else %}
-                        <div class="col-xs-12 col-sm-12 col-md-12">
-                      {% endif %}
-                          {% if entry.name %}
-                            <h6 class="title font-weight-bold ml-1 ml-md-4">{{ entry.name }}</h6>
-                          {% endif %}
-                          {% if entry.summary %}
-                            <h6 class="ml-1 ml-md-4" style="font-size: 0.95rem; font-style: italic">
-                              {{ entry.summary | markdownify | remove: '<p>' | remove: '</p>' }}
-                            </h6>
-                          {% endif %}
-                        </div>
-                    </div>
-                  </li>
-                {% endfor %}
-              </ul>
-
-            {% elsif section_title == 'Reviewing' %}
-              <!-- Reviewing: a single plain string entry -->
-              <div class="card-text font-weight-light p-1">
-                {% if section_entries.first %}
-                  {{ section_entries.first | markdownify | remove: '<p>' | remove: '</p>' }}
-                {% else %}
-                  {{ section_entries | markdownify | remove: '<p>' | remove: '</p>' }}
-                {% endif %}
+          <!-- Experience & Teaching -->
+          {% if section_title == 'Experience' or section_title == 'Teaching' %}
+            {% for entry in section_entries %}
+              <div class="rcv-entry">
+                <div class="rcv-entry-main">
+                  {% if entry.position and entry.company %}
+                    <strong>{{ entry.position }}</strong>, <em>{{ entry.company }}</em>
+                  {% elsif entry.position %}
+                    <strong>{{ entry.position }}</strong>
+                  {% elsif entry.company %}
+                    <em>{{ entry.company }}</em>
+                  {% endif %}
+                  {% if entry.summary %}
+                    <div>{{ entry.summary | markdownify | remove: '<p>' | remove: '</p>' }}</div>
+                  {% endif %}
+                  {% if entry.highlights %}
+                    <ul class="rcv-highlights">
+                      {% for h in entry.highlights %}
+                        <li>{{ h | markdownify | remove: '<p>' | remove: '</p>' }}</li>
+                      {% endfor %}
+                    </ul>
+                  {% endif %}
+                </div>
+                <div class="rcv-entry-date">
+                  {% if entry.start_date %}
+                    {{ entry.start_date }}{% if entry.end_date %} – {{ entry.end_date }}{% else %} – present{% endif %}
+                  {% elsif entry.end_date %}
+                    {{ entry.end_date }}
+                  {% endif %}
+                </div>
               </div>
+            {% endfor %}
 
-            {% elsif section_title == 'Outreach and service' %}
-              <!-- Outreach: name = event, date or start_date/end_date, summary = description -->
-              <ul class="card-text font-weight-light list-group list-group-flush">
-                {% for entry in section_entries %}
-                  <li class="list-group-item">
-                    <div class="row">
-                      {% capture date_display %}
-                        {% if entry.start_date %}
-                          {{ entry.start_date | split: '-' | first }} - {{ entry.end_date | split: '-' | first | default: 'Present' }}
-                        {% elsif entry.date %}
-                          {{ entry.date | split: '-' | first }}
-                        {% endif %}
-                      {% endcapture %}
-                      {% assign date_display = date_display | strip %}
+          <!-- Education -->
+          {% elsif section_title == 'Education' %}
+            {% for entry in section_entries %}
+              <div class="rcv-entry">
+                <div class="rcv-entry-main">
+                  {% if entry.degree and entry.area and entry.institution %}
+                    <strong>{{ entry.degree }} in {{ entry.area }}</strong>, <em>{{ entry.institution }}</em>
+                  {% elsif entry.degree and entry.institution %}
+                    <strong>{{ entry.degree }}</strong>, <em>{{ entry.institution }}</em>
+                  {% elsif entry.institution %}
+                    <em>{{ entry.institution }}</em>
+                  {% endif %}
+                  {% if entry.summary %}
+                    <div>{{ entry.summary | markdownify | remove: '<p>' | remove: '</p>' }}</div>
+                  {% endif %}
+                  {% if entry.highlights %}
+                    <ul class="rcv-highlights">
+                      {% for h in entry.highlights %}
+                        <li>{{ h | markdownify | remove: '<p>' | remove: '</p>' }}</li>
+                      {% endfor %}
+                    </ul>
+                  {% endif %}
+                </div>
+                <div class="rcv-entry-date">
+                  {% if entry.start_date %}
+                    {{ entry.start_date }}{% if entry.end_date %} – {{ entry.end_date }}{% else %} – present{% endif %}
+                  {% elsif entry.end_date %}
+                    {{ entry.end_date }}
+                  {% endif %}
+                </div>
+              </div>
+            {% endfor %}
 
-                      {% if date_display != '' %}
-                        <div class="col-xs-2 col-sm-2 col-md-2 text-center date-column">
-                          <table class="table-cv">
-                            <tbody>
-                              <tr>
-                                <td>
-                                  <span class="badge font-weight-bold danger-color-dark text-uppercase align-middle" style="min-width: 75px">
-                                    {{ date_display }}
-                                  </span>
-                                </td>
-                              </tr>
-                            </tbody>
-                          </table>
-                        </div>
-                        <div class="col-xs-10 col-sm-10 col-md-10 mt-2 mt-md-0">
-                      {% else %}
-                        <div class="col-xs-12 col-sm-12 col-md-12">
-                      {% endif %}
-                          {% if entry.name %}
-                            <h6 class="title font-weight-bold ml-1 ml-md-4">{{ entry.name }}</h6>
-                          {% endif %}
-                          {% if entry.summary %}
-                            <h6 class="ml-1 ml-md-4" style="font-size: 0.95rem; font-style: italic">
-                              {{ entry.summary | markdownify | remove: '<p>' | remove: '</p>' }}
-                            </h6>
-                          {% endif %}
-                        </div>
+          <!-- Publications & Preprints -->
+          {% elsif section_title == 'Publications' or section_title == 'Publications & Preprints' %}
+            {% for entry in section_entries %}
+              <div class="rcv-entry">
+                <div class="rcv-entry-main">
+                  {% assign authors_joined = entry.authors | join: ', ' %}
+                  {{ authors_joined | markdownify | remove: '<p>' | remove: '</p>' }}
+                  ({{ entry.date }}).
+                  {{ entry.title | markdownify | remove: '<p>' | remove: '</p>' }}.
+                  {% if entry.journal %}<em>{{ entry.journal }}</em>.{% endif %}
+                </div>
+              </div>
+            {% endfor %}
+
+          <!-- Invited Talks -->
+          {% elsif section_title == 'Invited talks' %}
+            {% for entry in section_entries %}
+              <div class="rcv-entry">
+                <div class="rcv-entry-main">
+                  {% if entry.position %}<strong>{{ entry.position }}</strong>{% endif %}
+                  {% if entry.company %}, <em>{{ entry.company }}</em>{% endif %}
+                </div>
+                <div class="rcv-entry-date">{{ entry.date }}</div>
+              </div>
+            {% endfor %}
+
+          <!-- Funding -->
+          {% elsif section_title == 'Funding' %}
+            {% for entry in section_entries %}
+              <div class="rcv-entry">
+                <div class="rcv-entry-main">
+                  {% if entry.name %}<strong>{{ entry.name }}</strong>{% endif %}
+                  {% if entry.summary %}
+                    <div style="font-style:italic; font-size:0.9rem">
+                      {{ entry.summary | markdownify | remove: '<p>' | remove: '</p>' }}
                     </div>
-                  </li>
-                {% endfor %}
-              </ul>
+                  {% endif %}
+                </div>
+                <div class="rcv-entry-date">
+                  {% if entry.start_date %}
+                    {{ entry.start_date }}{% if entry.end_date %} – {{ entry.end_date }}{% else %} – present{% endif %}
+                  {% elsif entry.end_date %}
+                    {{ entry.end_date }}
+                  {% endif %}
+                </div>
+              </div>
+            {% endfor %}
 
-            {% else %}
-              <!-- Generic fallback: bullet or label entries -->
-              {% for entry in section_entries %}
-                {% if entry.bullet %}
-                  <ul class="card-text font-weight-light list-group list-group-flush">
-                    <li class="list-group-item">{{ entry.bullet | markdownify | remove: '<p>' | remove: '</p>' }}</li>
-                  </ul>
-                {% elsif entry.label %}
-                  <div class="card-text font-weight-light">
-                    <strong>{{ entry.label }}:</strong> {{ entry.details }}
-                  </div>
-                {% endif %}
-              {% endfor %}
-            {% endif %}
+          <!-- Reviewing -->
+          {% elsif section_title == 'Reviewing' %}
+            <div class="rcv-plain">
+              {% if section_entries.first %}
+                {{ section_entries.first | markdownify | remove: '<p>' | remove: '</p>' }}
+              {% else %}
+                {{ section_entries | markdownify | remove: '<p>' | remove: '</p>' }}
+              {% endif %}
+            </div>
 
-          </div>
-        </div>
+          <!-- Outreach and service -->
+          {% elsif section_title == 'Outreach and service' %}
+            {% for entry in section_entries %}
+              <div class="rcv-entry">
+                <div class="rcv-entry-main">
+                  {% if entry.name %}<strong>{{ entry.name }}</strong>{% endif %}
+                  {% if entry.summary %}
+                    <div style="font-style:italic; font-size:0.9rem">
+                      {{ entry.summary | markdownify | remove: '<p>' | remove: '</p>' }}
+                    </div>
+                  {% endif %}
+                </div>
+                <div class="rcv-entry-date">
+                  {% capture date_display %}
+                    {% if entry.start_date %}
+                      {{ entry.start_date }} – {% if entry.end_date %}{{ entry.end_date }}{% else %}present{% endif %}
+                    {% elsif entry.date %}
+                      {{ entry.date }}
+                    {% endif %}
+                  {% endcapture %}
+                  {{ date_display | strip }}
+                </div>
+              </div>
+            {% endfor %}
+
+          <!-- al-folio native section fallbacks -->
+          {% elsif section_title == 'Awards' or section_title == 'Honors and Awards' %}
+            {% assign entries = section_entries %}{% include cv/awards.liquid %}
+          {% elsif section_title == 'Skills' %}
+            {% assign entries = section_entries %}{% include cv/skills.liquid %}
+          {% elsif section_title == 'Languages' %}
+            {% assign entries = section_entries %}{% include cv/languages.liquid %}
+          {% elsif section_title == 'Interests' or section_title == 'Academic Interests' %}
+            {% assign entries = section_entries %}{% include cv/interests.liquid %}
+          {% elsif section_title == 'Certificates' %}
+            {% assign entries = section_entries %}{% include cv/certificates.liquid %}
+          {% elsif section_title == 'Projects' or section_title == 'Open Source Projects' %}
+            {% assign entries = section_entries %}{% include cv/projects.liquid %}
+          {% elsif section_title == 'References' %}
+            {% assign entries = section_entries %}{% include cv/references.liquid %}
+
+          <!-- Generic fallback -->
+          {% else %}
+            {% for entry in section_entries %}
+              {% if entry.bullet %}
+                <div class="rcv-plain">• {{ entry.bullet | markdownify | remove: '<p>' | remove: '</p>' }}</div>
+              {% elsif entry.label %}
+                <div class="rcv-plain"><strong>{{ entry.label }}:</strong> {{ entry.details }}</div>
+              {% endif %}
+            {% endfor %}
+          {% endif %}
+
+        </div><!-- /rcv-section -->
       {% endfor %}
 
-    </div>
+    </div><!-- /rcv-wrap -->
   </article>
 </div>
