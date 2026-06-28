@@ -93,20 +93,20 @@
             <div class="rcv-headline">{{ cv.headline }}</div>
           {% endif %}
           <div class="rcv-connections">
+            {% if cv.website %}
+              <span class="rcv-sep">|</span>
+              <a href="{{ cv.website }}" target="_blank" rel="noopener noreferrer">
+                <i class="fa-solid fa-link"></i> {{ cv.website | remove: 'https://' | remove: 'http://' }}
+              </a>
+            {% endif %}
             {% if cv.email %}
               <a href="mailto:{{ cv.email }}">
-                <i class="fa-solid fa-envelope"></i> {{ cv.email }}
+                <i class="fa-regular fa-envelope"></i> {{ cv.email }}
               </a>
             {% endif %}
             {% if cv.phone %}
               <span class="rcv-sep">|</span>
               <span><i class="fa-solid fa-phone"></i> {{ cv.phone }}</span>
-            {% endif %}
-            {% if cv.website %}
-              <span class="rcv-sep">|</span>
-              <a href="{{ cv.website }}" target="_blank" rel="noopener noreferrer">
-                <i class="fa-solid fa-globe"></i> {{ cv.website | remove: 'https://' | remove: 'http://' }}
-              </a>
             {% endif %}
           </div>
         </div>
