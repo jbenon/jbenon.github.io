@@ -1,0 +1,274 @@
+<div class="post">
+  <header class="post-header">
+    <h1 class="post-title">
+      {{ page.title }}
+      {% if page.cv_pdf %}
+        <a
+          {% if page.cv_pdf contains '://' %}
+            href="{{ page.cv_pdf }}"
+          {% else %}
+            href="{{ page.cv_pdf | relative_url }}"
+          {% endif %}
+          target="_blank"
+          rel="noopener noreferrer"
+          class="float-right"
+        >
+          <i class="fa-solid fa-file-pdf"></i>
+        </a>
+      {% endif %}
+    </h1>
+    {% if page.description %}
+      <p class="post-description">{{ page.description }}</p>
+    {% endif %}
+  </header>
+
+  <article>
+    <div class="cv">
+      {% assign cv = site.data.cv.cv %}
+
+      <!-- Header/Contact Information -->
+      {% if cv.name or cv.headline or cv.email or cv.phone or cv.website %}
+        <div class="card mt-3 p-3">
+          <h3 class="card-title font-weight-medium">Contact Information</h3>
+          <table class="table table-cv table-sm table-borderless">
+            {% if cv.name %}
+              <tr>
+                <td class="p-1 pr-2 font-weight-bold"><b>Name</b></td>
+                <td class="p-1 pl-2 font-weight-light">{{ cv.name }}</td>
+              </tr>
+            {% endif %}
+            {% if cv.headline %}
+              <tr>
+                <td class="p-1 pr-2 font-weight-bold"><b>Title</b></td>
+                <td class="p-1 pl-2 font-weight-light">{{ cv.headline }}</td>
+              </tr>
+            {% endif %}
+            {% if cv.email %}
+              <tr>
+                <td class="p-1 pr-2 font-weight-bold"><b>Email</b></td>
+                <td class="p-1 pl-2 font-weight-light">{{ cv.email }}</td>
+              </tr>
+            {% endif %}
+            {% if cv.phone %}
+              <tr>
+                <td class="p-1 pr-2 font-weight-bold"><b>Phone</b></td>
+                <td class="p-1 pl-2 font-weight-light">{{ cv.phone }}</td>
+              </tr>
+            {% endif %}
+            {% if cv.website %}
+              <tr>
+                <td class="p-1 pr-2 font-weight-bold"><b>Website</b></td>
+                <td class="p-1 pl-2 font-weight-light">
+                  <a href="{{ cv.website }}" target="_blank">{{ cv.website }}</a>
+                </td>
+              </tr>
+            {% endif %}
+          </table>
+        </div>
+      {% endif %}
+
+      <!-- All sections, in the order defined in cv.yml -->
+      {% for section_pair in cv.sections %}
+        {% assign section_title = section_pair[0] %}
+        {% assign section_entries = section_pair[1] %}
+
+        <a class="anchor" id="{{ section_title | slugify }}"></a>
+        <div class="card mt-3 p-3">
+          <h3 class="card-title font-weight-medium">{{ section_title }}</h3>
+          <div>
+
+            {% if section_title == 'Experience' or section_title == 'Teaching' %}
+              {% assign entries = section_entries %}
+              {% include cv/experience.liquid %}
+
+            {% elsif section_title == 'Education' %}
+              {% assign entries = section_entries %}
+              {% include cv/education.liquid %}
+
+            {% elsif section_title == 'Publications' or section_title == 'Publications & Preprints' %}
+              {% assign entries = section_entries %}
+              {% include cv/publications.liquid %}
+
+            {% elsif section_title == 'Awards' or section_title == 'Honors and Awards' %}
+              {% assign entries = section_entries %}
+              {% include cv/awards.liquid %}
+
+            {% elsif section_title == 'Skills' %}
+              {% assign entries = section_entries %}
+              {% include cv/skills.liquid %}
+
+            {% elsif section_title == 'Languages' %}
+              {% assign entries = section_entries %}
+              {% include cv/languages.liquid %}
+
+            {% elsif section_title == 'Interests' or section_title == 'Academic Interests' %}
+              {% assign entries = section_entries %}
+              {% include cv/interests.liquid %}
+
+            {% elsif section_title == 'Certificates' %}
+              {% assign entries = section_entries %}
+              {% include cv/certificates.liquid %}
+
+            {% elsif section_title == 'Projects' or section_title == 'Open Source Projects' %}
+              {% assign entries = section_entries %}
+              {% include cv/projects.liquid %}
+
+            {% elsif section_title == 'References' %}
+              {% assign entries = section_entries %}
+              {% include cv/references.liquid %}
+
+            {% elsif section_title == 'Invited talks' %}
+              <!-- Invited talks: position = talk title, company = venue, date = date -->
+              <ul class="card-text font-weight-light list-group list-group-flush">
+                {% for entry in section_entries %}
+                  <li class="list-group-item">
+                    <div class="row">
+                      {% if entry.date %}
+                        <div class="col-xs-2 col-sm-2 col-md-2 text-center date-column">
+                          <table class="table-cv">
+                            <tbody>
+                              <tr>
+                                <td>
+                                  <span class="badge font-weight-bold danger-color-dark text-uppercase align-middle" style="min-width: 75px">
+                                    {{ entry.date }}
+                                  </span>
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                        <div class="col-xs-10 col-sm-10 col-md-10 mt-2 mt-md-0">
+                      {% else %}
+                        <div class="col-xs-12 col-sm-12 col-md-12">
+                      {% endif %}
+                          {% if entry.position %}
+                            <h6 class="title font-weight-bold ml-1 ml-md-4">{{ entry.position }}</h6>
+                          {% endif %}
+                          {% if entry.company %}
+                            <h6 class="ml-1 ml-md-4" style="font-size: 0.95rem">{{ entry.company }}</h6>
+                          {% endif %}
+                        </div>
+                    </div>
+                  </li>
+                {% endfor %}
+              </ul>
+
+            {% elsif section_title == 'Funding' %}
+              <!-- Funding: name = fellowship name, summary = description, start_date/end_date = years -->
+              <ul class="card-text font-weight-light list-group list-group-flush">
+                {% for entry in section_entries %}
+                  <li class="list-group-item">
+                    <div class="row">
+                      {% if entry.start_date %}
+                        <div class="col-xs-2 col-sm-2 col-md-2 text-center date-column">
+                          <table class="table-cv">
+                            <tbody>
+                              <tr>
+                                <td>
+                                  {% assign startDate = entry.start_date | split: '-' | first %}
+                                  {% assign endDate = entry.end_date | split: '-' | first | default: 'Present' %}
+                                  <span class="badge font-weight-bold danger-color-dark text-uppercase align-middle" style="min-width: 75px">
+                                    {{ startDate }} - {{ endDate }}
+                                  </span>
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                        <div class="col-xs-10 col-sm-10 col-md-10 mt-2 mt-md-0">
+                      {% else %}
+                        <div class="col-xs-12 col-sm-12 col-md-12">
+                      {% endif %}
+                          {% if entry.name %}
+                            <h6 class="title font-weight-bold ml-1 ml-md-4">{{ entry.name }}</h6>
+                          {% endif %}
+                          {% if entry.summary %}
+                            <h6 class="ml-1 ml-md-4" style="font-size: 0.95rem; font-style: italic">
+                              {{ entry.summary | markdownify | remove: '<p>' | remove: '</p>' }}
+                            </h6>
+                          {% endif %}
+                        </div>
+                    </div>
+                  </li>
+                {% endfor %}
+              </ul>
+
+            {% elsif section_title == 'Reviewing' %}
+              <!-- Reviewing: a single plain string entry -->
+              <div class="card-text font-weight-light p-1">
+                {% if section_entries.first %}
+                  {{ section_entries.first | markdownify | remove: '<p>' | remove: '</p>' }}
+                {% else %}
+                  {{ section_entries | markdownify | remove: '<p>' | remove: '</p>' }}
+                {% endif %}
+              </div>
+
+            {% elsif section_title == 'Outreach and service' %}
+              <!-- Outreach: name = event, date or start_date/end_date, summary = description -->
+              <ul class="card-text font-weight-light list-group list-group-flush">
+                {% for entry in section_entries %}
+                  <li class="list-group-item">
+                    <div class="row">
+                      {% capture date_display %}
+                        {% if entry.start_date %}
+                          {{ entry.start_date | split: '-' | first }} - {{ entry.end_date | split: '-' | first | default: 'Present' }}
+                        {% elsif entry.date %}
+                          {{ entry.date | split: '-' | first }}
+                        {% endif %}
+                      {% endcapture %}
+                      {% assign date_display = date_display | strip %}
+
+                      {% if date_display != '' %}
+                        <div class="col-xs-2 col-sm-2 col-md-2 text-center date-column">
+                          <table class="table-cv">
+                            <tbody>
+                              <tr>
+                                <td>
+                                  <span class="badge font-weight-bold danger-color-dark text-uppercase align-middle" style="min-width: 75px">
+                                    {{ date_display }}
+                                  </span>
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                        <div class="col-xs-10 col-sm-10 col-md-10 mt-2 mt-md-0">
+                      {% else %}
+                        <div class="col-xs-12 col-sm-12 col-md-12">
+                      {% endif %}
+                          {% if entry.name %}
+                            <h6 class="title font-weight-bold ml-1 ml-md-4">{{ entry.name }}</h6>
+                          {% endif %}
+                          {% if entry.summary %}
+                            <h6 class="ml-1 ml-md-4" style="font-size: 0.95rem; font-style: italic">
+                              {{ entry.summary | markdownify | remove: '<p>' | remove: '</p>' }}
+                            </h6>
+                          {% endif %}
+                        </div>
+                    </div>
+                  </li>
+                {% endfor %}
+              </ul>
+
+            {% else %}
+              <!-- Generic fallback: bullet or label entries -->
+              {% for entry in section_entries %}
+                {% if entry.bullet %}
+                  <ul class="card-text font-weight-light list-group list-group-flush">
+                    <li class="list-group-item">{{ entry.bullet | markdownify | remove: '<p>' | remove: '</p>' }}</li>
+                  </ul>
+                {% elsif entry.label %}
+                  <div class="card-text font-weight-light">
+                    <strong>{{ entry.label }}:</strong> {{ entry.details }}
+                  </div>
+                {% endif %}
+              {% endfor %}
+            {% endif %}
+
+          </div>
+        </div>
+      {% endfor %}
+
+    </div>
+  </article>
+</div>
