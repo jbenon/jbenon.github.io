@@ -94,7 +94,6 @@
           {% endif %}
           <div class="rcv-connections">
             {% if cv.website %}
-              <span class="rcv-sep">|</span>
               <a href="{{ cv.website }}" target="_blank" rel="noopener noreferrer">
                 <i class="fa-solid fa-link"></i> {{ cv.website | remove: 'https://' | remove: 'http://' }}
               </a>
@@ -105,7 +104,6 @@
               </a>
             {% endif %}
             {% if cv.phone %}
-              <span class="rcv-sep">|</span>
               <span><i class="fa-solid fa-phone"></i> {{ cv.phone }}</span>
             {% endif %}
           </div>
