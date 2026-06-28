@@ -100,7 +100,7 @@ design:
       main_column: "**LABEL:** DETAILS"
     education_entry:
       main_column: |-
-        **DEGREE in AREA**, *INSTITUTION*
+        **DEGREE in AREA** – *INSTITUTION*
         SUMMARY
         HIGHLIGHTS
       degree_column: ""
@@ -116,7 +116,7 @@ design:
         DATE
     experience_entry:
       main_column: |-
-        **POSITION**, *COMPANY*
+        **POSITION** – *COMPANY*
         SUMMARY
         HIGHLIGHTS
       date_and_location_column: |-
