@@ -118,7 +118,7 @@
         {% assign section_entries = section_pair[1] %}
 
         <div class="rcv-section">
-          <a class="anchor" id="{{ section_title | slugify }}"></a>
+          <h3 id="{{ section_title | slugify }}" style="position:absolute; width:1px; height:1px; overflow:hidden; clip:rect(0,0,0,0); white-space:nowrap;">{{ section_title }}</h3>
           <div class="rcv-section-title"><b>{{ section_title }}</b></div>
 
           <!-- Experience & Teaching -->
