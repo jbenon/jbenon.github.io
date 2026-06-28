@@ -250,7 +250,7 @@
                 <div class="rcv-entry-main">
                   {% if entry.name %}<strong>{{ entry.name }}</strong>{% endif %}
                   {% if entry.summary %}
-                    <div style="font-style:italic; font-size:0.9rem">
+                    <div style="font-size:0.9rem">
                       {{ entry.summary | markdownify | remove: '<p>' | remove: '</p>' }}
                     </div>
                   {% endif %}
