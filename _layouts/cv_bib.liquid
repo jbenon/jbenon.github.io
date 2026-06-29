@@ -1,0 +1,21 @@
+<div class="rcv-entry">
+  <div class="rcv-entry-main">
+    {% assign authors = entry.author | split: " and " %}
+    {% assign formatted = "" %}
+    {% for author in authors %}
+      {% assign parts = author | strip | split: ", " %}
+      {% if parts.size == 2 %}
+        {% assign name = parts[1] | strip | slice: 0 %}
+        {% assign formatted_author = parts[1] | strip | split: " " | last %}
+        {% capture one %}{{ parts[1] | strip | split: " " | last }} {{ parts[0] }}{% endcapture %}
+      {% else %}
+        {% capture one %}{{ author | strip }}{% endcapture %}
+      {% endif %}
+      {% unless forloop.first %}, {% endunless %}
+      {% if author contains site.scholar.last_name %}**{{ one | strip }}**{% else %}{{ one | strip }}{% endif %}
+    {% endfor %}
+    ({{ entry.year }}).
+    {% if entry.url %}<a href="{{ entry.url }}" target="_blank">{{ entry.title }}</a>{% else %}{{ entry.title }}{% endif %}.
+    {% if entry.journal %}<em>{{ entry.journal }}</em>.{% elsif entry.booktitle %}<em>{{ entry.booktitle }}</em>.{% endif %}
+  </div>
+</div>
