@@ -11,8 +11,8 @@
       {% else %}
         {% capture one %}{{ author | strip }}{% endcapture %}
       {% endif %}
-      {% unless forloop.first %}, {% endunless %}
-      {% assign author_clean = author | strip %}{% if author_clean contains "Bénon" or author_clean contains "Benon" %}<strong>{{ one | strip }}</strong>{% else %}{{ one | strip }}{% endif %}
+      {% assign author_clean = author | strip %}
+      {% unless forloop.first %}{% if forloop.last %}, and {% else %}, {% endif %}{% endunless %}{% if author_clean contains "Bénon" or author_clean contains "Benon" %}<strong>{{ one | strip }}</strong>{% else %}{{ one | strip }}{% endif %}
     {% endfor %}
     ({{ entry.year }}).
     {% if entry.url %}<a href="{{ entry.url }}" target="_blank">{{ entry.title }}</a>{% else %}{{ entry.title }}{% endif %}.
