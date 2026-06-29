@@ -114,172 +114,102 @@
           <h3 id="{{ section_title | slugify }}" style="position:absolute; width:1px; height:1px; overflow:hidden; clip:rect(0,0,0,0); white-space:nowrap;">{{ section_title }}</h3>
           <div class="rcv-section-title"><b>{{ section_title }}</b></div>
 
-          <!-- Experience & Teaching -->
-          {% if section_title == 'Experience' or section_title == 'Teaching' %}
-            {% for entry in section_entries %}
-              <div class="rcv-entry">
-                <div class="rcv-entry-main">
-                  {% if entry.position and entry.company %}
-                    <strong>{{ entry.position }}</strong>, <em>{{ entry.company }}</em>
-                  {% elsif entry.position %}
-                    <strong>{{ entry.position }}</strong>
-                  {% elsif entry.company %}
-                    <em>{{ entry.company }}</em>
-                  {% endif %}
-                  {% if entry.summary %}
-                    <div>{{ entry.summary | markdownify | remove: '<p>' | remove: '</p>' }}</div>
-                  {% endif %}
-                  {% if entry.highlights %}
-                    <ul class="rcv-highlights">
-                      {% for h in entry.highlights %}
-                        <li>{{ h | markdownify | remove: '<p>' | remove: '</p>' }}</li>
-                      {% endfor %}
-                    </ul>
-                  {% endif %}
-                </div>
-                <div class="rcv-entry-date">
-                  {% if entry.start_date %}
-                    {{ entry.start_date }}{% if entry.end_date %} – {{ entry.end_date }}{% else %} – present{% endif %}
-                  {% elsif entry.end_date %}
-                    {{ entry.end_date }}
-                  {% endif %}
-                </div>
-              </div>
-            {% endfor %}
-
-          <!-- Education -->
-          {% elsif section_title == 'Education' %}
-            {% for entry in section_entries %}
-              <div class="rcv-entry">
-                <div class="rcv-entry-main">
-                  {% if entry.degree and entry.area and entry.institution %}
-                    <strong>{{ entry.degree }} in {{ entry.area }}</strong>, <em>{{ entry.institution }}</em>
-                  {% elsif entry.degree and entry.institution %}
-                    <strong>{{ entry.degree }}</strong>, <em>{{ entry.institution }}</em>
-                  {% elsif entry.institution %}
-                    <em>{{ entry.institution }}</em>
-                  {% endif %}
-                  {% if entry.summary %}
-                    <div>{{ entry.summary | markdownify | remove: '<p>' | remove: '</p>' }}</div>
-                  {% endif %}
-                  {% if entry.highlights %}
-                    <ul class="rcv-highlights">
-                      {% for h in entry.highlights %}
-                        <li>{{ h | markdownify | remove: '<p>' | remove: '</p>' }}</li>
-                      {% endfor %}
-                    </ul>
-                  {% endif %}
-                </div>
-                <div class="rcv-entry-date">
-                  {% if entry.start_date %}
-                    {{ entry.start_date }}{% if entry.end_date %} – {{ entry.end_date }}{% else %} – present{% endif %}
-                  {% elsif entry.end_date %}
-                    {{ entry.end_date }}
-                  {% endif %}
-                </div>
-              </div>
-            {% endfor %}
-
           <!-- Publications & Preprints -->
-          {% elsif section_title == 'Publications' or section_title == 'Publications & Preprints' %}
+          {% if section_title contains "Publications" %}
               {% bibliography --template cv_bib --group_by none --sort_by year --order descending %}
 
-          <!-- Invited Talks -->
-          {% elsif section_title == 'Invited talks' %}
-            {% for entry in section_entries %}
-              <div class="rcv-entry">
-                <div class="rcv-entry-main">
-                  {% if entry.position %}<strong>{{ entry.position }}</strong>{% endif %}
-                  {% if entry.company %}, <em>{{ entry.company }}</em>{% endif %}
-                </div>
-                <div class="rcv-entry-date">{{ entry.date }}</div>
-              </div>
-            {% endfor %}
-
-          <!-- Funding -->
-          {% elsif section_title == 'Funding' %}
-            {% for entry in section_entries %}
-              <div class="rcv-entry">
-                <div class="rcv-entry-main">
-                  {% if entry.name %}<strong>{{ entry.name }}</strong>{% endif %}
-                  {% if entry.summary %}
-                    <div style="font-size:0.9rem">
-                      {{ entry.summary | markdownify | remove: '<p>' | remove: '</p>' }}
-                    </div>
-                  {% endif %}
-                </div>
-                <div class="rcv-entry-date">
-                  {% if entry.start_date %}
-                    {{ entry.start_date }}{% if entry.end_date %} – {{ entry.end_date }}{% else %} – present{% endif %}
-                  {% elsif entry.end_date %}
-                    {{ entry.end_date }}
-                  {% endif %}
-                </div>
-              </div>
-            {% endfor %}
-
-          <!-- Reviewing -->
-          {% elsif section_title == 'Reviewing' %}
-            <div class="rcv-plain">
-              {% if section_entries.first %}
-                {{ section_entries.first | markdownify | remove: '<p>' | remove: '</p>' }}
-              {% else %}
-                {{ section_entries | markdownify | remove: '<p>' | remove: '</p>' }}
-              {% endif %}
-            </div>
-
-          <!-- Outreach and service -->
-          {% elsif section_title == 'Outreach and service' %}
-            {% for entry in section_entries %}
-              <div class="rcv-entry">
-                <div class="rcv-entry-main">
-                  {% if entry.name %}<strong>{{ entry.name }}</strong>{% endif %}
-                  {% if entry.summary %}
-                    <div style="font-size:0.9rem">
-                      {{ entry.summary | markdownify | remove: '<p>' | remove: '</p>' }}
-                    </div>
-                  {% endif %}
-                </div>
-                <div class="rcv-entry-date">
-                  {% capture date_display %}
-                    {% if entry.start_date %}
-                      {{ entry.start_date }} – {% if entry.end_date %}{{ entry.end_date }}{% else %}present{% endif %}
-                    {% elsif entry.date %}
-                      {{ entry.date }}
-                    {% endif %}
-                  {% endcapture %}
-                  {{ date_display | strip }}
-                </div>
-              </div>
-            {% endfor %}
-
-          <!-- al-folio native section fallbacks -->
-          {% elsif section_title == 'Awards' or section_title == 'Honors and Awards' %}
-            {% assign entries = section_entries %}{% include cv/awards.liquid %}
-          {% elsif section_title == 'Skills' %}
-            {% assign entries = section_entries %}{% include cv/skills.liquid %}
-          {% elsif section_title == 'Languages' %}
-            {% assign entries = section_entries %}{% include cv/languages.liquid %}
-          {% elsif section_title == 'Interests' or section_title == 'Academic Interests' %}
-            {% assign entries = section_entries %}{% include cv/interests.liquid %}
-          {% elsif section_title == 'Certificates' %}
-            {% assign entries = section_entries %}{% include cv/certificates.liquid %}
-          {% elsif section_title == 'Projects' or section_title == 'Open Source Projects' %}
-            {% assign entries = section_entries %}{% include cv/projects.liquid %}
-          {% elsif section_title == 'References' %}
-            {% assign entries = section_entries %}{% include cv/references.liquid %}
-
-          <!-- Generic fallback -->
+          <!-- Classical RenderCV entries -->
           {% else %}
             {% for entry in section_entries %}
-              {% if entry.bullet %}
-                <div class="rcv-plain">• {{ entry.bullet | markdownify | remove: '<p>' | remove: '</p>' }}</div>
-              {% elsif entry.label %}
-                <div class="rcv-plain"><strong>{{ entry.label }}:</strong> {{ entry.details }}</div>
+
+              <!-- "Education" entry -->
+              {% if entry.institution and entry.area %}
+                <div class="rcv-entry">
+                  <div class="rcv-entry-main">
+                    {% if entry.degree and entry.area and entry.institution %}
+                      <strong>{{ entry.degree }} in {{ entry.area }}</strong> – <em>{{ entry.institution }}</em>
+                    {% else %}
+                      <strong>{{ entry.area }}</strong> – <em>{{ entry.institution }}</em>
+                    {% endif %}
+                    {% if entry.summary %}
+                      <div>{{ entry.summary | markdownify | remove: '<p>' | remove: '</p>' }}</div>
+                    {% endif %}
+                    {% if entry.highlights %}
+                      <ul class="rcv-highlights">
+                        {% for h in entry.highlights %}
+                          <li>{{ h | markdownify | remove: '<p>' | remove: '</p>' }}</li>
+                        {% endfor %}
+                      </ul>
+                    {% endif %}
+                  </div>
+                  <div class="rcv-entry-date">
+                    {% if entry.start_date %}
+                      {{ entry.start_date }}{% if entry.end_date %} – {{ entry.end_date }}{% else %} – present{% endif %}
+                    {% elsif entry.end_date %}
+                      {{ entry.end_date }}
+                    {% endif %}
+                  </div>
+                </div>
+
+              <!-- "Experience" entry -->
+              {% elseif entry.company and entry.position %}
+                <div class="rcv-entry">
+                  <div class="rcv-entry-main">
+                    <strong>{{ entry.position }}</strong>, <em>{{ entry.company }}</em>
+                    {% if entry.summary %}
+                      <div>{{ entry.summary | markdownify | remove: '<p>' | remove: '</p>' }}</div>
+                    {% endif %}
+                    {% if entry.highlights %}
+                      <ul class="rcv-highlights">
+                        {% for h in entry.highlights %}
+                          <li>{{ h | markdownify | remove: '<p>' | remove: '</p>' }}</li>
+                        {% endfor %}
+                      </ul>
+                    {% endif %}
+                  </div>
+                  <div class="rcv-entry-date">
+                    {% if entry.start_date %}
+                      {{ entry.start_date }}{% if entry.end_date %} – {{ entry.end_date }}{% else %} – present{% endif %}
+                    {% elsif entry.end_date %}
+                      {{ entry.end_date }}
+                    {% endif %}
+                  </div>
+                </div>
               {% endif %}
+
+              <!-- "Normal" entry -->
+              {% elseif entry.name %}
+                <div class="rcv-entry">
+                  <div class="rcv-entry-main">
+                    {% if entry.name %}<strong>{{ entry.name }}</strong>{% endif %}
+                    {% if entry.summary %}
+                      <div style="font-size:0.9rem">
+                        {{ entry.summary | markdownify | remove: '<p>' | remove: '</p>' }}
+                      </div>
+                    {% endif %}
+                  </div>
+                  <div class="rcv-entry-date">
+                    {% if entry.start_date %}
+                      {{ entry.start_date }}{% if entry.end_date %} – {{ entry.end_date }}{% else %} – present{% endif %}
+                    {% elsif entry.end_date %}
+                      {{ entry.end_date }}
+                    {% endif %}
+                  </div>
+                </div>
+              
+                <!-- "Text" entry -->
+                {% else %}
+                  <div class="rcv-entry">
+                    <div class="rcv-entry-main">
+                      {{ entry }}
+                    </div>
+                  </div>
+
+                {% endif %}
+                  
             {% endfor %}
           {% endif %}
-
+        
         </div><!-- /rcv-section -->
       {% endfor %}
 

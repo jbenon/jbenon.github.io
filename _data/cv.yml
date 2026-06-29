@@ -81,32 +81,6 @@ cv:
         end_date: 2025
 
     Publications & Preprints:
-      - title: "[Irrational decisions reflect robustness constraints on value computations implemented by orbitofrontal circuits](http://doi.org/10.1101/2025.07.10.664081)"
-        authors:
-          - "**Bénon, J.**"
-          - Pessiglione, M.
-          - Vinckier, F.
-          - Daunizeau, J.
-        journal: bioRxiv
-        date: 2026
-
-      - title: "[The online metacognitive control of decisions](http://doi.org/10.1038/s44271-024-00071-y)"
-        authors:
-          - "**Bénon, J.**"
-          - Lee, D.
-          - Hopper, W.
-          - Verdeil, M.
-          - Pessiglione, M.
-          - Vinckier, F.
-          - Bouret, S.
-          - Rouault, M.
-          - Le Bouc, R.
-          - Pezzulo, G.
-          - Schreiweis, C.
-          - Burguière, É.
-          - Daunizeau, J.
-        journal: Communications Psychology
-        date: 2024
 
     Invited talks:
       - position: Cognitive Noise Workshop
