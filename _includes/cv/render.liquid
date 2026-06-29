@@ -53,6 +53,10 @@
 
   /* Plain-text sections */
   .rcv-wrap .rcv-plain { font-size: 0.92rem; line-height: 1.5; }
+
+  /* Strip jekyll-scholar's wrapping ol from the publications list */
+  .rcv-wrap .bibliography { list-style: none; padding: 0; margin: 0; }
+  .rcv-wrap .bibliography li { padding: 0; margin: 0; }
 </style>
 
 <div class="post">
@@ -177,7 +181,7 @@
 
           <!-- Publications & Preprints -->
           {% elsif section_title == 'Publications' or section_title == 'Publications & Preprints' %}
-              {% bibliography --template cv_bib --group_by none --order descending %}
+              {% bibliography --template cv_bib --group_by none --sort_by year --order descending %}
 
           <!-- Invited Talks -->
           {% elsif section_title == 'Invited talks' %}
