@@ -152,7 +152,7 @@
                 </div>
 
               <!-- "Experience" entry -->
-              {% elseif entry.company and entry.position %}
+              {% elsif entry.company and entry.position %}
                 <div class="rcv-entry">
                   <div class="rcv-entry-main">
                     <strong>{{ entry.position }}</strong>, <em>{{ entry.company }}</em>
@@ -178,7 +178,7 @@
               {% endif %}
 
               <!-- "Normal" entry -->
-              {% elseif entry.name %}
+              {% elsif entry.name %}
                 <div class="rcv-entry">
                   <div class="rcv-entry-main">
                     {% if entry.name %}<strong>{{ entry.name }}</strong>{% endif %}
