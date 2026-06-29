@@ -147,6 +147,8 @@
                       {{ entry.start_date }}{% if entry.end_date %} – {{ entry.end_date }}{% else %} – present{% endif %}
                     {% elsif entry.end_date %}
                       {{ entry.end_date }}
+                    {% elsif entry.date %}
+                      {{ entry.date }}
                     {% endif %}
                   </div>
                 </div>
@@ -155,7 +157,7 @@
               {% elsif entry.company and entry.position %}
                 <div class="rcv-entry">
                   <div class="rcv-entry-main">
-                    <strong>{{ entry.position }}</strong>, <em>{{ entry.company }}</em>
+                    <strong>{{ entry.position }}</strong> – <em>{{ entry.company }}</em>
                     {% if entry.summary %}
                       <div>{{ entry.summary | markdownify | remove: '<p>' | remove: '</p>' }}</div>
                     {% endif %}
@@ -172,6 +174,8 @@
                       {{ entry.start_date }}{% if entry.end_date %} – {{ entry.end_date }}{% else %} – present{% endif %}
                     {% elsif entry.end_date %}
                       {{ entry.end_date }}
+                    {% elsif entry.date %}
+                      {{ entry.date }}
                     {% endif %}
                   </div>
                 </div>
@@ -192,6 +196,8 @@
                       {{ entry.start_date }}{% if entry.end_date %} – {{ entry.end_date }}{% else %} – present{% endif %}
                     {% elsif entry.end_date %}
                       {{ entry.end_date }}
+                    {% elsif entry.date %}
+                      {{ entry.date }}
                     {% endif %}
                   </div>
                 </div>
