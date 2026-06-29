@@ -14,7 +14,22 @@
       {%- if author_clean contains "Bénon" or author_clean contains "Benon" %}<strong>{{ one | strip }}</strong>{%- else %}{{ one | strip }}{%- endif -%}
     {%- endfor %}
     ({{ entry.year }}).
-    {% if entry.url %}<a href="{{ entry.url }}" target="_blank">{{ entry.title }}</a>{% else %}{{ entry.title }}{% endif %}.
-    {% if entry.journal %}<em>{{ entry.journal }}</em>.{% elsif entry.booktitle %}<em>{{ entry.booktitle }}</em>.{% endif %}
+    {% if entry.url %}
+      <a href="{{ entry.url }}" target="_blank">{{ entry.title }}</a>
+    {% else %}
+      {{ entry.title }}
+    {% endif %}.
+    {% if entry.journal %}
+      <em>{{ entry.journal }}</em>.
+    {% elsif entry.booktitle %}
+      <em>{{ entry.booktitle }}</em>.
+    {% elsif entry.school}
+      {% if entry.type %}
+        [{{ entry.type }}, {{ entry.school }}].
+      {% else %}
+        [{{ entry.school }}].
+      {% endif %}
+    {% endif %}
+
   </div>
 </div>
