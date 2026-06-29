@@ -177,7 +177,7 @@
 
           <!-- Publications & Preprints -->
           {% elsif section_title == 'Publications' or section_title == 'Publications & Preprints' %}
-              {% bibliography --template cv_bib %}
+              {% bibliography --template cv_bib --group_by none --order descending %}
 
           <!-- Invited Talks -->
           {% elsif section_title == 'Invited talks' %}
