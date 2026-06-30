@@ -152,17 +152,14 @@
               <div class="rcv-entry">
                 <div class="rcv-entry-main">
                   {% assign authors = entry.authors | split: " and " %}
-                  {%- for author in authors -%}
-                    {%- assign parts = author | strip | split: ", " -%}
-                    {%- if parts.size == 2 -%}
-                      {%- capture one %}{{ parts[1] | strip | split: " " | last }} {{ parts[0] }}{%- endcapture -%}
-                    {%- else -%}
-                      {%- capture one %}{{ author | strip }}{%- endcapture -%}
+                  {%- for author in entry.authors -%}
+                    {%- assign a = author | strip -%}
+                    {%- if a contains "**" -%}
+                      {%- assign a = a | remove: "**" | prepend: "<strong>" | append: "</strong>" -%}
                     {%- endif -%}
-                    {%- assign author_clean = author | strip -%}
                     {%- unless forloop.first %}{% if forloop.last %}, and {% else %}, {% endif %}{% endunless -%}
-                    {%- if author_clean contains "Bénon" or author_clean contains "Benon" %}<strong>{{ one | strip }}</strong>{%- else %}{{ one | strip }}{%- endif -%}
-                  {%- endfor %}
+                    {{ a }}
+                  {%- endfor -%}
                   ({{ entry.year }}).
                   {% if entry.url %}
                     <a href="{{ entry.url }}" target="_blank">{{ entry.title }}</a>.
