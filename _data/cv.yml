@@ -81,6 +81,24 @@ cv:
         end_date: 2025
 
     Publications & Preprints:
+      - authors: "Bénon, Juliette and Pessiglione, Mathias and Vinckier, Fabien and Daunizeau, Jean"
+        year: 2026
+        title: "Irrational decisions reflect robustness constraints on value computations implemented by orbitofrontal circuits"
+        url: https://www.biorxiv.org/content/10.1101/2025.07.10.664081v2
+        journal: bioRxiv
+
+      - authors: "Bénon, Juliette"
+        year: 2025
+        title: "A neuro-computational account of rationality costs in decision-making"
+        url: https://theses.hal.science/tel-05327543
+        school: "Sorbonne Université"
+        type: "Doctoral dissertation"
+
+      - authors: "Bénon, Juliette and Lee, Douglas and Hopper, William and Verdeil, Morgan and Pessiglione, Mathias and Vinckier, Fabien and Bouret, Sébastien and Rouault, Marion and Le Bouc, Raphaël and Pezzulo, Giovanni and Schreiweis, Christiane and Burguière, Éric and Daunizeau, Jean"
+        year: 2024
+        title: "The online metacognitive control of decisions"
+        url: https://www.nature.com/articles/s44271-024-00071-y
+        journal: "Communications Psychology"
 
     Invited talks:
       - position: Cognitive Noise Workshop

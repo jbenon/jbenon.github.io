@@ -114,10 +114,6 @@
           <h3 id="{{ section_title | slugify }}" style="position:absolute; width:1px; height:1px; overflow:hidden; clip:rect(0,0,0,0); white-space:nowrap;">{{ section_title }}</h3>
           <div class="rcv-section-title"><b>{{ section_title }}</b></div>
 
-          <!-- Publications & Preprints -->
-          {% if section_title contains "Publications" %}
-              {% bibliography --template cv_bib --group_by none --sort_by year --order descending %}
-
           <!-- Classical RenderCV entries -->
           {% else %}
             {% for entry in section_entries %}
@@ -149,6 +145,42 @@
                       {{ entry.end_date }}
                     {% elsif entry.date %}
                       {{ entry.date }}
+                    {% endif %}
+                  </div>
+                </div>
+
+              <!-- "Publication" entry -->
+              {% elsif entry.title and entry.authors %}
+                <div class="rcv-entry">
+                  <div class="rcv-entry-main">
+                    {% assign authors = entry.author | split: " and " %}
+                    {%- for author in authors -%}
+                      {%- assign parts = author | strip | split: ", " -%}
+                      {%- if parts.size == 2 -%}
+                        {%- capture one %}{{ parts[1] | strip | split: " " | last }} {{ parts[0] }}{%- endcapture -%}
+                      {%- else -%}
+                        {%- capture one %}{{ author | strip }}{%- endcapture -%}
+                      {%- endif -%}
+                      {%- assign author_clean = author | strip -%}
+                      {%- unless forloop.first %}{% if forloop.last %}, and {% else %}, {% endif %}{% endunless -%}
+                      {%- if author_clean contains "Bénon" or author_clean contains "Benon" %}<strong>{{ one | strip }}</strong>{%- else %}{{ one | strip }}{%- endif -%}
+                    {%- endfor %}
+                    ({{ entry.year }}).
+                    {% if entry.url %}
+                      <a href="{{ entry.url }}" target="_blank">{{ entry.title }}</a>.
+                    {% else %}
+                      {{ entry.title }}.
+                    {% endif %}
+                    {% if entry.journal %}
+                      <em>{{ entry.journal }}</em>.
+                    {% elsif entry.booktitle %}
+                      <em>{{ entry.booktitle }}</em>.
+                    {% elsif entry.school %}
+                      {% if entry.type %}
+                        [{{ entry.type }}, {{ entry.school }}].
+                      {% else %}
+                        [{{ entry.school }}].
+                      {% endif %}
                     {% endif %}
                   </div>
                 </div>
