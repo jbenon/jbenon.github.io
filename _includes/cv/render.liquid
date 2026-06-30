@@ -155,7 +155,7 @@
                   {%- for author in entry.authors -%}
                     {%- assign a = author | strip -%}
                     {%- if a contains "**" -%}
-                      {%- assign a = a | remove: "**" | prepend: "<strong>" | append: "</strong>" -%}
+                      {%- assign a = a | remove: "**" | prepend: "<b>" | append: "</b>" -%}
                     {%- endif -%}
                     {%- unless forloop.first %}, {% endunless -%}
                     {{ a }}
@@ -167,7 +167,13 @@
                     {{ entry.title }}.
                   {% endif %}
                   {% if entry.journal %}
-                    {{ entry.journal }}.
+                    {% assign journal = entry.journal %}
+                    {%- if journal contains "**" -%}
+                      {%- assign journal = journal | remove: "**" | prepend: "<b>" | append: "</b>" -%}
+                    {%- elsif journal contains "*" -%}
+                      {%- assign journal = journal | remove: "*" | prepend: "<i>" | append: "</i>" -%}
+                    {%- endif -%}
+                    {{ journal }}.
                   {% endif %}
                 </div>
               </div>
