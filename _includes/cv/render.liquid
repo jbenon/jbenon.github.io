@@ -167,15 +167,7 @@
                     {{ entry.title }}.
                   {% endif %}
                   {% if entry.journal %}
-                    <em>{{ entry.journal }}</em>.
-                  {% elsif entry.booktitle %}
-                    <em>{{ entry.booktitle }}</em>.
-                  {% elsif entry.school %}
-                    {% if entry.type %}
-                      [{{ entry.type }}, {{ entry.school }}].
-                    {% else %}
-                      [{{ entry.school }}].
-                    {% endif %}
+                    {{ entry.journal }}.
                   {% endif %}
                 </div>
               </div>

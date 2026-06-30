@@ -89,15 +89,14 @@ cv:
         date: "2026"
         title: "Irrational decisions reflect robustness constraints on value computations implemented by orbitofrontal circuits"
         url: https://www.biorxiv.org/content/10.1101/2025.07.10.664081v2
-        journal: bioRxiv
+        journal: "*bioRxiv*"
 
       - authors:
           - "**Bénon, J.**"
         date: "2025"
         title: "A neuro-computational account of rationality costs in decision-making"
         url: https://theses.hal.science/tel-05327543
-        school: "Sorbonne Université"
-        type: "Doctoral dissertation"
+        journal: "[Doctoral dissertation, Sorbonne Université]"
 
       - authors:
           - "**Bénon, J.**"
@@ -116,7 +115,7 @@ cv:
         date: "2024"
         title: "The online metacognitive control of decisions"
         url: https://www.nature.com/articles/s44271-024-00071-y
-        journal: "Communications Psychology"
+        journal: "*Communications Psychology*"
 
     Invited talks:
       - position: Cognitive Noise Workshop
