@@ -77,6 +77,15 @@ jobs:
         with:
           python-version: "3.13"
           cache: "pip" # caching pip dependencies
+      - name: Render CV 📄
+        run: |
+          pip install -r requirements.txt
+          cv_file=$(find _data -maxdepth 1 -type f \( -name "cv.yaml" -o -name "cv.yml" \))
+          rendercv render "$cv_file" \
+            --design assets/rendercv/design.yaml \
+            --locale-catalog assets/rendercv/locale.yaml \
+            --settings assets/rendercv/settings.yaml
+          rm -f assets/rendercv/rendercv_output/*.typ
       - name: Setup Node 🧰
         uses: actions/setup-node@v4
         with:
