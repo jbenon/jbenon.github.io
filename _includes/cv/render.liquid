@@ -157,7 +157,7 @@
                     {%- if a contains "**" -%}
                       {%- assign a = a | remove: "**" | prepend: "<strong>" | append: "</strong>" -%}
                     {%- endif -%}
-                    {%- unless forloop.first %}{% if forloop.last %}, and {% else %}, {% endif %}{% endunless -%}
+                    {%- unless forloop.first %}, {% endunless -%}
                     {{ a }}
                   {%- endfor -%}
                   ({{ entry.date }}).
