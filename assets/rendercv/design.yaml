@@ -123,5 +123,5 @@ design:
         DATE
     publication_entry:
       main_column: |-
-        AUTHORS (DATE). (TITLE)[URL]. JOURNAL.
+        AUTHORS (DATE). [TITLE](URL). JOURNAL.
       date_and_location_column: |-
