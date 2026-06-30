@@ -86,14 +86,14 @@ cv:
           - "Pessiglione, M."
           - "Vinckier, F."
           - "Daunizeau, J."
-        year: 2026
+        date: "2026"
         title: "Irrational decisions reflect robustness constraints on value computations implemented by orbitofrontal circuits"
         url: https://www.biorxiv.org/content/10.1101/2025.07.10.664081v2
         journal: bioRxiv
 
       - authors:
           - "**Bénon, J.**"
-        year: 2025
+        date: "2025"
         title: "A neuro-computational account of rationality costs in decision-making"
         url: https://theses.hal.science/tel-05327543
         school: "Sorbonne Université"
@@ -113,7 +113,7 @@ cv:
           - "Schreiweis, C."
           - "Burguière, É."
           - "Daunizeau, J."
-        year: 2024
+        date: "2024"
         title: "The online metacognitive control of decisions"
         url: https://www.nature.com/articles/s44271-024-00071-y
         journal: "Communications Psychology"
