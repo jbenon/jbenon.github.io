@@ -151,7 +151,7 @@
             {% elsif entry.title and entry.authors %}
               <div class="rcv-entry">
                 <div class="rcv-entry-main">
-                  {% assign authors = entry.author | split: " and " %}
+                  {% assign authors = entry.authors | split: " and " %}
                   {%- for author in authors -%}
                     {%- assign parts = author | strip | split: ", " -%}
                     {%- if parts.size == 2 -%}
