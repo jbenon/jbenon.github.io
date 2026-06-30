@@ -160,7 +160,7 @@
                     {%- unless forloop.first %}{% if forloop.last %}, and {% else %}, {% endif %}{% endunless -%}
                     {{ a }}
                   {%- endfor -%}
-                  ({{ entry.year }}).
+                  ({{ entry.date }}).
                   {% if entry.url %}
                     <a href="{{ entry.url }}" target="_blank">{{ entry.title }}</a>.
                   {% else %}
