@@ -1,5 +1,6 @@
 "Peer-reviewed":
   color: "#DC267F"
+  text-color: "#FFFFFF"
 
 "Invited talk":
   color: "#DC267F"
@@ -8,10 +9,10 @@
   color: "#FE6100"
 
 "Poster":
-  color: "#785EF0"
+  color: "#BBBBBB"
 
 "Preprint":
   color: "#BBBBBB"
 
-"PhD thesis":
+"PhD Thesis":
   color: "#FFB000"
