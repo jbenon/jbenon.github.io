@@ -40,7 +40,7 @@ on:
       - "**.liquid"
       - "**/*.md"
       - "**.yml"
-      - "**.scss"
+      - "**/*.scss"
       - "Gemfile"
       - "Gemfile.lock"
       - "!.github/workflows/axe.yml"
