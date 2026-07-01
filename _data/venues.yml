@@ -4,15 +4,20 @@
 
 "Invited talk":
   color: "#DC267F"
+  text-color: "#FFFFFF"
 
 "Selected talk":
   color: "#FE6100"
+  text-color: "#FFFFFF"
 
 "Poster":
   color: "#BBBBBB"
+  text-color: "#FFFFFF"
 
 "Preprint":
   color: "#BBBBBB"
+  text-color: "#FFFFFF"
 
 "PhD Thesis":
   color: "#FFB000"
+  text-color: "#FFFFFF"
