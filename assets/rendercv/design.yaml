@@ -10,11 +10,11 @@ design:
     show_top_note: true
   colors:
     body: rgb(0, 0, 0)
-    name: rgb(0, 79, 144)
-    headline: rgb(0, 79, 144)
-    connections: rgb(0, 79, 144)
-    section_titles: rgb(0, 79, 144)
-    links: rgb(0, 79, 144)
+    name: rgb(100, 143, 255)
+    headline: rgb(100, 143, 255)
+    connections: rgb(100, 143, 255)
+    section_titles: rgb(100, 143, 255)
+    links: rgb(100, 143, 255)
     footer: rgb(128, 128, 128)
     top_note: rgb(128, 128, 128)
   typography:
