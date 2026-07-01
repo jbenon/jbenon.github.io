@@ -73,14 +73,6 @@ jobs:
         with:
           ruby-version: "3.3.5"
           bundler-cache: true
-      - name: DEBUG - inspect gem files
-        run: |
-          echo "=== _includes listing ==="
-          ls -la vendor/bundle/ruby/3.3.0/gems/al_folio_core-1.0.11/_includes
-          echo "=== searching for social-related includes ==="
-          find vendor/bundle/ruby/3.3.0/gems/al_folio_core-1.0.11/_includes -iname "*social*"
-          echo "=== about.liquid contents ==="
-          cat vendor/bundle/ruby/3.3.0/gems/al_folio_core-1.0.11/_layouts/about.liquid
       - name: Setup Python 🐍
         uses: actions/setup-python@v5
         with:
