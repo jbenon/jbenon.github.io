@@ -16,39 +16,39 @@
     var scope = document.currentScript.closest('.publications') || document;
 
     document.addEventListener('DOMContentLoaded', function () {
-      var buttons = scope.querySelectorAll('.pub-filter-btn');
-      var items = scope.querySelectorAll('.bibliography > li');
-      var lists = scope.querySelectorAll('.bibliography');
+        var buttons = scope.querySelectorAll('.pub-filter-btn');
+        var items = scope.querySelectorAll('.bibliography > li');
+        var lists = scope.querySelectorAll('ol.bibliography');
 
-      function updateYearHeaders() {
+        function updateYearHeaders() {
         lists.forEach(function (list) {
-          var hasVisibleEntry = Array.prototype.some.call(
+            var hasVisibleEntry = Array.prototype.some.call(
             list.querySelectorAll('li'),
             function (li) { return li.style.display !== 'none'; }
-          );
-          var heading = list.previousElementSibling;
-          if (heading && heading.classList.contains('year')) {
+            );
+            var heading = list.previousElementSibling;
+            if (heading && heading.tagName === 'H2') {
             heading.style.display = hasVisibleEntry ? '' : 'none';
-          }
-          list.style.display = hasVisibleEntry ? '' : 'none';
+            }
+            list.style.display = hasVisibleEntry ? '' : 'none';
         });
-      }
+        }
 
-      buttons.forEach(function (btn) {
-        btn.addEventListener('click', function () {
-          buttons.forEach(function (b) { b.classList.remove('active'); });
-          btn.classList.add('active');
-          var filter = btn.getAttribute('data-filter');
+        buttons.forEach(function (btn) {
+            btn.addEventListener('click', function () {
+            buttons.forEach(function (b) { b.classList.remove('active'); });
+            btn.classList.add('active');
+            var filter = btn.getAttribute('data-filter');
 
-          items.forEach(function (li) {
-            var tagged = li.querySelector('[data-abbr]');
-            var abbr = tagged ? tagged.getAttribute('data-abbr') : null;
-            li.style.display = (filter === 'all' || abbr === filter) ? '' : 'none';
-          });
+            items.forEach(function (li) {
+                var tagged = li.querySelector('[data-abbr]');
+                var abbr = tagged ? tagged.getAttribute('data-abbr') : null;
+                li.style.display = (filter === 'all' || abbr === filter) ? '' : 'none';
+            });
 
-          updateYearHeaders();
+            updateYearHeaders();
+            });
         });
-      });
     });
   })();
 </script> <h2 class="bibliography">2026</h2> <ol class="bibliography"><li><div class="row" data-abbr="Preprint"> <div class="col col-sm-2 abbr"> <abbr class="badge rounded w-100" style="background-color:#BBBBBB;"> <div style="color:#FFFFFF !important;">Preprint</div> </abbr> <figure> <picture> <source class="responsive-img-srcset" srcset="/assets/img/publication_preview/benon_2026_irrational-480.webp 480w,/assets/img/publication_preview/benon_2026_irrational-800.webp 800w,/assets/img/publication_preview/benon_2026_irrational-1400.webp 1400w," type="image/webp" sizes="200px"></source> <img src="/assets/img/publication_preview/benon_2026_irrational.png" class="preview z-depth-1 rounded" width="100%" height="auto" alt="benon_2026_irrational.png" data-zoomable="" loading="eager" onerror="this.onerror=null; document.querySelectorAll('.responsive-img-srcset').forEach(function (n) { n.remove(); });"> </picture> </figure> </div> <div id="benon_2026_irrational" class="col-sm-8"> <div class="title">Irrational decisions reflect robustness constraints on value computations implemented by orbitofrontal circuits</div> <div class="author"> <em>Juliette Bénon</em>, <a href="https://scholar.google.com/citations?user=SKyTxCwAAAAJ&amp;hl=en" rel="external nofollow noopener" target="_blank">Mathias Pessiglione</a>, <a href="https://www.researchgate.net/profile/Fabien-Vinckier" rel="external nofollow noopener" target="_blank">Fabien Vinckier</a>, and <a href="https://sites.google.com/site/jeandaunizeauswebsite/home" rel="external nofollow noopener" target="_blank">Jean Daunizeau</a> </div> <div class="periodical"> <em>bioRxiv</em>, May 2026 </div> <div class="periodical"> </div> <div class="links"> <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a> <a href="https://doi.org/10.1101/2025.07.10.664081" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">DOI</a> <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a> <a href="https://www.biorxiv.org/content/10.1101/2025.07.10.664081v2" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">HTML</a> <a href="/assets/pdf/benon_2026_irrational.pdf" class="btn btn-sm z-depth-0" role="button">PDF</a> <a href="https://github.com/jbenon/Robustness-Irrational-OFC" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">Code</a> </div> <div class="abstract hidden"> <p>Making good decisions is essential for survival and success, yet humans and animals often exhibit perplexing irrational decision-making whose biological origin remains poorly understood. Recent empirical and computational work suggests that altered computations in perceptual, motor and memory systems in the brain may arise from informational, metabolic or robustness constraints on their internal connectivity structure. However, whether and how such neurobiological constraints may have molded the architecture of decision systems (such as the orbitofrontal cortex) and eventually distorted decision-relevant computations, remains largely unknown. We first train cohorts of artificial neural nets to perform ten variants of rational decision-relevant computations. Those variants that operate under a specific option-encoding format exhibit most of the electrophysiological coding properties observed in orbitofrontal neurons of monkeys making decisions under risk. We then distort these neural nets’ internal wiring to reproduce monkeys’ irrational choices. This induces deterministic spillover interferences in decision-relevant computations that generalize across individuals, at both the behavioral and neural level. Importantly, although irrational nets do not seem to bring informational or metabolic benefits, they display enhanced tolerance to damage and noise when compared to their rational counterparts. This suggests that some forms of irrational behavior may be the incidental outcome of distal evolutionary pressure on the robustness of orbitofrontal circuits.</p> </div> <div class="bibtex hidden"> <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@article</span><span class="p">{</span><span class="nl">benon_2026_irrational</span><span class="p">,</span>
