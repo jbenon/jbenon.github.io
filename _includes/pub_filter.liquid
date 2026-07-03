@@ -23,39 +23,39 @@
     var scope = document.currentScript.closest('.publications') || document;
 
     document.addEventListener('DOMContentLoaded', function () {
-      var buttons = scope.querySelectorAll('.pub-filter-btn');
-      var items = scope.querySelectorAll('.bibliography > li');
-      var lists = scope.querySelectorAll('.bibliography');
+        var buttons = scope.querySelectorAll('.pub-filter-btn');
+        var items = scope.querySelectorAll('.bibliography > li');
+        var lists = scope.querySelectorAll('ol.bibliography');
 
-      function updateYearHeaders() {
+        function updateYearHeaders() {
         lists.forEach(function (list) {
-          var hasVisibleEntry = Array.prototype.some.call(
+            var hasVisibleEntry = Array.prototype.some.call(
             list.querySelectorAll('li'),
             function (li) { return li.style.display !== 'none'; }
-          );
-          var heading = list.previousElementSibling;
-          if (heading && heading.classList.contains('year')) {
+            );
+            var heading = list.previousElementSibling;
+            if (heading && heading.tagName === 'H2') {
             heading.style.display = hasVisibleEntry ? '' : 'none';
-          }
-          list.style.display = hasVisibleEntry ? '' : 'none';
+            }
+            list.style.display = hasVisibleEntry ? '' : 'none';
         });
-      }
+        }
 
-      buttons.forEach(function (btn) {
-        btn.addEventListener('click', function () {
-          buttons.forEach(function (b) { b.classList.remove('active'); });
-          btn.classList.add('active');
-          var filter = btn.getAttribute('data-filter');
+        buttons.forEach(function (btn) {
+            btn.addEventListener('click', function () {
+            buttons.forEach(function (b) { b.classList.remove('active'); });
+            btn.classList.add('active');
+            var filter = btn.getAttribute('data-filter');
 
-          items.forEach(function (li) {
-            var tagged = li.querySelector('[data-abbr]');
-            var abbr = tagged ? tagged.getAttribute('data-abbr') : null;
-            li.style.display = (filter === 'all' || abbr === filter) ? '' : 'none';
-          });
+            items.forEach(function (li) {
+                var tagged = li.querySelector('[data-abbr]');
+                var abbr = tagged ? tagged.getAttribute('data-abbr') : null;
+                li.style.display = (filter === 'all' || abbr === filter) ? '' : 'none';
+            });
 
-          updateYearHeaders();
+            updateYearHeaders();
+            });
         });
-      });
     });
   })();
 </script>
