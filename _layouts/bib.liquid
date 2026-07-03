@@ -9,9 +9,6 @@
                 {% if site.data.venues[entry.abbr].color %}
                     {% assign venue_style_parts = venue_style_parts | append: 'background-color:' | append: site.data.venues[entry.abbr].color | append: ';' %}
                 {%- endif -%}
-                {% if site.data.venues[entry.abbr].text_color %}
-                    {% assign venue_style_parts = venue_style_parts | append: 'color:' | append: site.data.venues[entry.abbr].text_color | append: ' !important;' %}
-                {%- endif -%}
                 {% assign venue_style = null %}
                 {% if venue_style_parts != "" %}
                     {% assign venue_style = venue_style_parts | prepend: 'style="' | append: '"' %}
@@ -22,10 +19,14 @@
                     {{ venue_style }}
                 {% endif -%}
                 >
+                {% assign child_style = null %}
+                {% if site.data.venues[entry.abbr].text_color %}
+                    {% assign child_style = site.data.venues[entry.abbr].text_color | prepend: 'style="color:' | append: ' !important;"' %}
+                {%- endif -%}
                 {% if site.data.venues[entry.abbr].url %}
-                    <a href="{{ site.data.venues[entry.abbr].url }}">{{ entry.abbr }}</a>
+                  <a href="{{ site.data.venues[entry.abbr].url }}" {% if child_style %}{{ child_style }}{% endif %}>{{ entry.abbr }}</a>
                 {% else %}
-                    <div>{{- entry.abbr -}}</div>
+                  <div {% if child_style %}{{ child_style }}{% endif %}>{{- entry.abbr -}}</div>
                 {% endif %}
                 </abbr>
             {% else %}
