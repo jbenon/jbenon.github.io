@@ -15,6 +15,8 @@ nav_order: 2
 
 <div class="publications">
 
+{% include pub_filter.liquid %}
+
 {% bibliography --file papers %}
 
 </div>
