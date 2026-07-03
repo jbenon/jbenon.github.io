@@ -15,7 +15,7 @@ nav_order: 3
 
 <div class="publications">
 
-{% include pub_filter.liquid types=site.data.bib_categories.conferences %}
+{% include pub_filter.liquid types="Poster,Invited talk,Selected talk" %}
 
 {% bibliography --file conferences %}
 

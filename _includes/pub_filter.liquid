@@ -1,6 +1,9 @@
+{% assign filter_types = include.types | split: "," %}
+
 <div class="pub-filter mb-3">
   <button type="button" class="btn btn-sm z-depth-0 pub-filter-btn active" data-filter="all">All</button>
-  {% for type in include.types %}
+  {% for type in filter_types %}
+    {% assign type = type | strip %}
     <button type="button" class="btn btn-sm z-depth-0 pub-filter-btn" data-filter="{{ type }}">{{ type }}</button>
   {% endfor %}
 </div>
