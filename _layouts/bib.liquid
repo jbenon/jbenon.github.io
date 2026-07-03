@@ -10,7 +10,7 @@
                     {% assign venue_style_parts = venue_style_parts | append: 'background-color:' | append: site.data.venues[entry.abbr].color | append: ';' %}
                 {%- endif -%}
                 {% if site.data.venues[entry.abbr].text_color %}
-                    {% assign venue_style_parts = venue_style_parts | append: 'color:' | append: site.data.venues[entry.abbr].text_color | append: ';' %}
+                    {% assign venue_style_parts = venue_style_parts | append: 'color:' | append: site.data.venues[entry.abbr].text_color | append: ' !important;' %}
                 {%- endif -%}
                 {% assign venue_style = null %}
                 {% if venue_style_parts != "" %}
