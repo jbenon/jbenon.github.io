@@ -15,6 +15,8 @@ nav_order: 3
 
 <div class="publications">
 
+{% include pub_filter.liquid types=site.data.bib_categories.conferences %}
+
 {% bibliography --file conferences %}
 
 </div>

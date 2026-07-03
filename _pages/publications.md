@@ -15,7 +15,7 @@ nav_order: 2
 
 <div class="publications">
 
-{% include pub_filter.liquid %}
+{% include pub_filter.liquid types=site.data.bib_categories.papers %}
 
 {% bibliography --file papers %}
 

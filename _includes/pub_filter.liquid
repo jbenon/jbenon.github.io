@@ -1,7 +1,7 @@
 <div class="pub-filter mb-3">
   <button type="button" class="btn btn-sm z-depth-0 pub-filter-btn active" data-filter="all">All</button>
-  {% for venue in site.data.venues %}
-    <button type="button" class="btn btn-sm z-depth-0 pub-filter-btn" data-filter="{{ venue[0] }}">{{ venue[0] }}</button>
+  {% for type in include.types %}
+    <button type="button" class="btn btn-sm z-depth-0 pub-filter-btn" data-filter="{{ type }}">{{ type }}</button>
   {% endfor %}
 </div>
 
