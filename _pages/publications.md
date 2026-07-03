@@ -15,7 +15,7 @@ nav_order: 2
 
 <div class="publications">
 
-{% include pub_filter.liquid types=site.data.bib_categories.papers %}
+{% include pub_filter.liquid types="Preprint,Peer-reviewed,PhD Thesis" %}
 
 {% bibliography --file papers %}
 

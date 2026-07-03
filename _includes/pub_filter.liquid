@@ -1,14 +1,13 @@
+{% assign filter_types = include.types | split: "," %}
+
 <div class="pub-filter mb-3">
-  <button type="button" class="btn z-depth-0 pub-filter-btn active" data-filter="all">All</button>
+  <button type="button" class="btn btn-sm z-depth-0 pub-filter-btn active" data-filter="all">All</button>
   {% for type in include.types %}
-    <button type="button" class="btn z-depth-0 pub-filter-btn" data-filter="{{ type }}">{{ type }}</button>
+    <button type="button" class="btn btn-sm z-depth-0 pub-filter-btn" data-filter="{{ type }}">{{ type }}</button>
   {% endfor %}
 </div>
 
 <style>
-  .pub-filter-btn {
-    font-size: 1rem;
-  }
   .pub-filter-btn.active {
     background-color: var(--global-theme-color) !important;
     color: var(--global-hover-text-color) !important;
