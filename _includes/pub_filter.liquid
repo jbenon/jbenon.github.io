@@ -2,17 +2,20 @@
 
 <div class="pub-filter mb-3">
   <button type="button" class="btn btn-sm z-depth-0 pub-filter-btn active" data-filter="all">All</button>
-  {% for type in include.types %}
+  {% for type in filter_types %}
     <button type="button" class="btn btn-sm z-depth-0 pub-filter-btn" data-filter="{{ type }}">{{ type }}</button>
   {% endfor %}
 </div>
 
 <style>
-  .pub-filter-btn.active {
-    background-color: var(--global-theme-color) !important;
-    color: var(--global-hover-text-color) !important;
-    border-color: var(--global-theme-color) !important;
-  }
+    .pub-filter-btn {
+        font-size: 1rem;
+    }
+    .pub-filter-btn.active {
+        background-color: var(--global-theme-color) !important;
+        color: var(--global-hover-text-color) !important;
+        border-color: var(--global-theme-color) !important;
+    }
 </style>
 
 <script>
@@ -22,6 +25,21 @@
     document.addEventListener('DOMContentLoaded', function () {
       var buttons = scope.querySelectorAll('.pub-filter-btn');
       var items = scope.querySelectorAll('.bibliography > li');
+      var lists = scope.querySelectorAll('.bibliography');
+
+      function updateYearHeaders() {
+        lists.forEach(function (list) {
+          var hasVisibleEntry = Array.prototype.some.call(
+            list.querySelectorAll('li'),
+            function (li) { return li.style.display !== 'none'; }
+          );
+          var heading = list.previousElementSibling;
+          if (heading && heading.classList.contains('year')) {
+            heading.style.display = hasVisibleEntry ? '' : 'none';
+          }
+          list.style.display = hasVisibleEntry ? '' : 'none';
+        });
+      }
 
       buttons.forEach(function (btn) {
         btn.addEventListener('click', function () {
@@ -34,6 +52,8 @@
             var abbr = tagged ? tagged.getAttribute('data-abbr') : null;
             li.style.display = (filter === 'all' || abbr === filter) ? '' : 'none';
           });
+
+          updateYearHeaders();
         });
       });
     });
