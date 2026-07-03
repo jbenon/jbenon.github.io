@@ -1,0 +1,39 @@
+<div class="pub-filter mb-3">
+  <button type="button" class="btn btn-sm z-depth-0 pub-filter-btn active" data-filter="all">All</button>
+  {% for venue in site.data.venues %}
+    <button type="button" class="btn btn-sm z-depth-0 pub-filter-btn" data-filter="{{ venue[0] }}">{{ venue[0] }}</button>
+  {% endfor %}
+</div>
+
+<style>
+  .pub-filter-btn.active {
+    background-color: var(--global-theme-color) !important;
+    color: var(--global-hover-text-color) !important;
+    border-color: var(--global-theme-color) !important;
+  }
+</style>
+
+<script>
+  (function () {
+    var scope = document.currentScript.closest('.publications') || document;
+
+    document.addEventListener('DOMContentLoaded', function () {
+      var buttons = scope.querySelectorAll('.pub-filter-btn');
+      var items = scope.querySelectorAll('.bibliography > li');
+
+      buttons.forEach(function (btn) {
+        btn.addEventListener('click', function () {
+          buttons.forEach(function (b) { b.classList.remove('active'); });
+          btn.classList.add('active');
+          var filter = btn.getAttribute('data-filter');
+
+          items.forEach(function (li) {
+            var tagged = li.querySelector('[data-abbr]');
+            var abbr = tagged ? tagged.getAttribute('data-abbr') : null;
+            li.style.display = (filter === 'all' || abbr === filter) ? '' : 'none';
+          });
+        });
+      });
+    });
+  })();
+</script>
