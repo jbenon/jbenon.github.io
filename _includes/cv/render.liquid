@@ -209,7 +209,7 @@
             {% elsif entry.name %}
               <div class="rcv-entry">
                 <div class="rcv-entry-main">
-                  {% if entry.name %}<strong>{{ entry.name }}</strong>{% endif %}
+                  {% if entry.name %}<strong>{{ entry.name | markdownify | remove: '<p>' | remove: '</p>'}}</strong>{% endif %}
                   {% if entry.summary %}
                     <div style="font-size:0.9rem">
                       {{ entry.summary | markdownify | remove: '<p>' | remove: '</p>' }}
@@ -231,7 +231,7 @@
               {% else %}
                 <div class="rcv-entry">
                   <div class="rcv-entry-main">
-                    {{ entry }}
+                    {{ entry | markdownify | remove: '<p>' | remove: '</p>'}}
                   </div>
                 </div>
 
