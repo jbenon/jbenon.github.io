@@ -1,6 +1,8 @@
+# MBB team, Paris Brain Institute
+
 "daunizeau":
   - firstname: ["Jean", "J."]
-    url: https://sites.google.com/site/jeandaunizeauswebsite/home
+    url: https://orcid.org/0000-0001-9142-1270
 
 "pessiglione":
   - firstname: ["Mathias", "M."]
@@ -8,4 +10,44 @@
 
 "vinckier":
   - firstname: ["Fabien", "F."]
-    url: https://www.researchgate.net/profile/Fabien-Vinckier
+    url: https://orcid.org/0000-0003-4984-6296
+
+"bouret":
+  - firstname: ["Sébastien", "Sebastien", "S."]
+    url: https://orcid.org/0000-0003-2279-6161
+
+"rouault":
+  - firstname: ["Marion", "M."]
+    url: https://orcid.org/0000-0001-6586-3788
+
+"le bouc":
+  - firstname: ["Raphaël", "Raphael", "R."]
+    url: https://scholar.google.com/citations?user=w3_znVEAAAAJ&hl=en
+
+"lespart":
+  - firstname: ["Arnaud", "A."]
+    url: https://orcid.org/0009-0008-6926-3040
+
+"burguière":
+  - firstname: ["Éric", "Eric", "E."]
+    url: https://orcid.org/0000-0002-9690-5909
+
+"schreiweis":
+  - firstname: ["Christiane", "C."]
+    url: https://scholar.google.com/citations?user=c2poPLsAAAAJ&hl=en
+
+"pezzulo":
+  - firstname: ["Giovanni", "G."]
+    url: https://scholar.google.com/citations?user=kkVbtzAAAAAJ&hl=en
+
+"verdeil":
+  - firstname: ["Morgan", "M."]
+    url: https://orcid.org/0009-0004-8009-7363
+
+"hopper":
+  - firstname: ["William", "W."]
+    url: https://theses.hal.science/tel-04642263
+
+"lee":
+  - firstname: ["Douglas", "Douglas G.", "D. G.", "D.", "D.G."]
+    url: https://orcid.org/0000-0001-5892-8694
